@@ -22,5 +22,5 @@ O Flexi Fitness é uma plataforma abrangente e intuitiva que reúne recursos ess
 
 # Conclusão 
 
-O projeto Flexi Fitness inova para atender às necessidades de uma sociedade em busca de melhor qualidade de vida. Combinando Engenharia de Software e bem-estar, a plataforma ajuda os usuários a alcançarem objetivos de forma personalizada e eficiente. Neste trabalho, exploraremos a arquitetura, funcionalidades e tecnologias do Flexi Fitness, mostrando como ele é essencial na busca por um estilo de vida saudável.
+- O projeto Flexi Fitness inova para atender às necessidades de uma sociedade em busca de melhor qualidade de vida. Combinando Engenharia de Software e bem-estar, a plataforma ajuda os usuários a alcançarem objetivos de forma personalizada e eficiente. Neste trabalho, exploraremos a arquitetura, funcionalidades e tecnologias do Flexi Fitness, mostrando como ele é essencial na busca por um estilo de vida saudável.
   
