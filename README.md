@@ -111,16 +111,13 @@ O Flexi Fitness é uma plataforma abrangente e intuitiva que reúne recursos ess
 
 ### Não Funcionais
 
-- A plataforma deve carregar rapidamente e responder prontamente às solicitações dos usuários.
-- O tempo de resposta para gerar planos de treino e dietas personalizadas deve ser razoável mesmo durante picos de uso.
-- A plataforma deve ser capaz de lidar com um aumento significativo no número de usuários sem degradação do desempenho.
-- Implementar medidas de segurança, como criptografia de dados e autenticação robusta, para proteger as informações do usuário.
-- Respeitar regulamentações de privacidade de dados, como o Regulamento Geral de Proteção de Dados (GDPR) da União Europeia.
-- Fornecer aos usuários a capacidade de controlar suas configurações de privacidade e o que desejam compartilhar.
-- Garantir que a interface de usuário seja intuitiva e acessível para todos, incluindo pessoas com deficiência.
-- A plataforma deve ser compatível com uma ampla variedade de navegadores da web e dispositivos, incluindo smartphones, tablets e computadores desktop.
-- Fornecer documentação completa para desenvolvedores, administradores e usuários finais, incluindo manuais de uso e guias de solução de problemas.
-- Manter um registro detalhado de mudanças, atualizações e correções no sistema para fins de rastreabilidade e auditoria.
+- A plataforma deve carregar rapidamente e responder prontamente às solicitações dos usuários;
+- Implementar medidas de segurança, como criptografia de dados e autenticação robusta, para proteger as informações do usuário;
+- Respeitar regulamentações de privacidade de dados, como o Regulamento Geral de Proteção de Dados (GDPR) da União Europeia;
+- Fornecer aos usuários a capacidade de controlar suas configurações de privacidade e o que desejam compartilhar;
+- Garantir que a interface de usuário seja intuitiva e acessível para todos;
+- Fornecer documentação completa para administradores e usuários finais, incluindo manuais de uso e guias de solução de problemas;
+- Manter um registro detalhado de mudanças, atualizações e correções no sistema para fins de rastreabilidade e auditoria;
 - Cumprir com todas as regulamentações e requisitos legais relacionados à saúde, privacidade e segurança de dados, se aplicável.
 
 ### Funcionais
