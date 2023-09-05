@@ -1,0 +1,18 @@
+/* styles.css */
+
+  
+  /* Outros estilos para o conteúdo da página, como cores de texto */
+  .container {
+    color: #fff; /* Cor do texto no conteúdo da página */
+  }
+
+  .mt-5 {
+    margin-top: 66px !important;
+  }
+  
+.footer {
+    background-color: #333; /* Define a cor de fundo igual à da navbar */
+    padding: 2rem 0; /* Adicione espaço interno superior e inferior de 2 vezes a altura da navbar */
+    color: white; /* Define a cor do texto como branco */
+  }
+  
