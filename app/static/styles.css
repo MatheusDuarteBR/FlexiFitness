@@ -15,4 +15,32 @@
     padding: 2rem 0; /* Adicione espaço interno superior e inferior de 2 vezes a altura da navbar */
     color: white; /* Define a cor do texto como branco */
   }
+
+  #topo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinha o conteúdo à esquerda */
+  }
+  
+  #topo h1 {
+    font-size: 3rem; /* Tamanho da fonte grande */
+    text-align: center;
+    margin-left: 10%; /* Ajusta o espaço à esquerda */
+  }
+
+  .nav-link {
+    color: #fff; /* Cor branca */
+  }
+
+  .servicos-section {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top; /* Ajuste para alinhar no topo */
+    color: #fff; /* Cor do texto, se necessário */
+    height: 100vh; /* 100% da altura da tela */
+    margin-top: 200px; /* Remove a margem superior do elemento h2 */
+    background-attachment: fixed; 
+  }
+
+ 
   

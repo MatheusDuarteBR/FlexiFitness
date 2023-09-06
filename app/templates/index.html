@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seu Site Fitness</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='../static/styles.css') }}">
     
 </head>
@@ -16,38 +17,36 @@
    <div style="background-image: url('../static/background-image.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; height: 100vh;">
     <!-- Conteúdo da Página -->
     <div id="topo"></div>
-    <div class="container mt-5">
+    <div class="container mt-5" style="margin-top: 70px;">
       <h1>Bem-vindo ao Seu Site Fitness</h1>
       <p>Este é um exemplo de site fitness responsivo usando Bootstrap.</p>
     </div>
   </div>
 
-<!-- Seção Servicos -->
-<div id="serviços" class="container mt-5">
-  <h2>Servicos</h2>
-  <p>Esta é a seção Servicos do seu site.</p>
-  <a href="#topo" class="btn btn-secondary mt-3">Voltar ao Topo</a>
-</div>
+  <div style="background-image: url('../static/servico.png'); background-size: cover; background-repeat: no-repeat; background-attachment: fixed; height: 100vh;">
+    <!-- Conteúdo da Página -->
+  <div id="servicos" class="container mt-5 servicos-section">
+    <h2>Nossos Serviços</h2>
+    <p>Aqui estão alguns dos serviços que oferecemos.</p>
+    <!-- Adicione mais conteúdo aqui, se necessário -->
+  </div>
 
 <!-- Seção Receitas -->
 <div id="receitas" class="container mt-5">
   <h2>Receitas</h2>
   <p>Esta é a seção receitas do seu site.</p>
-  <a href="#topo" class="btn btn-secondary mt-3">Voltar ao Topo</a>
 </div>
 
   <!-- Seção Sobre -->
   <div id="sobre" class="container mt-5">
     <h2>Sobre</h2>
     <p>Esta é a seção Sobre do seu site.</p>
-    <a href="#topo" class="btn btn-secondary mt-3">Voltar ao Topo</a>
   </div>
 
   <!-- Seção Contato -->
   <div id="contato" class="container mt-5">
     <h2>Contato</h2>
     <p>Esta é a seção Contato do seu site.</p>
-    <a href="#topo" class="btn btn-secondary mt-3">Voltar ao Topo</a>
   </div>
 
   <!-- Footer -->
