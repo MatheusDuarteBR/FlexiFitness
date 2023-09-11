@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - FlexiFitness</title>
+    <!-- Inclua os links para os arquivos CSS e JS do Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro</h2>
+        <form method="POST" action="/registro" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="username">Nome de Usuário:</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+                <div class="valid-feedback">Parece bom!</div>
+                <div class="invalid-feedback">Por favor, preencha este campo.</div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="valid-feedback">Parece bom!</div>
+                <div class="invalid-feedback">Por favor, insira um e-mail válido.</div>
+            </div>
+            <div class="form-group">
+                <label for="password">Senha:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+                <div class="valid-feedback">Parece bom!</div>
+                <div class="invalid-feedback">Por favor, escolha uma senha.</div>
+            </div>
+            <div class="form-group">
+                <label for="confirm_password">Confirme a Senha:</label>
+                <input type="password" class="form-control" id="confirm_password" name="confirm_password" required>
+                <div class="valid-feedback">Parece bom!</div>
+                <div class="invalid-feedback">Por favor, confirme sua senha.</div>
+            </div>
+            <button type="submit" class="btn btn-primary" id="registrar-btn">Registrar</button>
+        </form>
+        <p>Já tem uma conta? <a href="/login">Faça login aqui</a></p>
+    </div>
+</body>
+</html>
