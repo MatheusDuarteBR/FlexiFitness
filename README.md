@@ -1,7 +1,7 @@
 # FlexiFitness
 
 
-## Introdução
+## 🧠 Sobre
 
 Flexi Fitness é uma plataforma revolucionária que combina Engenharia de Software e saúde, proporcionando aos usuários ferramentas poderosas para um estilo de vida saudável. Melhore sua qualidade de vida com o Flexi Fitness. 
 
@@ -10,11 +10,10 @@ Hoje, mais do que nunca, é essencial tornar a saúde e o bem-estar acessíveis 
 ## Visão Geral da plataforma Flexi Fitness
 
 O Flexi Fitness é uma plataforma abrangente e intuitiva que reúne recursos essenciais para a promoção da saúde física e mental. Através dessa plataforma, os usuários terão acesso a uma variedade de funcionalidades que incluem:
-- Treinamento Personalizado: A plataforma oferece a capacidade de criar, visualizar e seguir planos de treinamento personalizados, adequados aos objetivos individuais de cada usuário. Desde treinos de resistência até exercícios aeróbicos, o Flexi Fitness proporciona uma experiência de treinamento sob medida.
-  
-- Cálculo de Dietas: A alimentação desempenha um papel vital na conquista de um estilo de vida saudável. O Flexi Fitness permite aos usuários calcular suas necessidades calóricas e nutricionais, oferecendo orientações para criar dietas equilibradas e adaptadas aos objetivos de perda de peso, ganho muscular ou manutenção.
 
-- Receitas Saudáveis e Saborosas: A plataforma apresenta uma rica coleção de receitas elaboradas por profissionais da área da nutrição. Essas receitas não apenas visam atender aos objetivos de saúde, mas também proporcionam prazer culinário, demonstrando que é possível aliar sabor e bem-estar.
+- Treinamento Personalizado
+- Cálculo de Dietas
+- Receitas Saudáveis e Saborosas
 
 ## Objetivo
 
