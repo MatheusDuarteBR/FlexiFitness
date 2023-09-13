@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="{{ url_for('static', filename='../static/favicon.png') }}" type="image/x-icon">
+    <style>
+        /* Estilos CSS personalizados para a página de dashboard */
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .info-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .logout-btn {
+            float: right;
+            margin-top: 10px;
+        }
+        body {
+        overflow: hidden;
+        }
+        .w3-bar .w3-button {
+        padding: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="w3-top">
+        <div class="w3-bar w3-dark-grey w3-card" id="myNavbar">
+            <img src="{{ url_for('static', filename='../static/logo.png') }}" width="250" height="50" style="padding-left: 25px;">
+            <!-- Right-sided navbar links -->
+            <div class="w3-right w3-hide-small">
+                <a href="/dashboard" class="w3-bar-item w3-button" style="text-decoration: none;"><i class="fa fa-home"></i>HOME</a>
+                <a href="#services" class="w3-bar-item w3-button" style="text-decoration: none;"><i class="fa fa-user"></i> SERVIÇOS</a>
+                <a href="#receitas" class="w3-bar-item w3-button" style="text-decoration: none;"><i class="fa fa-cutlery"></i> RECEITAS</a>
+                <a href="#about" class="w3-bar-item w3-button" style="text-decoration: none;"><i class="fa fa-info"></i> SOBRE</a>
+                <a href="#contact" class="w3-bar-item w3-button" style="text-decoration: none;"><i class="fa fa-envelope"></i> SUPORTE</a>
+                <a href="/logout" class="w3-bar-item w3-button" style="text-decoration: none;"><i class="fa fa-sign-out"></i>LOGOUT</a>
+            </div>
+    </div>
+    <div class="container">
+        <h1>Dashboard</h1>
+
+        <div class="info-card">
+            <h2>Seja bem-vindo, [Nome do Usuário]!</h2>
+            <p>Aqui estão algumas informações úteis:</p>
+            <ul>
+                <li>Número de pedidos: [Número de Pedidos]</li>
+                <li>Saldo em conta: R$ [Saldo em Conta]</li>
+                <li>Último login: [Data e Hora do Último Login]</li>
+            </ul>
+            <a href="/logout" class="btn btn-danger logout-btn">Sair</a>
+        </div>
+
+        <div class="info-card">
+            <!-- Adicione mais informações do dashboard aqui -->
+        </div>
+    </div>
+</body>
+</html>

@@ -10,11 +10,7 @@
     margin-top: 66px !important;
   }
   
-.footer {
-    background-color: #333; /* Define a cor de fundo igual à da navbar */
-    padding: 2rem 0; /* Adicione espaço interno superior e inferior de 2 vezes a altura da navbar */
-    color: white; /* Define a cor do texto como branco */
-  }
+
 
   #topo {
     display: flex;
@@ -41,6 +37,58 @@
     margin-top: 200px; /* Remove a margem superior do elemento h2 */
     background-attachment: fixed; 
   }
+
+  /* Estilos personalizados para a página de registro */
+  body {
+    background-image: url('../static/registro-background.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+.registro-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px; 
+}
+.registro-container h2 {
+    text-align: center;
+}
+.registro-container {
+  margin-top: 110px;
+}
+#registrar-btn {
+  background-color: rgba(237, 227, 124, 1.0); 
+  color: black;
+  border: none; 
+  padding: 10px 20px;
+  cursor: pointer;
+}
+#registrar-btn:hover {
+  background-color: white; 
+  color: BLACK;
+}
+  /* Estilos personalizados para a página de registro */
+
+#login-btn {
+  background-color: rgba(237, 227, 124, 1.0); 
+  color: black;
+  border: none; 
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#login-btn:hover {
+  background-color: white; 
+  color: BLACK;
+}
 
  
   
