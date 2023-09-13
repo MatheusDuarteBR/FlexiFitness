@@ -13,7 +13,7 @@ O Flexi Fitness é uma plataforma abrangente e intuitiva que reúne recursos ess
 
 - Treinamento Personalizado
 - Cálculo de Dietas
-- Receitas Saudáveis e Saborosas
+- Receitas Saudáveis
 
 ## Objetivo
 
