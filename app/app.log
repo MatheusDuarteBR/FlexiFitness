@@ -2242,3 +2242,1330 @@ DETAIL:  Key (username)=(teste) already exists.
 2023-09-14 08:25:48,994 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:25:48] "GET /login HTTP/1.1" 200 -
 2023-09-14 08:25:49,009 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:25:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
 2023-09-14 08:25:49,009 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:25:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 08:53:00,253 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:53:00] "GET /login HTTP/1.1" 200 -
+2023-09-14 08:53:00,273 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:53:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 08:53:00,287 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:53:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 08:53:00,958 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:53:00] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 08:53:04,789 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-09-14 08:53:04,789 [INFO] - User session: <SecureCookieSession {'user_id': 10, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-09-14 08:53:04,792 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:53:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-14 08:53:04,795 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:53:04] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 08:53:04,804 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:53:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 08:55:36,424 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 08:55:36,424 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 08:55:37,852 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:55:37] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 08:55:37,865 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:55:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 08:55:37,886 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:55:37] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 08:55:38,405 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:55:38] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 08:55:38,411 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:55:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 08:55:38,423 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:55:38] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 08:55:48,840 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 08:55:48,840 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 08:55:50,295 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:55:50] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 08:55:50,303 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:55:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 08:55:50,316 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:55:50] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 08:56:32,369 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:56:32] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 08:56:32,386 [INFO] - 127.0.0.1 - - [14/Sep/2023 08:56:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:05:15,068 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:05:15,068 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:05:21,038 [INFO] - Usuário desconectado: Duarteex
+2023-09-14 09:05:21,040 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:21] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-09-14 09:05:21,047 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:21] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:05:21,057 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:05:21,059 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:21] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:05:21,078 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:21] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:05:22,132 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:22] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:05:22,143 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:05:22,144 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:05:22,153 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:22] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:05:25,704 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-09-14 09:05:25,705 [INFO] - User session: <SecureCookieSession {'user_id': 10, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-09-14 09:05:25,709 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-14 09:05:25,716 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:25] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:05:25,729 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:05:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:06:43,910 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:06:43] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:06:43,927 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:06:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:06:43,944 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:06:43] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:06:48,007 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:06:48,007 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:06:49,317 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:06:49] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:06:49,324 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:06:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:06:49,337 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:06:49] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:06:50,643 [ERROR] - Exception on /dashboard/treinos [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 284, in decorated_view
+    elif not current_user.is_authenticated:
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 316, in __get__
+    obj = instance._get_current_object()
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+2023-09-14 09:06:50,645 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:06:50] "[35m[1mGET /dashboard/treinos HTTP/1.1[0m" 500 -
+2023-09-14 09:06:58,011 [ERROR] - Exception on /dashboard/treinos [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 284, in decorated_view
+    elif not current_user.is_authenticated:
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 316, in __get__
+    obj = instance._get_current_object()
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+2023-09-14 09:06:58,012 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:06:58] "[35m[1mGET /dashboard/treinos HTTP/1.1[0m" 500 -
+2023-09-14 09:07:01,661 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:07:01] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:07:01,693 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:07:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:08:58,649 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:08:58,649 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:09:00,000 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:09:00] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:09:00,013 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:09:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:09:00,037 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:09:00] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:09:01,558 [ERROR] - Exception on /dashboard/treinos [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 284, in decorated_view
+    elif not current_user.is_authenticated:
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 316, in __get__
+    obj = instance._get_current_object()
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+2023-09-14 09:09:01,559 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:09:01] "[35m[1mGET /dashboard/treinos HTTP/1.1[0m" 500 -
+2023-09-14 09:10:28,670 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:10:28,670 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:10:30,837 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:30] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:10:30,891 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:30,918 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:30] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:36,326 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:36] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:10:36,334 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:40,772 [INFO] - Usuário desconectado: Duarteex
+2023-09-14 09:10:40,774 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:40] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-09-14 09:10:40,779 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:40] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:10:40,787 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:10:40,789 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:40,807 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:40] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:43,996 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:43] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-09-14 09:10:44,001 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:44] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:10:44,028 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:44] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:10:44,033 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:44,041 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:44] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:45,879 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:45] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:10:45,887 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:49,818 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-09-14 09:10:49,821 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:49] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:10:49,850 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:10:49,855 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,808 [INFO] - Rota "/" foi acessada.
+2023-09-14 09:10:51,816 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "GET / HTTP/1.1" 200 -
+2023-09-14 09:10:51,842 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,846 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,852 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,857 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,860 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,862 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,875 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,883 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,913 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:51,922 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:51] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:54,759 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:54] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-09-14 09:10:54,762 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:54] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:10:54,794 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:10:54,799 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:54,805 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:54] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:58,798 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:58] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-09-14 09:10:58,803 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:58] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:10:58,838 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:10:58,839 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:58,845 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:58] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:10:59,987 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:59] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:10:59,996 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:10:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:11:02,201 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:02] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-09-14 09:11:02,205 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:02] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:11:02,216 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:11:02,218 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:11:30,756 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:11:30,756 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:11:34,789 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:34] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:11:34,801 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:34] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:11:34,803 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:11:34,835 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:34] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:11:38,580 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-09-14 09:11:38,581 [INFO] - User session: <SecureCookieSession {'user_id': 10, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-09-14 09:11:38,582 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-14 09:11:38,586 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:38] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:11:38,603 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:11:39,597 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:39] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:11:39,606 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:11:42,597 [INFO] - Usuário desconectado: Duarteex
+2023-09-14 09:11:42,599 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:42] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-09-14 09:11:42,605 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:42] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:11:42,634 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:11:42,634 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:42] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:11:46,150 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:46] "[32mGET /dashboard/treinos HTTP/1.1[0m" 302 -
+2023-09-14 09:11:46,156 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:46] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:11:46,169 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:11:46,172 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:11:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:12:13,909 [WARNING] - Senha incorreta para o usuário: Duarteex
+2023-09-14 09:12:13,910 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:13] "POST /login HTTP/1.1" 200 -
+2023-09-14 09:12:13,919 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:12:13,927 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:12:18,733 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-09-14 09:12:18,733 [INFO] - User session: <SecureCookieSession {'user_id': 10, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-09-14 09:12:18,734 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-14 09:12:18,736 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:18] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:12:18,746 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:12:19,919 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:19] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:12:19,935 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:12:28,199 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:28] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:12:28,218 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:12:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:13:05,273 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:13:05] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:13:05,296 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:13:05] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:13:05,343 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:13:05] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:13:07,070 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:13:07] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:13:07,089 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:13:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:13:10,545 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:13:10,545 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:13:11,746 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:13:11] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:13:11,758 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:13:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:13:11,776 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:13:11] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:16,157 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:14:16,157 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:14:17,275 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:17] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:17,294 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:17,322 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:17] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:17,807 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:17] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:17,813 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:17,829 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:17] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:20,371 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:20] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:14:20,378 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:22,874 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:22] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:22,881 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:25,074 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:25] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:25,082 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:25,375 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:25] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:25,380 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:25,756 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:25] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:25,769 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:26,086 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:26] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:26,091 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:26,476 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:26] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:26,483 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:29,717 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:29] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:29,723 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:32,768 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:32] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:32,775 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:33,141 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:33] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:14:33,155 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:14:33,707 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:33] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:14:33,719 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:14:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:16:23,387 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:16:23] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:16:23,430 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:16:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:16:23,455 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:16:23] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:16:24,598 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:16:24] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:16:24,616 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:16:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:17:27,886 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:17:27] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:17:27,910 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:17:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:17:28,485 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:17:28] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:17:28,496 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:17:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:17:29,047 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:17:29] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:17:29,058 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:17:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:18:48,004 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:18:48,004 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:18:49,130 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:18:49] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:18:49,151 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:18:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:18:49,166 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:18:49] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:18:53,427 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:18:53] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:18:53,445 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:18:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:18:54,717 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:18:54] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:18:54,734 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:18:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:18:55,992 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:18:55] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:18:56,013 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:18:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:19:16,580 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:19:16,581 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:19:17,512 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:17] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:19:17,523 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:19:17,549 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:17] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:19:18,553 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:18] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:19:18,573 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:19:50,356 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:19:50,357 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:19:51,724 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:51] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:19:51,733 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:19:51,751 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:51] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:19:52,538 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:52] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:19:52,543 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:19:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:25,605 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:25] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:20:25,620 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:26,337 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:26] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:20:26,354 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:26,921 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:26] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:20:26,936 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:27,407 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:27] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:20:27,419 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:27,854 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:27] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:20:27,864 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:30,261 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:30] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:20:30,278 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:30,999 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:30] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:20:31,009 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:31,902 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:31] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:20:31,919 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:32,615 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:32] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:20:36,236 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:36] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:20:36,246 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:37,001 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:37] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:20:37,015 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:38,181 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:38] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:20:38,196 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:40,285 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:40] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:20:40,298 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:46,121 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:46] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:20:46,138 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:46,891 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:46] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:20:46,899 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:48,183 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:48] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:20:48,197 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:48,898 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:48] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:20:48,914 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:20:49,983 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:49] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:20:49,999 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:20:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:20,976 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:21:20,976 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:21:22,263 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:22] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:21:22,315 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:22,394 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:22] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:22,997 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:22] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:21:23,019 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:23,833 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:23] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:21:23,853 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:24,634 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:24] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:21:24,667 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:25,650 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:25] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:21:25,679 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:26,414 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:26] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:21:26,434 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:26,931 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:26] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:21:26,945 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:27,416 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:27] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:21:27,426 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:28,145 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:28] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:21:28,160 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:28,819 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:28] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:21:28,830 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:29,398 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:29] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:21:29,411 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:29,899 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:29] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:21:29,910 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:30,296 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:30] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:21:30,303 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:30,755 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:30] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:21:30,762 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:31,214 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:31] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:21:31,224 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:21:31,524 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:31] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:21:31,537 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:21:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:28,662 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:22:28,662 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:22:30,167 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:30] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:30,187 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:30,203 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:30] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:31,364 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:31] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:22:31,372 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:31,985 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:31] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:22:31,991 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:32,569 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:32] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:32,585 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:36,397 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:36] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:36,411 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:48,233 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:22:48,233 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:22:49,552 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:49] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:49,560 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:49,575 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:49] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:50,566 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:50] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:22:50,571 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:51,066 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:51] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:22:51,072 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:51,488 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:51] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:51,496 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:51,927 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:51] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:22:51,934 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:52,527 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:52] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:52,534 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:52,959 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:52] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:22:52,966 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:53,307 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:53] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:53,315 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:53,665 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:53] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:22:53,672 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:53,954 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:53] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:53,961 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:54,226 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:54] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:22:54,233 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:54,549 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:54] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:22:54,556 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:54,934 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:54] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:22:54,940 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:55,326 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:55] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:22:55,333 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:55,627 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:55] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:22:55,635 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:55,910 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:55] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:22:55,919 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:56,237 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:56] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:22:56,243 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:56,543 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:56] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:56,551 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:56,839 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:56] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:22:56,846 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:57,118 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:57] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:22:57,123 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:57,404 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:57] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:22:57,411 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:57,669 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:57] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:57,675 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:57,941 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:57] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:22:57,950 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:58,468 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:58] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:22:58,474 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:58,722 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:58] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:58,727 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:59,099 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:59] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:59,108 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:59,328 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:59] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:22:59,335 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:22:59,549 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:59] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:22:59,561 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:22:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:00,629 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:00] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:23:00,645 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:01,553 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:01] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:23:01,567 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:01,981 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:01] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:23:01,996 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:07,613 [INFO] - Usuário desconectado: Duarteex
+2023-09-14 09:23:07,615 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:07] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-09-14 09:23:07,622 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:07] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:23:07,633 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:23:07,634 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:07,650 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:07] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:09,288 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:09] "[32mGET /dashboard/receitas HTTP/1.1[0m" 302 -
+2023-09-14 09:23:09,291 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:09] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:23:09,301 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:09] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:23:09,302 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:14,313 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-09-14 09:23:14,313 [INFO] - User session: <SecureCookieSession {'user_id': 10, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-09-14 09:23:14,314 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-14 09:23:14,317 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:14] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:23:14,330 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:17,608 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:17] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:23:17,629 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:17,933 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:17] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:23:17,947 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:18,188 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:18] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:23:18,201 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:18,447 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:18] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:23:18,455 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:18,703 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:18] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:23:18,709 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:29,021 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:29] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:23:29,030 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:30,014 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:30] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:23:30,032 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:30,426 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:30] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:23:30,441 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:31,521 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:31] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:23:31,558 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:23:31,774 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:31] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:23:31,787 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:23:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:12,421 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:12] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:24:12,449 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:12,966 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:12] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:24:12,988 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:13,530 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:13] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:24:13,542 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:14,709 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:14] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:24:14,723 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:15,027 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:15] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:24:15,040 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:15,370 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:15] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:24:15,377 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:15,700 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:15] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:24:15,709 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:18,953 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:18] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:24:18,970 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:19,343 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:19] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:24:19,358 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:19,756 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:19] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:24:19,767 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:24:20,484 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:20] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:24:20,498 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:24:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:25:30,028 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:25:30,028 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:25:31,961 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:25:31] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:25:31,978 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:25:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:25:31,999 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:25:31] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:26:46,470 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:26:46,470 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:26:48,015 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:48] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:26:48,025 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:26:48,052 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:48] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:26:48,747 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:48] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:26:48,757 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:26:48,779 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:48] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:26:49,304 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:49] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:26:49,313 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:26:49,332 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:49] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:26:49,453 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:49] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:26:49,460 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:26:49,474 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:26:49] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:27:10,987 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:27:10,987 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:27:12,364 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:27:12] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:27:12,377 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:27:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:27:12,396 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:27:12] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:12,475 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:28:12,475 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:28:13,779 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:13] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:28:13,790 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:13,808 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:13] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:33,964 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:33] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:28:33,979 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:35,138 [INFO] - Usuário desconectado: Duarteex
+2023-09-14 09:28:35,140 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:35] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-09-14 09:28:35,146 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:35] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:28:35,168 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:28:35,169 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:35,181 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:35] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,319 [INFO] - Rota "/" foi acessada.
+2023-09-14 09:28:36,323 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "GET / HTTP/1.1" 200 -
+2023-09-14 09:28:36,332 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,334 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,349 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,350 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,352 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,354 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,356 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,365 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,376 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:36,383 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:36] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:40,678 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:40] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:28:40,700 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:40,702 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:40] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,731 [INFO] - Rota "/" foi acessada.
+2023-09-14 09:28:58,732 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "GET / HTTP/1.1" 200 -
+2023-09-14 09:28:58,739 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,745 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,747 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,748 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,749 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,751 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,753 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,755 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,757 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 09:28:58,760 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:28:58] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:01,998 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:01] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:29:02,007 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:29:02,008 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:03,252 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:03] "GET /registro HTTP/1.1" 200 -
+2023-09-14 09:29:03,259 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:03,259 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:29:04,644 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:04] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:29:04,662 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:29:04,664 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:07,095 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:07] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:29:07,105 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:29:07,107 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:10,613 [WARNING] - Senha incorreta para o usuário: Duarteex
+2023-09-14 09:29:10,615 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:10] "POST /login HTTP/1.1" 200 -
+2023-09-14 09:29:10,625 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:10,635 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:29:14,702 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-09-14 09:29:14,702 [INFO] - User session: <SecureCookieSession {'user_id': 10, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-09-14 09:29:14,703 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-14 09:29:14,706 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:14] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:29:14,713 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:40,501 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:29:40,501 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:29:42,060 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:42] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:29:42,076 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:42,102 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:42] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:42,748 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:42] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:29:42,769 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:42,786 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:42] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:49,667 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:29:49,667 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:29:51,143 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:51] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:29:51,153 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:51,171 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:51] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:51,765 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:51] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:29:51,772 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:51,786 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:51] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:51,918 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:51] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:29:51,935 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:51,951 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:51] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:52,056 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:52] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:29:52,063 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:29:52,078 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:29:52] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:30:04,060 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:30:04,060 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:30:05,190 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:30:05] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:30:05,202 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:30:05] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:30:05,225 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:30:05] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:08,353 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:37:08,353 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:37:09,933 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:09] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:37:09,956 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:10,002 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:10] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:39,458 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:37:39,459 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:37:40,522 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:40] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:37:40,587 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:40,671 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:40] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:52,090 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:37:52,090 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:37:53,356 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:53] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:37:53,369 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:53,386 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:53] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:54,095 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:54] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:37:54,104 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:54,116 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:54] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:54,659 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:54] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:37:54,666 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:54,681 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:54] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:55,182 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:55] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:37:55,188 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:55,201 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:55] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:55,469 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:55] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:37:55,477 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:37:55,498 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:37:55] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:07,221 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:38:07,221 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:38:08,714 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:08] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:38:08,726 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:08,746 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:08] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:09,394 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:09] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:38:09,407 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:09,415 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:09] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:09,521 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:09] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:38:09,527 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:09,542 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:09] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:09,661 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:09] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:38:09,668 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:09,683 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:09] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:20,431 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:38:20,431 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:38:21,680 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:21] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:38:21,691 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:21,713 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:21] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,081 [INFO] - Rota "/" foi acessada.
+2023-09-14 09:38:58,088 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "GET / HTTP/1.1" 200 -
+2023-09-14 09:38:58,135 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,139 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,140 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,148 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,155 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,172 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,178 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,183 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,186 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 09:38:58,188 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:38:58] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:01,076 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:01] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:39:01,086 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:01,087 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:01] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:39:01,104 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:01] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:05,989 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:05] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:39:05,998 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:05] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:09,967 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:09] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:39:09,983 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:11,269 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:11] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:39:11,275 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:12,192 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:12] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:39:12,207 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:12,666 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:12] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:39:12,677 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:13,604 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:13] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:39:13,619 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:15,139 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:15] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:39:15,149 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:15,480 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:15] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:39:15,492 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:27,603 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:39:27,603 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:39:29,148 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:29] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:39:29,156 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:29,175 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:29] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:51,672 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:39:51,672 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:39:53,344 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:53] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:39:53,395 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:53,463 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:53] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:54,130 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:54] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:39:54,147 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:55,306 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:55] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:39:55,330 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:56,383 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:56] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:39:56,411 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:56,915 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:56] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:39:56,922 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:57,196 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:57] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:39:57,203 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:57,468 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:57] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:39:57,475 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:39:58,745 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:58] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:39:58,755 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:39:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:40:00,011 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:40:00] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:40:00,022 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:40:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:40:00,357 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:40:00] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:40:00,367 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:40:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:40:01,681 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:40:01] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:40:01,693 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:40:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:40:06,033 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:40:06] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:40:06,074 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:40:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:16,307 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:16] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:46:16,326 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:16,899 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:16] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:46:16,917 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:17,466 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:17] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:46:17,482 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:17,945 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:17] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:46:17,958 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:18,353 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:18] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:46:18,367 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:18,640 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:18] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:46:18,647 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:18,867 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:18] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:46:18,875 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,562 [INFO] - Rota "/" foi acessada.
+2023-09-14 09:46:19,570 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "GET / HTTP/1.1" 200 -
+2023-09-14 09:46:19,581 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,583 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,596 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,597 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,598 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,600 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,601 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,632 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,651 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:19,652 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:19] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:20,849 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:20] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:46:20,859 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:46:20,864 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:20,883 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:20] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:24,640 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:24] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:46:24,649 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:25,907 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:25] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:46:25,917 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:30,862 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:30] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:46:30,945 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:46:43,956 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:43] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:46:43,971 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:46:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:47:54,822 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:47:54] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:47:54,842 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:47:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:47:54,864 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:47:54] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:08,669 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:08] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:48:08,678 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:09,098 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:09] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:48:09,109 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:09,593 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:09] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:48:09,610 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:10,070 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:10] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:48:10,082 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:10,662 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:10] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:48:10,675 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:11,016 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:11] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:48:11,027 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:11,348 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:11] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:48:11,365 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,156 [INFO] - Rota "/" foi acessada.
+2023-09-14 09:48:12,157 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "GET / HTTP/1.1" 200 -
+2023-09-14 09:48:12,177 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,177 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,189 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,191 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,194 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,202 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,205 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,222 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,223 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:12,224 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:12] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:13,174 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:13] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:48:13,180 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:13,185 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:48:13,197 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:13] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:48:17,214 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-09-14 09:48:17,214 [INFO] - User session: <SecureCookieSession {'user_id': 10, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-09-14 09:48:17,216 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:17] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-14 09:48:17,218 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:17] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:48:17,228 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:48:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:09,219 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:49:09,219 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:49:10,436 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:10] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:49:10,453 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:10,477 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:10] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:14,376 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:14] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:49:14,384 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:17,440 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:17] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:49:17,450 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:19,103 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:19] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:49:19,108 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:19,354 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:19] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:49:19,361 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:22,149 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:22] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:49:22,159 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:22,656 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:22] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:49:22,670 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:22,956 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:22] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:49:22,970 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:23,219 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:23] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:49:23,233 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:23,501 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:23] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:49:23,506 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:25,907 [INFO] - Usuário desconectado: Duarteex
+2023-09-14 09:49:25,908 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:25] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-09-14 09:49:25,916 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:25] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:49:25,937 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:49:25,939 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:25,944 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:25] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,488 [INFO] - Rota "/" foi acessada.
+2023-09-14 09:49:27,493 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "GET / HTTP/1.1" 200 -
+2023-09-14 09:49:27,508 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,510 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,515 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,517 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,518 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,520 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,523 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,525 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,527 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:27,531 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:27] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:31,404 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:31] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-09-14 09:49:31,414 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:31] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:49:31,433 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:49:31,444 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:49:31,452 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:49:31] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:14,274 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:50:14,274 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:50:15,625 [INFO] - Rota "/" foi acessada.
+2023-09-14 09:50:15,629 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "GET / HTTP/1.1" 200 -
+2023-09-14 09:50:15,636 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,637 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,642 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,644 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,646 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,647 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,647 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,652 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,650 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,653 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:15,699 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:15] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:16,274 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:16] "[32mGET /dashboard/treinos HTTP/1.1[0m" 302 -
+2023-09-14 09:50:16,286 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:16] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:50:16,305 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:16] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:50:16,319 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:16,324 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:16] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:20,073 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-09-14 09:50:20,074 [INFO] - User session: <SecureCookieSession {'user_id': 10, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-09-14 09:50:20,075 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-14 09:50:20,078 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:20] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:50:20,088 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:21,655 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:21] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:50:21,684 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:26,871 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:26] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:50:26,902 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:30,069 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:30] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:50:30,104 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:31,641 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:31] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:50:31,671 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:44,106 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:44] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:50:44,146 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:46,139 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:46] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:50:46,185 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:54,803 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:54] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:50:54,810 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:54,812 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:50:54,828 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:54] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:57,214 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:57] "GET /registro HTTP/1.1" 200 -
+2023-09-14 09:50:57,224 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:50:57,229 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:58,840 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:58] "GET /login HTTP/1.1" 200 -
+2023-09-14 09:50:58,846 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:50:58,848 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:50:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 09:51:03,920 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-09-14 09:51:03,920 [INFO] - User session: <SecureCookieSession {'user_id': 10, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-09-14 09:51:03,921 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-09-14 09:51:03,923 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:03] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:51:03,932 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:39,187 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:51:39,187 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:51:40,480 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:40] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:51:40,488 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:40,505 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:40] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:44,715 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:44] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:51:44,720 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:45,253 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:45] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:51:45,258 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:45,597 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:45] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-09-14 09:51:45,603 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:45,888 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:45] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-09-14 09:51:45,894 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:46,135 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:46] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:51:46,140 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:46,533 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:46] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-09-14 09:51:46,539 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:46,768 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:46] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:51:46,773 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:51:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:51:58,291 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 09:51:58,291 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 09:52:00,136 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:52:00] "GET /dashboard HTTP/1.1" 200 -
+2023-09-14 09:52:00,141 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:52:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 09:52:00,152 [INFO] - 127.0.0.1 - - [14/Sep/2023 09:52:00] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:17,033 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:04:17,033 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:04:19,471 [INFO] - Rota "/" foi acessada.
+2023-09-14 10:04:19,477 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "GET / HTTP/1.1" 200 -
+2023-09-14 10:04:19,538 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:19,541 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:19,542 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:19,548 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:19,555 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:19,566 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:19,569 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:19,619 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:19,628 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:19,640 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:19] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:35,124 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:35] "GET /registro HTTP/1.1" 200 -
+2023-09-14 10:04:35,137 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:35] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 10:04:35,161 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:35,165 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:35] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 10:04:38,855 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:04:38] "[33mGET /termos-de-servico HTTP/1.1[0m" 404 -
+2023-09-14 10:06:35,410 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:06:35,410 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:06:37,863 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:06:37] "[33mGET /termos-de-servico HTTP/1.1[0m" 404 -
+2023-09-14 10:07:29,559 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:07:29,559 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:07:30,899 [ERROR] - Exception on /termos-de-servico [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 209, in termos_de_servico
+    return render_template('termos_de_servico.html')
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: termos_de_servico.html
+2023-09-14 10:07:30,904 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:30] "[35m[1mGET /termos-de-servico HTTP/1.1[0m" 500 -
+2023-09-14 10:07:52,656 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:07:52,656 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:07:53,848 [ERROR] - Exception on /termos-de-servico [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 209, in termos_de_servico
+    return render_template('termos-de-servico')
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: termos-de-servico
+2023-09-14 10:07:53,850 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:53] "[35m[1mGET /termos-de-servico HTTP/1.1[0m" 500 -
+2023-09-14 10:07:54,443 [ERROR] - Exception on /termos-de-servico [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 209, in termos_de_servico
+    return render_template('termos-de-servico')
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: termos-de-servico
+2023-09-14 10:07:54,443 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:54] "[35m[1mGET /termos-de-servico HTTP/1.1[0m" 500 -
+2023-09-14 10:07:57,374 [INFO] - Rota "/" foi acessada.
+2023-09-14 10:07:57,377 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "GET / HTTP/1.1" 200 -
+2023-09-14 10:07:57,398 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:57,406 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:57,407 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:57,439 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:57,447 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:57,448 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:57,454 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:57,467 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:57,472 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:57,474 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:57] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:58,867 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:58] "GET /registro HTTP/1.1" 200 -
+2023-09-14 10:07:58,878 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 10:07:58,891 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:58,894 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:58] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 10:07:59,799 [ERROR] - Exception on /termos-de-servico [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 209, in termos_de_servico
+    return render_template('termos-de-servico')
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 62, in get_source
+    return self._get_source_fast(environment, template)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 98, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: termos-de-servico
+2023-09-14 10:07:59,803 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:07:59] "[35m[1mGET /termos-de-servico HTTP/1.1[0m" 500 -
+2023-09-14 10:09:26,831 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:09:26,832 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:09:28,043 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:09:28,046 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:09:28] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:09:28,078 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:09:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:09:38,735 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:09:38] "GET /db HTTP/1.1" 200 -
+2023-09-14 10:09:41,439 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:09:41,440 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:09:41] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:09:41,459 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:09:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:10:52,288 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:10:52,288 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:10:53,704 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:10:53,709 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:10:53] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:10:53,724 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:10:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:10:53,750 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:10:53] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:11:03,271 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:11:03,272 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:11:04,961 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:11:04,964 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:11:04] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:11:04,971 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:11:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:11:04,990 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:11:04] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:11:22,963 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:11:22,963 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:11:24,739 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:11:24,756 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:11:24] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:11:24,825 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:11:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:11:25,031 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:11:25] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:11:25,241 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:11:25,243 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:11:25] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:11:25,309 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:11:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:11:25,456 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:11:25] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:12:46,719 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:12:46,719 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:12:48,151 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:12:48,155 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:12:48] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:12:48,168 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:12:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:12:48,196 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:12:48] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:20:26,769 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:20:26,770 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:20:28,417 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:20:28,420 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:20:28] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:20:28,437 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:20:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:20:28,463 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:20:28] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:20:50,548 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:20:50,548 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:20:51,843 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:20:51,849 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:20:51] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:20:51,862 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:20:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:20:51,886 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:20:51] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:21:07,613 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:21:07,613 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:21:08,859 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:21:08,863 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:21:08] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:21:08,875 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:21:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:21:08,892 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:21:08] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:21:34,056 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:21:34,056 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:21:35,455 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:21:35,458 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:21:35] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:21:35,470 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:21:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:21:35,492 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:21:35] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:22:16,434 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:22:16,434 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:22:17,885 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:22:17,889 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:22:17] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:22:17,901 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:22:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:22:17,923 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:22:17] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:22:24,548 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:22:24,548 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:22:25,831 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:22:25,834 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:22:25] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:22:25,840 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:22:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:22:25,860 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:22:25] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:27,060 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:23:27,060 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:23:28,361 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:23:28,365 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:28] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:23:28,377 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:28,409 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:28] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:31,613 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:31] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-09-14 10:23:31,618 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:31] "GET /login HTTP/1.1" 200 -
+2023-09-14 10:23:31,628 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 10:23:31,629 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:31,642 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:31] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,142 [INFO] - Rota "/" foi acessada.
+2023-09-14 10:23:33,145 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "GET / HTTP/1.1" 200 -
+2023-09-14 10:23:33,153 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,158 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,159 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,160 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,161 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,163 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,164 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,189 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,204 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 10:23:33,220 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:23:33] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:33,371 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:24:33,371 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:24:38,640 [INFO] - Rota "/" foi acessada.
+2023-09-14 10:24:38,644 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "GET / HTTP/1.1" 200 -
+2023-09-14 10:24:38,666 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,667 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,666 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,674 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,676 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,677 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,682 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,684 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,685 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,685 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:38,732 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:38] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:48,539 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:24:48,541 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:48] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:24:48,552 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:50,860 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:50] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-09-14 10:24:50,867 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:50] "GET /login HTTP/1.1" 200 -
+2023-09-14 10:24:50,878 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:50,878 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 10:24:50,890 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:50] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,739 [INFO] - Rota "/" foi acessada.
+2023-09-14 10:24:52,740 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "GET / HTTP/1.1" 200 -
+2023-09-14 10:24:52,745 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,747 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,756 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,758 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,758 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,760 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,764 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,767 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,767 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:52,768 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:52] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:54,503 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:24:54,503 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:54] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:24:54,512 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:55,612 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:55] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-09-14 10:24:55,615 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:55] "GET /login HTTP/1.1" 200 -
+2023-09-14 10:24:55,622 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:55] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 10:24:55,624 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:24:55,641 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:24:55] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,440 [INFO] - Rota "/" foi acessada.
+2023-09-14 10:25:11,441 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "GET / HTTP/1.1" 200 -
+2023-09-14 10:25:11,452 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,458 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,463 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,467 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,463 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,476 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,469 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,472 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,475 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:11,474 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:11] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:13,679 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:25:13,680 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:13] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:25:13,686 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:43,256 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-09-14 10:25:43,257 [INFO] - [33mPress CTRL+C to quit[0m
+2023-09-14 10:25:44,464 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:25:44,469 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:44] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:25:44,483 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:44,505 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:44] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:45,574 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:45] "[32mGET /dashboard/treinos HTTP/1.1[0m" 302 -
+2023-09-14 10:25:45,582 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:45] "GET /login HTTP/1.1" 200 -
+2023-09-14 10:25:45,596 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 10:25:45,602 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:45,627 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:45] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,910 [INFO] - Rota "/" foi acessada.
+2023-09-14 10:25:46,915 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "GET / HTTP/1.1" 200 -
+2023-09-14 10:25:46,932 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,933 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,943 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,945 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,947 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,949 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,950 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,951 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,953 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:46,958 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:46] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:49,032 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:25:49,033 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:49] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:25:49,052 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,154 [INFO] - Rota "/" foi acessada.
+2023-09-14 10:25:51,155 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "GET / HTTP/1.1" 200 -
+2023-09-14 10:25:51,163 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,167 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,187 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,190 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,192 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,194 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,196 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,198 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,199 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:51,206 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:51] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:53,434 [INFO] - Rota "/termos-de-servico" foi acessada.
+2023-09-14 10:25:53,434 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:53] "GET /termos-de-servico HTTP/1.1" 200 -
+2023-09-14 10:25:53,441 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:57,241 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:57] "[32mGET /dashboard/receitas HTTP/1.1[0m" 302 -
+2023-09-14 10:25:57,243 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:57] "GET /login HTTP/1.1" 200 -
+2023-09-14 10:25:57,250 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:57] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-09-14 10:25:57,251 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:57,263 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:57] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,499 [INFO] - Rota "/" foi acessada.
+2023-09-14 10:25:58,499 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "GET / HTTP/1.1" 200 -
+2023-09-14 10:25:58,506 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,508 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,514 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,517 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,518 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,519 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,521 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,522 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,524 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-09-14 10:25:58,524 [INFO] - 127.0.0.1 - - [14/Sep/2023 10:25:58] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -

@@ -44,15 +44,6 @@ def index():
     logging.info('Rota "/" foi acessada.')
     return render_template('index.html')
 
-@app.route('/dashboard')
-def dashboard():
-    if 'user_id' not in session:
-        flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
-        return redirect(url_for('login'))
-    
-    # Resto da lógica da página de dashboard
-    return render_template('dashboard.html')
-
 ## Função para verificar se uma senha atende aos critérios mínimos
 def senha_atende_aos_criterios(senha):
     # Pelo menos uma letra maiúscula
@@ -155,6 +146,39 @@ def login():
             flash(str(e), 'danger')
     return render_template('login.html')
 
+@app.route('/dashboard')
+def dashboard():
+    if 'user_id' not in session:
+        flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
+        return redirect(url_for('login'))
+    
+    # Resto da lógica da página de dashboard
+    return render_template('dashboard.html')
+
+@app.route('/dashboard/treinos')
+def treinos():
+    if 'user_id' not in session:
+        flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
+        return redirect(url_for('login'))
+    
+    return render_template('treinos.html')
+
+@app.route('/dashboard/dietas')
+def dietas():
+    if 'user_id' not in session:
+        flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
+        return redirect(url_for('login'))
+    
+    return render_template('dietas.html')
+
+@app.route('/dashboard/receitas')
+def receitas():
+    if 'user_id' not in session:
+        flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
+        return redirect(url_for('login'))
+    
+    return render_template('receitas.html')
+
 
 # Rota de logout
 @app.route('/logout')
@@ -179,6 +203,11 @@ def teste_conexao_db():
             return 'Não há usuários registrados no banco de dados.'
     except Exception as e:
         return f'Erro ao conectar com o banco de dados: {str(e)}'
+
+@app.route('/termos-de-servico')
+def termos_de_servico():
+    logging.info('Rota "/termos-de-servico" foi acessada.')
+    return render_template('termos-de-servico.html')
 
 if __name__ == '__main__':
     app.run()
