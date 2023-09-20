@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Meu Perfil</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -13,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="{{ url_for('static', filename='../static/favicon.png') }}" type="image/x-icon">
     <style>
-        /* Estilos CSS personalizados para a página de dashboard */
+        /* Estilos CSS personalizados para a página de perfil */
         body {
             background-color: #f4f4f4;
             font-family: "Raleway", sans-serif;
@@ -45,8 +46,13 @@
             float: right;
             margin-top: 10px;
         }
-        body {
-        overflow: hidden;
+
+        .profile-form {
+            margin-top: 20px;
+        }
+
+        .profile-form .form-group {
+            margin-bottom: 20px;
         }
 
         .w3-bar .w3-button {
@@ -112,21 +118,41 @@
     </div>
 
     <div class="container">
-        <h1>Dashboard</h1>
+        <h1>Meu Perfil</h1>
 
         <div class="info-card">
-            <h2>Seja bem-vindo, [Nome do Usuário]!</h2>
-            <p>Aqui estão algumas informações úteis:</p>
-            <ul>
-                <li>Número de pedidos: [Número de Pedidos]</li>
-                <li>Saldo em conta: R$ [Saldo em Conta]</li>
-                <li>Último login: [Data e Hora do Último Login]</li>
-            </ul>
-            <a href="/logout" class="btn btn-danger logout-btn">Sair</a>
-        </div>
-
-        <div class="info-card">
-            <!-- Adicione mais informações do dashboard aqui -->
+            <!-- Formulário de perfil -->
+            <form class="profile-form" action="/dashboard/meu-perfil" method="post">
+                <div class="form-group">
+                    <label for="idade">Idade:</label>
+                    <input type="text" class="form-control" id="idade" name="idade" required>
+                </div>
+                <div class="form-group">
+                    <label for="peso">Peso:</label>
+                    <input type="text" class="form-control" id="peso" name="peso" required>
+                </div>
+                <div class="form-group">
+                    <label for="sexo">Sexo:</label>
+                    <select class="form-control" id="sexo" name="sexo" required>
+                        <option value="">-</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="alergias">Possíveis alergias a alimentos:</label>
+                    <textarea class="form-control" id="alergias" name="alergias" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="dieta">Dieta:</label>
+                    <select class="form-control" id="dieta" name="dieta" required>
+                        <option value="barata">Dieta Barata</option>
+                        <option value="media">Dieta Média</option>
+                        <option value="cara">Dieta Cara</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Salvar Perfil</button>
+            </form>
         </div>
     </div>
 

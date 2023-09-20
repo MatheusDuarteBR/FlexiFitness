@@ -5,10 +5,12 @@ import re
 import logging
 from functools import wraps
 from datetime import timedelta
+from flask_migrate import Migrate
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://pollux:pollux123@localhost/flexifitness'
 db = SQLAlchemy(app)
+migrate = Migrate(app, db)
 bcrypt = Bcrypt(app)
 
 # Chave secreta para sessões
@@ -18,12 +20,21 @@ app.permanent_session_lifetime = timedelta(minutes=15)
 with app.app_context():
     db.create_all()
 
-# Defina a classe do modelo de usuário (se já não estiver definida)
 class Usuario(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(50), unique=True, nullable=False)
     email = db.Column(db.String(100), unique=True, nullable=False)
     password = db.Column(db.String(60), nullable=False)
+    perfil = db.relationship('Perfil', backref='usuario', uselist=False)
+
+class Perfil(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    idade = db.Column(db.Integer)
+    peso = db.Column(db.Float)
+    sexo = db.Column(db.String(10))
+    alergias = db.Column(db.String(200))
+    dieta = db.Column(db.String(20))
+    user_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
 
 # Função de verificação de autenticação
 def verifica_autenticacao(f):
@@ -32,9 +43,51 @@ def verifica_autenticacao(f):
         if 'user_id' in session:
             return f(*args, **kwargs)
         else:
-            flash('Você deve fazer login para acessar esta página.', 'danger')
+            flash('Você deve fazer login para acessar esta página.', 'Você deve fazer login para acessar esta página.')
             return redirect(url_for('login'))
     return decorador
+
+@app.route('/dashboard/meu-perfil', methods=['GET', 'POST'])
+@verifica_autenticacao
+def meu_perfil():
+    user_id = session['user_id']
+    usuario = Usuario.query.get(user_id)
+
+    if usuario.perfil:
+        flash('Você já possui um perfil cadastrado.', 'Você já possui um perfil cadastrado.')
+        logging.info('Você já possui um perfil cadastrado. %s', usuario.username)
+        return render_template('perfil.html', usuario=usuario)
+
+    if request.method == 'POST':
+        idade = request.form.get('idade')
+        peso = request.form.get('peso')
+        sexo = request.form.get('sexo')
+        alergias = request.form.get('alergias')
+        dieta = request.form.get('dieta')
+
+        perfil = Perfil(idade=idade, peso=peso, sexo=sexo, alergias=alergias, dieta=dieta)
+
+        usuario.perfil = perfil  # Associe o perfil ao usuário
+        db.session.commit()
+
+        flash('Perfil criado com sucesso!', 'success')
+        return redirect(url_for('meu_perfil'))
+
+    return render_template('perfil.html', usuario=usuario)
+
+@app.route('/salvar-perfil', methods=['POST'])
+def salvar_perfil():
+    # Recupere os dados do perfil do formulário enviado
+    idade = request.form.get('idade')
+    peso = request.form.get('peso')
+    sexo = request.form.get('sexo')
+    alergias = request.form.get('alergias')
+    dieta = request.form.get('dieta')
+
+    # Faça o processamento dos dados, como validações e salvamento no banco de dados
+
+    # Redirecione o usuário de volta para a página de perfil ou outra página relevante
+    return redirect(url_for('perfil'))
 
 # Configurar o log para escrever em um arquivo
 logging.basicConfig(filename='app.log', level=logging.DEBUG, format='%(asctime)s [%(levelname)s] - %(message)s')
@@ -64,6 +117,12 @@ def senha_atende_aos_criterios(senha):
 
     return True
 
+# Função para verificar se um e-mail é válido
+def is_valid_email(email):
+    # Padrão de expressão regular para verificar o formato de e-mail
+    pattern = r'^[\w\.-]+@[\w\.-]+\.\w+$'
+    return re.match(pattern, email)
+
 # Rota de registro
 @app.route('/registro', methods=['GET', 'POST'])
 def registro():
@@ -82,6 +141,11 @@ def registro():
             # Verifique se a senha atende aos critérios mínimos
             if not senha_atende_aos_criterios(password):
                 flash('A senha deve conter pelo menos uma letra maiúscula, uma letra minúscula, um caractere especial e ter pelo menos 8 caracteres de comprimento.', 'A senha deve conter pelo menos uma letra maiúscula, uma letra minúscula, um caractere especial e ter pelo menos 8 caracteres de comprimento.')
+                return redirect(url_for('registro'))
+
+            # Verifique se o e-mail é válido
+            if not is_valid_email(email):
+                flash('O endereço de e-mail não é válido. Tente novamente.', 'O endereço de e-mail não é válido. Tente novamente.')
                 return redirect(url_for('registro'))
 
             # Verifique se o usuário ou o email já existem no banco de dados
@@ -108,9 +172,8 @@ def registro():
             flash('Conta criada com sucesso! Você pode fazer login agora.', 'Conta criada com sucesso! Você pode fazer login agora.')
             return redirect(url_for('login'))
         except Exception as e:
-            # Captura e registra exceções personalizadas
             logging.warning('Erro no registro: %s', str(e))
-            flash(str(e), 'danger')
+            flash('Ocorreu um erro no registro. Tente novamente mais tarde.', 'Ocorreu um erro no registro. Tente novamente mais tarde.')
             return redirect(url_for('registro'))
 
     return render_template('registro.html')
@@ -141,7 +204,6 @@ def login():
                 logging.warning('Usuário não encontrado para o email: %s', email)
                 flash('Usuário não encontrado. Verifique seu email.', 'Usuário não encontrado. Verifique seu email.')
         except Exception as e:
-            # Captura e registra exceções personalizadas
             logging.warning('Erro no login: %s', str(e))
             flash(str(e), 'danger')
     return render_template('login.html')
@@ -152,9 +214,9 @@ def dashboard():
         flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
         return redirect(url_for('login'))
     
-    # Resto da lógica da página de dashboard
     return render_template('dashboard.html')
 
+# Routes for the Dashboard page
 @app.route('/dashboard/treinos')
 def treinos():
     if 'user_id' not in session:
