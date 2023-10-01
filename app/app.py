@@ -36,10 +36,10 @@ class Perfil(db.Model):
     cep = db.Column(db.String(10))
     idade = db.Column(db.Integer)
     peso = db.Column(db.Float)
+    altura = db.Column(db.Float)
     sexo = db.Column(db.String(10))
     estado = db.Column(db.String(50))
     user_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
-
 
 # Função de verificação de autenticação
 def verifica_autenticacao(f):
@@ -86,13 +86,17 @@ def meu_perfil():
             estado=estado
         )
 
-        usuario.perfil = perfil  # Associe o perfil ao usuário
+        usuario.perfil = perfil
         db.session.commit()
 
         flash('Perfil criado com sucesso!', 'success')
         return redirect(url_for('meu_perfil'))
 
     return render_template('perfil.html', usuario=usuario)
+
+@app.route('/dashboard/mensagens')
+def mensagens():
+    return render_template('mensagem.html')
 
 @app.route('/')
 def index():
@@ -101,19 +105,15 @@ def index():
 
 ## Função para verificar se uma senha atende aos critérios mínimos
 def senha_atende_aos_criterios(senha):
-    # Pelo menos uma letra maiúscula
     if not re.search(r'[A-Z]', senha):
         return False
 
-    # Pelo menos uma letra minúscula
     if not re.search(r'[a-z]', senha):
         return False
 
-    # Pelo menos um caractere especial (você pode definir sua própria lista de caracteres especiais)
     if not re.search(r'[!@#$%^&*(),.?":{}|<>]', senha):
         return False
 
-    # Pelo menos 8 caracteres de comprimento (ou o comprimento mínimo que você deseja)
     if len(senha) < 8:
         return False
 
