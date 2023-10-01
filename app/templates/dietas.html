@@ -59,18 +59,27 @@
         <div class="w3-bar w3-dark-grey w3-card" id="myNavbar">
             <!-- Ícone do menu para telas pequenas -->
             <i class="fa fa-bars menu-icon d-md-none" onclick="toggleSidebar()"></i>
-            <img src="{{ url_for('static', filename='../static/logo.png') }}" width="250" height="50" style="padding-left: 25px;">
+            <a href="/dashboard" title="Página Inicial">
+                <img src="{{ url_for('static', filename='../static/logo.png') }}" width="250" height="50" style="padding-left: 25px;">
+            </a>
             <!-- Right-sided navbar links -->
             <div class="w3-right w3-hide-small">
                 <a href="/dashboard" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
                 <a href="/dashboard/treinos" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TREINOS</a>
                 <a href="/dashboard/dietas" class="w3-bar-item w3-button"><i class="fa fa-cutlery"></i> DIETAS</a>
-                <a href="/dashboard/receitas" class="w3-bar-item w3-button"><i class="fa fa-book"></i> RECEITAS</a>
+                <div class="w3-dropdown-hover w3-hide-small">
+                    <button class="w3-padding-large w3-button" title="More"> RECEITAS  <i class="fa fa-book"></i></button>     
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                    <a href="/dashboard/receitas" class="w3-bar-item w3-button">Bulking</a>
+                    <a href="/dashboard/receitas" class="w3-bar-item w3-button">Cutting</a>
+                    <a href="/dashboard/receitas" class="w3-bar-item w3-button">Saudáveis</a>
+                    </div>
+                </div>
                 <div class="w3-dropdown-hover w3-hide-small">
                     <button class="w3-padding-large w3-button" title="More"> MINHA CONTA  <i class="fa fa-caret-down"></i></button>     
                     <div class="w3-dropdown-content w3-bar-block w3-card-4">
                       <a href="/dashboard/meu-perfil" class="w3-bar-item w3-button">Meu perfil</a>
-                      <a href="#" class="w3-bar-item w3-button">Mensagens</a>
+                      <a href="/dashboard/mensagens" class="w3-bar-item w3-button">Mensagens</a>
                       <a href="#" class="w3-bar-item w3-button">Configurações</a>
                       <a href="#" class="w3-bar-item w3-button">Suporte</a>
                       <a href="/logout" class="w3-bar-item w3-button">Logout</a>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Minhas Mensagens</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="{{ url_for('static', filename='../static/favicon.png') }}" type="image/x-icon">
     <style>
-        /* Estilos CSS personalizados para a página de dashboard */
+        /* Estilos CSS personalizados para a página de mensagens */
         body {
             background-color: #f4f4f4;
             font-family: "Raleway", sans-serif;
@@ -32,25 +32,36 @@
             margin-bottom: 30px;
         }
 
-        .info-card {
+        .message-card {
             background-color: #fff;
             border: 1px solid #ddd;
             border-radius: 5px;
             padding: 20px;
             margin: 10px;
-            text-align: center;
         }
 
         .logout-btn {
             float: right;
             margin-top: 10px;
         }
-        body {
-        overflow: hidden;
+
+        .message-list {
+            margin-top: 20px;
         }
 
-        .w3-bar .w3-button {
-            padding: 14px;
+        .message-list .message-item {
+            margin-bottom: 20px;
+        }
+
+        .message-item .message-content {
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .message-item .message-date {
+            font-size: 12px;
+            color: #888;
         }
 
         /* Estilos para o ícone do menu */
@@ -66,12 +77,18 @@
         /* Estilos para remover o sublinhado dos links */
         .w3-bar-item {
             text-decoration: none !important;
+            padding: 14px;
         }
 
         /* Estilos para o menu lateral */
-        .w3-sidebar {
+        .w3-sidebar .w3-bar{
             right: 0;
         }
+
+        .w3-bar .w3-button {
+            padding: 14px;
+        }
+
     </style>
 </head>
 <body>
@@ -87,21 +104,14 @@
                 <a href="/dashboard" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
                 <a href="/dashboard/treinos" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TREINOS</a>
                 <a href="/dashboard/dietas" class="w3-bar-item w3-button"><i class="fa fa-cutlery"></i> DIETAS</a>
-                <div class="w3-dropdown-hover w3-hide-small">
-                    <button class="w3-padding-large w3-button" title="More"> RECEITAS  <i class="fa fa-book"></i></button>     
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/dashboard/receitas" class="w3-bar-item w3-button">Bulking</a>
-                    <a href="/dashboard/receitas" class="w3-bar-item w3-button">Cutting</a>
-                    <a href="/dashboard/receitas" class="w3-bar-item w3-button">Saudáveis</a>
-                    </div>
-                </div>
+                <a href="/dashboard/receitas" class="w3-bar-item w3-button"><i class="fa fa-book"></i> RECEITAS</a>
                 <div class="w3-dropdown-hover w3-hide-small">
                     <button class="w3-padding-large w3-button" title="More"> MINHA CONTA  <i class="fa fa-caret-down"></i></button>     
                     <div class="w3-dropdown-content w3-bar-block w3-card-4">
                     <a href="/dashboard/meu-perfil" class="w3-bar-item w3-button">Meu perfil</a>
                     <a href="/dashboard/mensagens" class="w3-bar-item w3-button">Mensagens</a>
-                    <a href="#" class="w3-bar-item w3-button">Configurações</a>
-                    <a href="#" class="w3-bar-item w3-button">Suporte</a>
+                    <a href="/dashboard/configuracoes" class="w3-bar-item w3-button">Configurações</a>
+                    <a href="/dashboard/suporte" class="w3-bar-item w3-button">Suporte</a>
                     <a href="/logout" class="w3-bar-item w3-button">Logout</a>
                     </div>
                 </div>
@@ -113,30 +123,39 @@
     <div id="sidebar" class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left d-md-none">
         <a href="javascript:void(0)" onclick="toggleSidebar()" class="w3-bar-item w3-button w3-large w3-padding-16">Fechar ×</a>
         <a href="/dashboard" onclick="toggleSidebar()" class="w3-bar-item w3-button">HOME</a>
-        <a href="/dashboard/treinos" onclick="toggleSidebar()" class="w3-bar-item w3-button">TREINOS</a>
-        <a href="/dashboard/dietas" onclick="toggleSidebar()" class="w3-bar-item w3-button">DIETAS</a>
-        <a href="/dashboard/receitas" onclick="toggleSidebar()" class="w3-bar-item w3-button">RECEITAS</a>
-        <a href="/dashboard/meu-perfil" onclick="toggleSidebar()" class="w3-bar-item w3-button">MEU PERFIL</a>
+        <a href="#services" onclick="toggleSidebar()" class="w3-bar-item w3-button">TREINOS</a>
+        <a href="#receitas" onclick="toggleSidebar()" class="w3-bar-item w3-button">DIETAS</a>
+        <a href="#about" onclick="toggleSidebar()" class="w3-bar-item w3-button">RECEITAS</a>
         <a href="#contact" onclick="toggleSidebar()" class="w3-bar-item w3-button">SUPORTE</a>
         <a href="/logout"" onclick="toggleSidebar()" class="w3-bar-item w3-button">LOGOUT</a>
     </div>
 
-    <div class="container">
-        <h1>Dashboard</h1>
-
-        <div class="info-card">
-            <h2>Seja bem-vindo, [Nome do Usuário]!</h2>
-            <p>Aqui estão algumas informações úteis:</p>
-            <ul>
-                <li>Número de pedidos: [Número de Pedidos]</li>
-                <li>Saldo em conta: R$ [Saldo em Conta]</li>
-                <li>Último login: [Data e Hora do Último Login]</li>
-            </ul>
-            <a href="/logout" class="btn btn-danger logout-btn">Sair</a>
+    <div class="container rounded bg-white mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Minhas Mensagens</h1>
+            </div>
         </div>
+        <div class="message-list">
+            <!-- Exemplo de mensagem recebida -->
+            <div class="message-item">
+                <div class="message-content">
+                    <p>Olá! Que tal aproveitar o dia para uma ótima sessão de treino? Aproveite para manter-se ativo e saudável. Vamos lá!</p>
+                </div>
+                <div class="message-date">
+                    <small>Enviada em: 01/09/2023</small>
+                </div>
+            </div>
 
-        <div class="info-card">
-            <!-- Adicione mais informações do dashboard aqui -->
+            <!-- Exemplo de outra mensagem recebida -->
+            <div class="message-item">
+                <div class="message-content">
+                    <p>Bom dia! Já tomou o seu café da manhã hoje? Lembre-se de que o café da manhã é a refeição mais importante do dia. Não pule essa refeição!</p>
+                </div>
+                <div class="message-date">
+                    <small>Enviada em: 02/09/2023</small>
+                </div>
+            </div>
         </div>
     </div>
 
