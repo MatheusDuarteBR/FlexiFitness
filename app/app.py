@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, session
+from flask import Flask, render_template, request, redirect, url_for, flash, session, make_response
 from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 import re
@@ -7,6 +7,8 @@ from functools import wraps
 from datetime import timedelta
 from flask_migrate import Migrate
 from datetime import datetime
+from reportlab.pdfgen import canvas
+from io import BytesIO
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://pollux:pollux123@localhost/flexifitness'
@@ -50,32 +52,74 @@ class Receita(db.Model):
     categoria = db.Column(db.String(50), nullable=True)
     refeicao = db.Column(db.String(20), nullable=True)
     data_criacao = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+    imagem = db.Column(db.String(255))
+    tempo_de_preparo = db.Column(db.String(50))
 
-@app.route('/dashboard/receitas/bulking')
+@app.route('/gerar_pdf/<int:receita_id>')
+def gerar_pdf(receita_id):
+    # Recupere os detalhes da receita do banco de dados
+    receita = Receita.query.get(receita_id)
+
+    # Crie um objeto BytesIO para armazenar o conteúdo do PDF
+    pdf_buffer = BytesIO()
+
+    # Crie o PDF usando reportlab
+    p = canvas.Canvas(pdf_buffer)
+    p.drawString(100, 100, f"Nome: {receita.nome}")
+    p.drawString(100, 80, f"Descrição: {receita.descricao}")
+    p.drawString(100, 60, f"Calorias: {receita.calorias}")
+    p.drawString(100, 40, f"Categoria: {receita.categoria}")
+    p.drawString(100, 20, f"Refeição: {receita.refeicao}")
+
+    # Adicione mais informações conforme necessário
+
+    p.save()
+
+    # Volte ao início do buffer antes de enviar
+    pdf_buffer.seek(0)
+
+    # Crie um objeto de resposta com o conteúdo do PDF
+    response = make_response(pdf_buffer.read())
+    response.headers['Content-Type'] = 'application/pdf'
+    response.headers['Content-Disposition'] = f'inline; filename={receita.nome}.pdf'
+
+    return response
+
+@app.route('/dashboard/receitas')
 def receitas_bulking():
-    refeicao_filtrada = request.args.get('refeicao')
+    categoria_filtrada = request.args.get('categoria', default=None, type=str)
+    refeicao_filtrada = request.args.get('refeicao', default=None, type=str)
+    calorias_max = request.args.get('calorias_max', default=None, type=int)
+
+    query = Receita.query
+
+    if categoria_filtrada:
+        query = query.filter_by(categoria=categoria_filtrada)
 
     if refeicao_filtrada:
-        receitas = Receita.query.filter_by(categoria='bulking', refeicao=refeicao_filtrada).all()
-    else:
-        receitas = Receita.query.filter_by(categoria='bulking').all()
+        query = query.filter_by(refeicao=refeicao_filtrada)
 
-    return render_template('receitas_bulking.html', receitas=receitas)
+    if calorias_max is not None:
+        query = query.filter(Receita.calorias <= calorias_max)
+
+    receitas = query.all()
+
+    return render_template('receitas.html', receitas=receitas)
 
 @app.route('/adicionar-bulking')
 def add_example_recipes():
     # Adicione algumas receitas de exemplo
     receitas = [
-        {"nome": "Bulking 1", "descricao": "Receita para bulking com 2300 kcal", "calorias": 2300, "refeicao": "cafe_da_manha"},
-        {"nome": "Bulking 2", "descricao": "Receita para bulking com 2500 kcal", "calorias": 2500, "refeicao": "jantar"},
-        {"nome": "Bulking 3", "descricao": "Receita para bulking com 2700 kcal", "calorias": 2700, "refeicao": "almoco"},
-        {"nome": "Bulking 4", "descricao": "Receita para bulking com 3000 kcal", "calorias": 3000, "refeicao": "jantar"},
-        {"nome": "Bulking 5", "descricao": "Receita para bulking com 3300 kcal", "calorias": 3300, "refeicao": "almoco"},
-        {"nome": "Bulking 6", "descricao": "Receita para bulking com 3500 kcal", "calorias": 3500, "refeicao": "almoco"},
-        {"nome": "Bulking 7", "descricao": "Receita para bulking com 3800 kcal", "calorias": 3800, "refeicao": "almoco"},
-        {"nome": "Bulking 8", "descricao": "Receita para bulking com 4000 kcal", "calorias": 4000, "refeicao": "jantar"},
-        {"nome": "Bulking 9", "descricao": "Receita para bulking com 4500 kcal", "calorias": 4500, "refeicao": "cafe_da_tarde"},
-        {"nome": "Bulking 10", "descricao": "Receita para bulking com 5000 kcal", "calorias": 5000, "refeicao": "cafe_da_tarde"},
+        {"nome": "Bulking 1 SALADA MISTA COM PEIXE", "descricao": "Receita para bulking com 2300 kcal enrolado de carne", "calorias": 2300, "refeicao": "cafe_da_manha", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos"},
+        {"nome": "Bulking 2 Arroz, file e frango a passarinho", "descricao": "Receita para bulking com 2500 kcal", "calorias": 2500, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos"},
+        {"nome": "Bulking 3", "descricao": "Receita para bulking com 2700 kcal", "calorias": 2700, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos"},
+        {"nome": "Bulking 4", "descricao": "Receita para bulking com 3000 kcal", "calorias": 3000, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos"},
+        {"nome": "Bulking 5", "descricao": "Receita para bulking com 3300 kcal", "calorias": 3300, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "7 minutos"},
+        {"nome": "Bulking 6", "descricao": "Receita para bulking com 3500 kcal", "calorias": 3500, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "12 minutos"},
+        {"nome": "Bulking 7", "descricao": "Receita para bulking com 3800 kcal", "calorias": 3800, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "13  minutos"},
+        {"nome": "Bulking 8", "descricao": "Receita para bulking com 4000 kcal", "calorias": 4000, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "1 minuto"},
+        {"nome": "Bulking 9", "descricao": "Receita para bulking com 4500 kcal", "calorias": 4500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos"},
+        {"nome": "Bulking 10", "descricao": "Receita para bulking com 5000 kcal", "calorias": 5000, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos"},
 ]
 
     for receita_data in receitas:
@@ -83,7 +127,7 @@ def add_example_recipes():
         db.session.add(nova_receita)
 
     db.session.commit()
-    return redirect(url_for('receitas_bulking'))
+    return redirect(url_for('receitas'))
 # Função de verificação de autenticação
 def verifica_autenticacao(f):
     @wraps(f)
