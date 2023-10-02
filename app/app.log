@@ -9667,3 +9667,1051 @@ jinja2.exceptions.TemplateNotFound: base.html
 2023-10-01 10:21:39,724 [INFO] - 127.0.0.1 - - [01/Oct/2023 10:21:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
 2023-10-01 10:21:40,344 [INFO] - 127.0.0.1 - - [01/Oct/2023 10:21:40] "GET /dashboard/receitas HTTP/1.1" 200 -
 2023-10-01 10:21:40,360 [INFO] - 127.0.0.1 - - [01/Oct/2023 10:21:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:20,827 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:20] "[32mGET /dashboard/receitas HTTP/1.1[0m" 302 -
+2023-10-01 13:48:20,832 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:20] "GET /login HTTP/1.1" 200 -
+2023-10-01 13:48:20,852 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-01 13:48:20,864 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:21,474 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:21] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:26,046 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-01 13:48:26,046 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-01 13:48:26,047 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-01 13:48:26,050 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:26] "GET /dashboard HTTP/1.1" 200 -
+2023-10-01 13:48:26,056 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:27,230 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:27] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:27,249 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:28,311 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:28] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:28,324 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:28,954 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:28] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:28,961 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:29,442 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:29] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:29,451 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:30,144 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:30] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-01 13:48:30,154 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:30,379 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:30] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-01 13:48:30,391 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:30,657 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:30] "GET /dashboard HTTP/1.1" 200 -
+2023-10-01 13:48:30,666 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:30,869 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:30] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-01 13:48:30,875 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:32,107 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:32] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-01 13:48:32,122 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:32,406 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:32] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-01 13:48:32,417 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:32,664 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:32] "GET /dashboard HTTP/1.1" 200 -
+2023-10-01 13:48:32,690 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:41,257 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:41] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:41,270 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:42,347 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:42] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:42,359 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:43,330 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:43] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:43,342 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:43,939 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:43] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:43,945 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:44,479 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:44] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:44,488 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:45,019 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:45] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:45,028 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:47,215 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-10-01 13:48:47,217 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:47] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-01 13:48:47,231 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 13:48:49,670 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:49] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 13:48:49,684 [INFO] - 127.0.0.1 - - [01/Oct/2023 13:48:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:50:13,842 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:13] "[32mGET /dashboard/receitas HTTP/1.1[0m" 302 -
+2023-10-01 14:50:13,850 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:13] "GET /login HTTP/1.1" 200 -
+2023-10-01 14:50:13,868 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:13] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-01 14:50:13,892 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:50:14,498 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:14] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-01 14:50:19,685 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-01 14:50:19,685 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-01 14:50:19,687 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-01 14:50:19,690 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:19] "GET /dashboard HTTP/1.1" 200 -
+2023-10-01 14:50:19,700 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:50:20,892 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:20] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 14:50:20,908 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:50:21,988 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:21] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 14:50:22,003 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:50:22,999 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:22] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 14:50:23,012 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:50:24,018 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:24] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 14:50:24,029 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:50:24,971 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:24] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 14:50:24,980 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:50:25,360 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:25] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-01 14:50:25,371 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:50:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:52:27,478 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:52:27] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 14:52:27,502 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:52:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:52:35,626 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:52:35] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-01 14:52:35,638 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:52:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:56:53,719 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:53] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-01 14:56:53,747 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:56:54,169 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:54] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-01 14:56:54,203 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:56:54,599 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:54] "GET /dashboard HTTP/1.1" 200 -
+2023-10-01 14:56:54,608 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:56:55,061 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:55] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-01 14:56:55,071 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:56:55,503 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:55] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-01 14:56:55,512 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:56:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:57:13,293 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-10-01 14:57:13,295 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:57:13] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-01 14:57:13,308 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:57:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:57:33,856 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:57:33] "GET /dashboard/mensagens HTTP/1.1" 200 -
+2023-10-01 14:57:33,867 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:57:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-01 14:58:14,511 [INFO] - 127.0.0.1 - - [01/Oct/2023 14:58:14] "[33mGET /dashboard/suporte HTTP/1.1[0m" 404 -
+2023-10-02 08:12:06,602 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:06] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-10-02 08:12:06,619 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:06] "GET /login HTTP/1.1" 200 -
+2023-10-02 08:12:06,648 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:06] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 08:12:06,691 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:07,294 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:07] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:11,935 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-02 08:12:11,935 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-02 08:12:11,936 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-02 08:12:11,939 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:11] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 08:12:11,957 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:13,156 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:13] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 08:12:13,175 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:13,782 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:13] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 08:12:13,792 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:14,315 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:14] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 08:12:14,326 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:16,062 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:16] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 08:12:16,069 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:16,380 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:16] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 08:12:16,387 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:16,709 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:16] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 08:12:16,722 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:16,997 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:16] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 08:12:17,014 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:18,268 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:18] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 08:12:18,279 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:18,990 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:18] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 08:12:19,034 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:19,644 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:19] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 08:12:19,654 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:20,479 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:20] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 08:12:20,487 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:20,907 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:20] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 08:12:20,914 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:21,392 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:21] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 08:12:21,404 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:21,827 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:21] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 08:12:21,835 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:12:22,516 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:22] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 08:12:22,527 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:12:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:04,832 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:04] "[32mGET /dashboard/receitas HTTP/1.1[0m" 302 -
+2023-10-02 08:57:04,840 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:04] "GET /login HTTP/1.1" 200 -
+2023-10-02 08:57:04,861 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:04] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 08:57:04,874 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:05,671 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:05] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,383 [INFO] - Rota "/" foi acessada.
+2023-10-02 08:57:07,393 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "GET / HTTP/1.1" 200 -
+2023-10-02 08:57:07,403 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,411 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,416 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,419 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,423 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,425 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,430 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,444 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,470 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-10-02 08:57:07,480 [INFO] - 127.0.0.1 - - [02/Oct/2023 08:57:07] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,239 [INFO] - Rota "/" foi acessada.
+2023-10-02 10:24:45,248 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "GET / HTTP/1.1" 200 -
+2023-10-02 10:24:45,303 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,312 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,320 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,323 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,324 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,328 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,333 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,335 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,349 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,381 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:45,452 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:45] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:46,200 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:46] "GET /login HTTP/1.1" 200 -
+2023-10-02 10:24:46,213 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:46] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 10:24:46,222 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:46,235 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:46] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:49,936 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-02 10:24:49,936 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-02 10:24:49,938 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-02 10:24:49,942 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:49] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 10:24:49,951 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:50,984 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:50] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 10:24:50,990 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:51,305 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:51] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 10:24:51,314 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:52,158 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:52] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 10:24:52,165 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:52,743 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:52] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 10:24:52,748 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:53,377 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:53] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 10:24:53,382 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:24:53,909 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:53] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 10:24:53,914 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:24:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:26,774 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 10:25:26,774 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 10:25:29,581 [INFO] - Rota "/" foi acessada.
+2023-10-02 10:25:29,586 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "GET / HTTP/1.1" 200 -
+2023-10-02 10:25:29,628 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:29,629 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:29,631 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:29,632 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:29,635 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:29,637 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:29,651 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:29,674 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:29,687 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:29,691 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:29] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:35,633 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:35] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 10:25:35,667 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:25:40,634 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:40] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 10:25:40,642 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:25:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 10:26:10,979 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:26:10] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 10:26:10,987 [INFO] - 127.0.0.1 - - [02/Oct/2023 10:26:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:18:54,051 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:18:54] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-10-02 17:18:54,072 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:18:54] "GET /login HTTP/1.1" 200 -
+2023-10-02 17:18:54,097 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:18:54] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:18:54,133 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:18:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:18:54,857 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:18:54] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-02 17:18:59,461 [WARNING] - Senha incorreta para o usuário: Duarteex
+2023-10-02 17:18:59,464 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:18:59] "POST /login HTTP/1.1" 200 -
+2023-10-02 17:18:59,472 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:18:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:18:59,474 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:18:59] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:19:03,505 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-02 17:19:03,506 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-02 17:19:03,507 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-02 17:19:03,509 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:03] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 17:19:03,516 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:04,739 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:04] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:19:04,754 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:37,491 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:37] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:19:37,504 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:39,978 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:39] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 17:19:39,987 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:41,374 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:41] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:19:41,381 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:43,172 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:43] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:19:43,179 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:44,015 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:44] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 17:19:44,024 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:44,376 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:44] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 17:19:44,384 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:44,636 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:44] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 17:19:44,643 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:45,071 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:45] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 17:19:45,080 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:45,305 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:45] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 17:19:45,311 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:46,793 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:46] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 17:19:46,800 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:47,202 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:47] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 17:19:47,208 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:19:47,462 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:47] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 17:19:47,468 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:19:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:21:23,388 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:21:23] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:21:23,419 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:21:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:24:52,777 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:52] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:24:52,800 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:24:53,378 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:53] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:24:53,387 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:24:54,032 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:54] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:24:54,044 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:24:54,630 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:54] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:24:54,637 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:24:55,384 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:55] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:24:55,391 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:24:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:35:54,489 [ERROR] - Error: Directory migrations already exists and is not empty
+2023-10-02 17:37:32,714 [ERROR] - Error: Directory migrations already exists and is not empty
+2023-10-02 17:39:20,331 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:20] "[32mGET /dashboard/dietas HTTP/1.1[0m" 302 -
+2023-10-02 17:39:20,337 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:20] "GET /login HTTP/1.1" 200 -
+2023-10-02 17:39:20,357 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:39:20,361 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:39:20,385 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:20] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-02 17:39:22,435 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:22] "GET /login HTTP/1.1" 200 -
+2023-10-02 17:39:22,449 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:22] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:39:22,456 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:39:26,169 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-02 17:39:26,170 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-02 17:39:26,171 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-02 17:39:26,173 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:26] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 17:39:26,180 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:39:26,886 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:26] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 17:39:26,894 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:39:35,733 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:35] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 17:39:35,748 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:39:37,783 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:37] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 17:39:37,802 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:39:38,274 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:38] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 17:39:38,291 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:39:40,253 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:40] "GET /dashboard/mensagens HTTP/1.1" 200 -
+2023-10-02 17:39:40,267 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:39:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:44:49,608 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 17:44:49,608 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 17:44:51,842 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:51] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:44:51,855 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:44:52,937 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:52] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:44:52,946 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:44:52,962 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:52] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 17:44:54,249 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:54] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:44:54,257 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:44:54,272 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:54] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 17:44:54,658 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:54] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:44:54,669 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:44:54,690 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:54] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 17:44:55,314 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:55] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:44:55,324 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:44:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:45:00,326 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:00] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:45:00,341 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:45:01,366 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:01] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 17:45:01,380 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:45:02,654 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:02] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:45:02,664 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:45:03,674 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:03] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:45:03,685 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:45:04,450 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:04] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:45:04,463 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:45:39,697 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:39] "[32mGET /add_example_recipes HTTP/1.1[0m" 302 -
+2023-10-02 17:45:39,703 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:39] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:45:39,767 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:45:42,095 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:42] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 17:45:42,107 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:45:42,691 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:42] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:45:42,701 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:45:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:46:48,756 [ERROR] - Error: Directory migrations already exists and is not empty
+2023-10-02 17:47:10,915 [ERROR] - Exception on /dashboard/receitas/bulking [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1966, in _exec_single_context
+    cursor, str_statement, effective_parameters, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "receita_bulking" does not exist
+LINE 2: FROM receita_bulking 
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 55, in receitas_bulking
+    receitas = Receita.query.filter_by(categoria='bulking').all()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2688, in all
+    return self._iter().all()  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2268, in execute
+    _add_event=_add_event,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2150, in _execute_internal
+    conn,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/context.py", line 294, in orm_execute_statement
+    statement, params or {}, execution_options=execution_options
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    execution_options or NO_OPTIONS,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    self, distilled_params, execution_options
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1645, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    dialect, context, statement, parameters
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1985, in _exec_single_context
+    e, str_statement, effective_parameters, cursor, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1966, in _exec_single_context
+    cursor, str_statement, effective_parameters, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "receita_bulking" does not exist
+LINE 2: FROM receita_bulking 
+             ^
+
+[SQL: SELECT receita_bulking.id AS receita_bulking_id, receita_bulking.nome AS receita_bulking_nome, receita_bulking.descricao AS receita_bulking_descricao, receita_bulking.calorias AS receita_bulking_calorias, receita_bulking.categoria AS receita_bulking_categoria, receita_bulking.data_criacao AS receita_bulking_data_criacao 
+FROM receita_bulking 
+WHERE receita_bulking.categoria = %(categoria_1)s]
+[parameters: {'categoria_1': 'bulking'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-10-02 17:47:10,931 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:47:10] "[35m[1mGET /dashboard/receitas/bulking HTTP/1.1[0m" 500 -
+2023-10-02 17:47:14,809 [ERROR] - Exception on /dashboard/receitas/bulking [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1966, in _exec_single_context
+    cursor, str_statement, effective_parameters, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "receita_bulking" does not exist
+LINE 2: FROM receita_bulking 
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 55, in receitas_bulking
+    receitas = Receita.query.filter_by(categoria='bulking').all()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2688, in all
+    return self._iter().all()  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2268, in execute
+    _add_event=_add_event,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2150, in _execute_internal
+    conn,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/context.py", line 294, in orm_execute_statement
+    statement, params or {}, execution_options=execution_options
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    execution_options or NO_OPTIONS,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    self, distilled_params, execution_options
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1645, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    dialect, context, statement, parameters
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1985, in _exec_single_context
+    e, str_statement, effective_parameters, cursor, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1966, in _exec_single_context
+    cursor, str_statement, effective_parameters, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "receita_bulking" does not exist
+LINE 2: FROM receita_bulking 
+             ^
+
+[SQL: SELECT receita_bulking.id AS receita_bulking_id, receita_bulking.nome AS receita_bulking_nome, receita_bulking.descricao AS receita_bulking_descricao, receita_bulking.calorias AS receita_bulking_calorias, receita_bulking.categoria AS receita_bulking_categoria, receita_bulking.data_criacao AS receita_bulking_data_criacao 
+FROM receita_bulking 
+WHERE receita_bulking.categoria = %(categoria_1)s]
+[parameters: {'categoria_1': 'bulking'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-10-02 17:47:14,811 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:47:14] "[35m[1mGET /dashboard/receitas/bulking HTTP/1.1[0m" 500 -
+2023-10-02 17:47:17,287 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:47:17] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:47:17,306 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:47:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:47:17,335 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:47:17] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 17:47:18,605 [ERROR] - Exception on /dashboard/receitas/bulking [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1966, in _exec_single_context
+    cursor, str_statement, effective_parameters, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "receita_bulking" does not exist
+LINE 2: FROM receita_bulking 
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 55, in receitas_bulking
+    receitas = Receita.query.filter_by(categoria='bulking').all()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2688, in all
+    return self._iter().all()  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2268, in execute
+    _add_event=_add_event,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2150, in _execute_internal
+    conn,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/context.py", line 294, in orm_execute_statement
+    statement, params or {}, execution_options=execution_options
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    execution_options or NO_OPTIONS,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    self, distilled_params, execution_options
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1645, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    dialect, context, statement, parameters
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1985, in _exec_single_context
+    e, str_statement, effective_parameters, cursor, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1966, in _exec_single_context
+    cursor, str_statement, effective_parameters, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "receita_bulking" does not exist
+LINE 2: FROM receita_bulking 
+             ^
+
+[SQL: SELECT receita_bulking.id AS receita_bulking_id, receita_bulking.nome AS receita_bulking_nome, receita_bulking.descricao AS receita_bulking_descricao, receita_bulking.calorias AS receita_bulking_calorias, receita_bulking.categoria AS receita_bulking_categoria, receita_bulking.data_criacao AS receita_bulking_data_criacao 
+FROM receita_bulking 
+WHERE receita_bulking.categoria = %(categoria_1)s]
+[parameters: {'categoria_1': 'bulking'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-10-02 17:47:18,606 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:47:18] "[35m[1mGET /dashboard/receitas/bulking HTTP/1.1[0m" 500 -
+2023-10-02 17:48:21,746 [ERROR] - Exception on /dashboard/receitas/bulking [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1966, in _exec_single_context
+    cursor, str_statement, effective_parameters, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+psycopg2.errors.UndefinedTable: relation "receita_bulking" does not exist
+LINE 2: FROM receita_bulking 
+             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 55, in receitas_bulking
+    receitas = Receita.query.filter_by(categoria='bulking').all()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2688, in all
+    return self._iter().all()  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2845, in _iter
+    execution_options={"_sa_orm_load_options": self.load_options},
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2268, in execute
+    _add_event=_add_event,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2150, in _execute_internal
+    conn,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/context.py", line 294, in orm_execute_statement
+    statement, params or {}, execution_options=execution_options
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1415, in execute
+    execution_options or NO_OPTIONS,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 516, in _execute_on_connection
+    self, distilled_params, execution_options
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1645, in _execute_clauseelement
+    cache_hit=cache_hit,
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1845, in _execute_context
+    dialect, context, statement, parameters
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1985, in _exec_single_context
+    e, str_statement, effective_parameters, cursor, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2339, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1966, in _exec_single_context
+    cursor, str_statement, effective_parameters, context
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 921, in do_execute
+    cursor.execute(statement, parameters)
+sqlalchemy.exc.ProgrammingError: (psycopg2.errors.UndefinedTable) relation "receita_bulking" does not exist
+LINE 2: FROM receita_bulking 
+             ^
+
+[SQL: SELECT receita_bulking.id AS receita_bulking_id, receita_bulking.nome AS receita_bulking_nome, receita_bulking.descricao AS receita_bulking_descricao, receita_bulking.calorias AS receita_bulking_calorias, receita_bulking.categoria AS receita_bulking_categoria, receita_bulking.data_criacao AS receita_bulking_data_criacao 
+FROM receita_bulking 
+WHERE receita_bulking.categoria = %(categoria_1)s]
+[parameters: {'categoria_1': 'bulking'}]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2023-10-02 17:48:21,748 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:48:21] "[35m[1mGET /dashboard/receitas/bulking HTTP/1.1[0m" 500 -
+2023-10-02 17:48:26,203 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 17:48:26,203 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 17:48:27,454 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:48:27] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:48:27,461 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:48:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:48:29,128 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:48:29] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 17:48:29,139 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:48:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:48:29,476 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:48:29] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 17:48:29,485 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:48:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:48:30,159 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:48:30] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:48:30,169 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:48:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:53:56,815 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 17:53:56,815 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 17:54:00,150 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-10-02 17:54:00,156 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:00] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-02 17:54:00,171 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:02,249 [INFO] - Usuário desconectado: Duarteex
+2023-10-02 17:54:02,251 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:02] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-10-02 17:54:02,259 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:02] "GET /login HTTP/1.1" 200 -
+2023-10-02 17:54:02,276 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:02,276 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:54:02,299 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:02] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:03,338 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:03] "GET /registro HTTP/1.1" 200 -
+2023-10-02 17:54:03,363 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:54:03,367 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:12,254 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:12] "[32mPOST /registro HTTP/1.1[0m" 302 -
+2023-10-02 17:54:12,257 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:12] "GET /registro HTTP/1.1" 200 -
+2023-10-02 17:54:12,267 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:54:12,268 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:29,237 [INFO] - Registro bem-sucedido para o usuário: admin
+2023-10-02 17:54:29,238 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:29] "[32mPOST /registro HTTP/1.1[0m" 302 -
+2023-10-02 17:54:29,240 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:29] "GET /login HTTP/1.1" 200 -
+2023-10-02 17:54:29,250 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:29] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:54:29,253 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:30,836 [WARNING] - Usuário não encontrado para o email: 
+2023-10-02 17:54:30,838 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:30] "POST /login HTTP/1.1" 200 -
+2023-10-02 17:54:30,847 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:30] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:54:30,848 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:35,459 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-02 17:54:35,459 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-02 17:54:35,461 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-02 17:54:35,466 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:35] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 17:54:35,475 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:37,029 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:37] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 17:54:37,042 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:39,522 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:39] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 17:54:39,528 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:40,096 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:40] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:54:40,104 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:49,945 [INFO] - Usuário desconectado: Duarteex
+2023-10-02 17:54:49,949 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-10-02 17:54:49,954 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:49] "GET /login HTTP/1.1" 200 -
+2023-10-02 17:54:49,970 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:49] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 17:54:49,972 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:53,467 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-02 17:54:53,467 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-02 17:54:53,468 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-02 17:54:53,471 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:53] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 17:54:53,480 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 17:54:55,556 [ERROR] - Exception on /add_example_recipes [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 61, in add_example_recipes
+    if not current_user.is_admin:
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 316, in __get__
+    obj = instance._get_current_object()
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+2023-10-02 17:54:55,560 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:54:55] "[35m[1mGET /add_example_recipes HTTP/1.1[0m" 500 -
+2023-10-02 17:56:50,894 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 17:56:50,894 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 17:56:52,872 [ERROR] - Exception on /add_example_recipes [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 61, in add_example_recipes
+    if not current_user.is_admin:
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 316, in __get__
+    obj = instance._get_current_object()
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+2023-10-02 17:56:52,874 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:56:52] "[35m[1mGET /add_example_recipes HTTP/1.1[0m" 500 -
+2023-10-02 17:56:53,585 [ERROR] - Exception on /add_example_recipes [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 61, in add_example_recipes
+    if not current_user.is_admin:
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 316, in __get__
+    obj = instance._get_current_object()
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+2023-10-02 17:56:53,586 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:56:53] "[35m[1mGET /add_example_recipes HTTP/1.1[0m" 500 -
+2023-10-02 17:57:06,748 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 17:57:06,748 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 17:57:08,749 [ERROR] - Exception on /add_example_recipes [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 61, in add_example_recipes
+    if not current_user.is_admin:
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 316, in __get__
+    obj = instance._get_current_object()
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+2023-10-02 17:57:08,751 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:57:08] "[35m[1mGET /add_example_recipes HTTP/1.1[0m" 500 -
+2023-10-02 17:57:09,267 [ERROR] - Exception on /add_example_recipes [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 61, in add_example_recipes
+    if not current_user.is_admin:
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 316, in __get__
+    obj = instance._get_current_object()
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+2023-10-02 17:57:09,268 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:57:09] "[35m[1mGET /add_example_recipes HTTP/1.1[0m" 500 -
+2023-10-02 17:57:11,216 [ERROR] - Exception on /add_example_recipes [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 61, in add_example_recipes
+    if not current_user.is_admin:
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 316, in __get__
+    obj = instance._get_current_object()
+  File "/home/parallels/.local/lib/python3.7/site-packages/werkzeug/local.py", line 520, in _get_current_object
+    return get_name(local())  # type: ignore
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 25, in <lambda>
+    current_user = LocalProxy(lambda: _get_user())
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask_login/utils.py", line 372, in _get_user
+    current_app.login_manager._load_user()
+AttributeError: 'Flask' object has no attribute 'login_manager'
+2023-10-02 17:57:11,218 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:57:11] "[35m[1mGET /add_example_recipes HTTP/1.1[0m" 500 -
+2023-10-02 17:59:52,898 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 17:59:52,898 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 17:59:54,253 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:59:54] "[32mGET /add_example_recipes HTTP/1.1[0m" 302 -
+2023-10-02 17:59:54,263 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:59:54] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 17:59:54,279 [INFO] - 127.0.0.1 - - [02/Oct/2023 17:59:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:03:03,856 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 18:03:03,856 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 18:03:14,622 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 18:03:14,622 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 18:03:18,807 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:18] "[32mGET /adicionar HTTP/1.1[0m" 302 -
+2023-10-02 18:03:18,821 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:18] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:03:18,841 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:03:35,725 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:35] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 18:03:35,743 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:03:37,694 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:37] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:03:37,707 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:03:59,647 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:59] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:03:59,654 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:03:59,669 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:03:59] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 18:04:04,825 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:04:04] "[32mGET /adicionar HTTP/1.1[0m" 302 -
+2023-10-02 18:04:04,830 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:04:04] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:04:04,845 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:04:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:06:15,195 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:15] "[32mGET /adicionar HTTP/1.1[0m" 302 -
+2023-10-02 18:06:15,205 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:15] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:06:15,225 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:06:16,640 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:16] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:06:16,652 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:06:16,662 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:16] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 18:06:36,393 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:36] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 18:06:36,404 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:06:37,153 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:37] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-02 18:06:37,164 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:06:37,711 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:37] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 18:06:37,724 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:06:38,518 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:38] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:06:38,529 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:06:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:07:18,136 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:07:18] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 18:07:18,145 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:07:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:07:19,630 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:07:19] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 18:07:19,638 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:07:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:07:20,644 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:07:20] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 18:07:20,656 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:07:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:07:21,316 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:07:21] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:07:21,324 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:07:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:13:08,239 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:08] "[32mGET /dashboard/dietas HTTP/1.1[0m" 302 -
+2023-10-02 18:13:08,251 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:08] "GET /login HTTP/1.1" 200 -
+2023-10-02 18:13:08,270 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:13:08,271 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 18:13:08,304 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:08] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-02 18:13:13,352 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-02 18:13:13,352 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-02 18:13:13,354 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-02 18:13:13,357 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:13] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 18:13:13,370 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:13:19,988 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:19] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 18:13:20,001 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:13:22,906 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:22] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 18:13:22,924 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:13:23,416 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:23] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:13:23,428 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:13:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:22:26,608 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:22:26] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 18:22:26,636 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:22:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:22:27,695 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:22:27] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:22:27,705 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:22:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:30:59,332 [ERROR] - Error: Directory migrations already exists and is not empty
+2023-10-02 18:34:09,268 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 18:34:09,269 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 18:34:10,864 [ERROR] - Exception on /dashboard/receitas/bulking [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/sql/base.py", line 2191, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'Receita' has no attribute 'categoria'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 55, in receitas_bulking
+    receitas = Receita.query.filter_by(categoria='bulking').all()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2000, in filter_by
+    for key, value in kwargs.items()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2000, in <listcomp>
+    for key, value in kwargs.items()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/sql/base.py", line 2195, in _entity_namespace_key
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "receita" has no property "categoria"
+2023-10-02 18:34:10,870 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:34:10] "[35m[1mGET /dashboard/receitas/bulking HTTP/1.1[0m" 500 -
+2023-10-02 18:34:11,587 [ERROR] - Exception on /dashboard/receitas/bulking [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/sql/base.py", line 2191, in _entity_namespace_key
+    return getattr(ns, key)  # type: ignore
+AttributeError: type object 'Receita' has no attribute 'categoria'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 55, in receitas_bulking
+    receitas = Receita.query.filter_by(categoria='bulking').all()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2000, in filter_by
+    for key, value in kwargs.items()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 2000, in <listcomp>
+    for key, value in kwargs.items()
+  File "/home/parallels/.local/lib/python3.7/site-packages/sqlalchemy/sql/base.py", line 2195, in _entity_namespace_key
+    ) from err
+sqlalchemy.exc.InvalidRequestError: Entity namespace for "receita" has no property "categoria"
+2023-10-02 18:34:11,588 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:34:11] "[35m[1mGET /dashboard/receitas/bulking HTTP/1.1[0m" 500 -
+2023-10-02 18:37:47,156 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 18:37:47,156 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 18:37:48,524 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:48] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:37:48,569 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:37:48,640 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:48] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 18:37:49,970 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:49] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:37:49,990 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:37:56,118 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:56] "GET /dashboard/receitas/bulking?refeicao=cafe_da_tarde HTTP/1.1" 200 -
+2023-10-02 18:37:56,139 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:37:56,727 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:56] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:37:56,736 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:37:57,298 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:57] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:37:57,310 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:37:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:38:04,353 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:38:04] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:38:04,375 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:38:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:38:08,826 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:38:08] "GET /dashboard/receitas/bulking?refeicao=almoco HTTP/1.1" 200 -
+2023-10-02 18:38:08,841 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:38:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:38:10,512 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:38:10] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:38:10,528 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:38:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:07,637 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 18:43:07,637 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 18:43:09,753 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:09] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:43:09,771 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:09,805 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:09] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:12,938 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:12] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:43:12,946 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:14,386 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:14] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:43:14,392 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:17,611 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:17] "[32mGET /adicionar HTTP/1.1[0m" 302 -
+2023-10-02 18:43:17,620 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:17] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:43:17,676 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:19,916 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:19] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:43:19,927 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:21,650 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:21] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:43:21,664 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:23,600 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:23] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:43:23,616 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:24,780 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:24] "GET /dashboard/receitas/bulking?refeicao=almoco HTTP/1.1" 200 -
+2023-10-02 18:43:24,789 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:26,452 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:26] "GET /dashboard/receitas/bulking?refeicao=cafe_da_tarde HTTP/1.1" 200 -
+2023-10-02 18:43:26,463 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:27,849 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:27] "GET /dashboard/receitas/bulking?refeicao=jantar HTTP/1.1" 200 -
+2023-10-02 18:43:27,860 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:42,016 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:42] "[32mGET /adicionar HTTP/1.1[0m" 302 -
+2023-10-02 18:43:42,024 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:42] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:43:42,061 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:44,870 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:44] "GET /dashboard/receitas/bulking?refeicao=jantar HTTP/1.1" 200 -
+2023-10-02 18:43:44,882 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:48,759 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:48] "GET /dashboard/receitas/bulking?refeicao=jantar HTTP/1.1" 200 -
+2023-10-02 18:43:48,771 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:43:50,792 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:50] "GET /dashboard/receitas/bulking?refeicao=cafe_da_tarde HTTP/1.1" 200 -
+2023-10-02 18:43:50,804 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:43:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:44:31,798 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:44:31] "GET /dashboard/receitas/bulking?refeicao=jantar HTTP/1.1" 200 -
+2023-10-02 18:44:31,815 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:44:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:44:33,323 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:44:33] "GET /dashboard/receitas/bulking?refeicao=cafe_da_tarde HTTP/1.1" 200 -
+2023-10-02 18:44:33,330 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:44:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:45:01,307 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:01] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:45:01,317 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:45:05,542 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:05] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:45:05,555 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:05] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:45:09,838 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:09] "GET /dashboard/receitas/bulking?refeicao=jantar HTTP/1.1" 200 -
+2023-10-02 18:45:09,846 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:45:37,556 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 18:45:37,556 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 18:45:41,067 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:41] "[32mGET /adicionar HTTP/1.1[0m" 302 -
+2023-10-02 18:45:41,087 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:41] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:45:41,120 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:45:44,476 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:44] "GET /dashboard/receitas/bulking?refeicao=jantar HTTP/1.1" 200 -
+2023-10-02 18:45:44,489 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:45:46,825 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:46] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:45:46,840 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:45:50,702 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:50] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:45:50,719 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:45:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:46:45,618 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:45] "[32mGET /dashboard/dietas HTTP/1.1[0m" 302 -
+2023-10-02 18:46:45,639 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:45] "GET /login HTTP/1.1" 200 -
+2023-10-02 18:46:45,668 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:45] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 18:46:45,670 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:46:45,712 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:45] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-02 18:46:51,168 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-02 18:46:51,168 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-02 18:46:51,170 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:51] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-02 18:46:51,175 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:51] "GET /dashboard HTTP/1.1" 200 -
+2023-10-02 18:46:51,188 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:46:56,183 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:56] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 18:46:56,200 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:46:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:47:03,197 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:47:03] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 18:47:03,218 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:47:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:47:20,806 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:47:20] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:47:20,818 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:47:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:47:34,108 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:47:34] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:47:34,120 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:47:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:47:38,555 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:47:38] "GET /dashboard/receitas/bulking?refeicao=almoco HTTP/1.1" 200 -
+2023-10-02 18:47:38,566 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:47:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:22,100 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:22] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 18:48:22,112 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:24,169 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:24] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:48:24,178 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:29,543 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:29] "GET /dashboard/receitas/bulking?refeicao=almoco HTTP/1.1" 200 -
+2023-10-02 18:48:29,559 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:30,840 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:30] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:48:30,851 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:32,288 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:32] "GET /dashboard/receitas/bulking?refeicao=almoco HTTP/1.1" 200 -
+2023-10-02 18:48:32,303 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:32,554 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:32] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:48:32,567 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:33,105 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:33] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:48:33,116 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:33,283 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:33] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:48:33,293 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:33,445 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:33] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:48:33,452 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:33,746 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:33] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:48:33,755 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:34,062 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:34] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:48:34,075 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:34,209 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:34] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:48:34,219 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:34,357 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:34] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:48:34,372 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:48,929 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:48] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 18:48:48,943 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:48:56,403 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:56] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:48:56,413 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:48:56] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:49:12,739 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:12] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:49:12,746 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:49:14,569 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:14] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 18:49:14,580 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:49:15,548 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:15] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:49:15,558 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:49:16,332 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:16] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-02 18:49:16,346 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:49:17,349 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:17] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:49:17,361 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:49:21,116 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:21] "GET /dashboard/receitas/bulking?refeicao=almoco HTTP/1.1" 200 -
+2023-10-02 18:49:21,126 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:49:23,137 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:23] "GET /dashboard/receitas/bulking?refeicao=jantar HTTP/1.1" 200 -
+2023-10-02 18:49:23,145 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:23] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:49:25,125 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:25] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:49:25,135 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:49:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:50:53,412 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 18:50:53,413 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 18:50:55,058 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:50:55] "GET /dashboard/receitas/bulking?refeicao=cafe_da_manha HTTP/1.1" 200 -
+2023-10-02 18:50:55,075 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:50:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:50:55,103 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:50:55] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 18:51:21,910 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:51:21] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-02 18:51:21,924 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:51:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:51:24,100 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:51:24] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:51:24,112 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:51:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:57:19,436 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 18:57:19,436 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 18:57:20,843 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:20] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:57:20,862 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:57:20,887 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:20] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 18:57:31,116 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-02 18:57:31,116 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-02 18:57:32,877 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:32] "GET /dashboard/receitas/bulking HTTP/1.1" 200 -
+2023-10-02 18:57:32,885 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:57:32,906 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:32] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-02 18:57:52,020 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:52] "GET /dashboard/receitas/bulking?refeicao=almoco HTTP/1.1" 200 -
+2023-10-02 18:57:52,032 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 18:57:57,207 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:57] "GET /dashboard/receitas/bulking?refeicao= HTTP/1.1" 200 -
+2023-10-02 18:57:57,227 [INFO] - 127.0.0.1 - - [02/Oct/2023 18:57:57] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
