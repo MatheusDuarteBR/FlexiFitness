@@ -17,6 +17,10 @@
         body {
             background-color: #f4f4f4;
             font-family: "Raleway", sans-serif;
+            background-image: url('../static/background-receita.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .container {
@@ -67,14 +71,7 @@
                 <a href="/dashboard" class="w3-bar-item w3-button"><i class="fa fa-home"></i>HOME</a>
                 <a href="/dashboard/treinos" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TREINOS</a>
                 <a href="/dashboard/dietas" class="w3-bar-item w3-button"><i class="fa fa-cutlery"></i> DIETAS</a>
-                <div class="w3-dropdown-hover w3-hide-small">
-                    <button class="w3-padding-large w3-button" title="More"> RECEITAS  <i class="fa fa-book"></i></button>     
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                    <a href="/dashboard/receitas/bulking" class="w3-bar-item w3-button">Bulking</a>
-                    <a href="/dashboard/receitas" class="w3-bar-item w3-button">Cutting</a>
-                    <a href="/dashboard/receitas" class="w3-bar-item w3-button">Saudáveis</a>
-                    </div>
-                </div>
+                <a href="/dashboard/receitas" class="w3-bar-item w3-button"><i class="fa fa-book"></i> RECEITAS</a>
                 <div class="w3-dropdown-hover w3-hide-small">
                     <button class="w3-padding-large w3-button" title="More"> MINHA CONTA  <i class="fa fa-caret-down"></i></button>     
                     <div class="w3-dropdown-content w3-bar-block w3-card-4">
@@ -88,14 +85,87 @@
             </div>
         </div>
     </div>
-
     <div class="container">
-        <h1>Receitas</h1>
-
         <div class="info-card">
             <!-- Conteúdo da página de Receitas -->
-            <p>Aqui você pode adicionar o conteúdo relacionado às receitas.</p>
+            <div class="container">
+                <h1>Receitas</h1>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Imagem</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Calorias</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Refeição</th>
+                            <th scope="col">Tempo de preparo</th>
+                        </tr>
+                    </thead>
+                    <!-- Adicione um formulário de seleção para filtrar por refeição -->
+                    <div class="container mt-4">
+                        <form action="/dashboard/receitas" method="GET" class="filter-form">
+                            <div class="form-group">
+                                <label for="categoria">Categoria:</label>
+                                <select name="categoria" class="form-control">
+                                    <option value="">Todas</option>
+                                    <option value="bulking">Bulking</option>
+                                    <option value="cutting">Cutting</option>
+                                </select>
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="refeicao">Refeição:</label>
+                                <select name="refeicao" class="form-control">
+                                    <option value="">Todas</option>
+                                    <option value="cafe_manha">Café da Manhã</option>
+                                    <option value="almoco">Almoço</option>
+                                    <option value="cafe_tarde">Café da Tarde</option>
+                                    <option value="jantar">Jantar</option>
+                                </select>
+                            </div>
+                        
+                            <div class="form-group">
+                                <label for="calorias_max">Calorias até:</label>
+                                <input type="number" name="calorias_max" class="form-control" placeholder="Calorias até">
+                            </div>
+                        
+                            <button type="submit" class="btn btn-primary">Filtrar</button>
+                        </form>
+                    <tbody>
+                    <!-- Exibir as receitas -->
+                        {% for receita in receitas %}
+                        <tr>
+                            <td><img src="{{ url_for('static', filename=receita.imagem) }}" alt="{{ receita.nome }}" style="max-width: 50px; max-height: 50px;"></td>
+                            <th scope="row">{{ receita.nome }}</th>
+                            <td>{{ receita.descricao }}</td>
+                            <td>{{ receita.calorias }}</td>
+                            <td>{{ receita.categoria }}</td>
+                            <td>{{ receita.refeicao }}</td>
+                            <td>{{ receita.tempo_de_preparo }}</td>
+                            <td>
+                                <a href="{{ url_for('gerar_pdf', receita_id=receita.id) }}" class="btn btn-primary" target="_blank">Baixar PDF</a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                    </div>
+                </table>
+            </div>
         </div>
     </div>
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64" style="margin-top: 377px; padding-top: 4px!important; padding-bottom: 4px!important; opacity: 0.6;">
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-center w3-large">Flexi Fitness 2023. Todos os direitos reservados.</p>
+    </div>
+</footer>
 </body>
 </html>
