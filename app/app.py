@@ -6,6 +6,7 @@ import logging
 from functools import wraps
 from datetime import timedelta
 from flask_migrate import Migrate
+from datetime import datetime
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://pollux:pollux123@localhost/flexifitness'
@@ -41,6 +42,48 @@ class Perfil(db.Model):
     estado = db.Column(db.String(50))
     user_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
 
+class Receita(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(255), nullable=False)
+    descricao = db.Column(db.Text, nullable=False)
+    calorias = db.Column(db.Integer, nullable=False)
+    categoria = db.Column(db.String(50), nullable=True)
+    refeicao = db.Column(db.String(20), nullable=True)
+    data_criacao = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+
+@app.route('/dashboard/receitas/bulking')
+def receitas_bulking():
+    refeicao_filtrada = request.args.get('refeicao')
+
+    if refeicao_filtrada:
+        receitas = Receita.query.filter_by(categoria='bulking', refeicao=refeicao_filtrada).all()
+    else:
+        receitas = Receita.query.filter_by(categoria='bulking').all()
+
+    return render_template('receitas_bulking.html', receitas=receitas)
+
+@app.route('/adicionar-bulking')
+def add_example_recipes():
+    # Adicione algumas receitas de exemplo
+    receitas = [
+        {"nome": "Bulking 1", "descricao": "Receita para bulking com 2300 kcal", "calorias": 2300, "refeicao": "cafe_da_manha"},
+        {"nome": "Bulking 2", "descricao": "Receita para bulking com 2500 kcal", "calorias": 2500, "refeicao": "jantar"},
+        {"nome": "Bulking 3", "descricao": "Receita para bulking com 2700 kcal", "calorias": 2700, "refeicao": "almoco"},
+        {"nome": "Bulking 4", "descricao": "Receita para bulking com 3000 kcal", "calorias": 3000, "refeicao": "jantar"},
+        {"nome": "Bulking 5", "descricao": "Receita para bulking com 3300 kcal", "calorias": 3300, "refeicao": "almoco"},
+        {"nome": "Bulking 6", "descricao": "Receita para bulking com 3500 kcal", "calorias": 3500, "refeicao": "almoco"},
+        {"nome": "Bulking 7", "descricao": "Receita para bulking com 3800 kcal", "calorias": 3800, "refeicao": "almoco"},
+        {"nome": "Bulking 8", "descricao": "Receita para bulking com 4000 kcal", "calorias": 4000, "refeicao": "jantar"},
+        {"nome": "Bulking 9", "descricao": "Receita para bulking com 4500 kcal", "calorias": 4500, "refeicao": "cafe_da_tarde"},
+        {"nome": "Bulking 10", "descricao": "Receita para bulking com 5000 kcal", "calorias": 5000, "refeicao": "cafe_da_tarde"},
+]
+
+    for receita_data in receitas:
+        nova_receita = Receita(**receita_data, categoria="bulking")
+        db.session.add(nova_receita)
+
+    db.session.commit()
+    return redirect(url_for('receitas_bulking'))
 # Função de verificação de autenticação
 def verifica_autenticacao(f):
     @wraps(f)

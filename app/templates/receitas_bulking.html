@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dietas</title>
+    <title>Receitas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="{{ url_for('static', filename='../static/favicon.png') }}" type="image/x-icon">
     <style>
-        /* Estilos CSS personalizados para a página de dietas */
+        /* Estilos CSS personalizados para a página de receitas */
         body {
             background-color: #f4f4f4;
             font-family: "Raleway", sans-serif;
@@ -78,23 +78,60 @@
                 <div class="w3-dropdown-hover w3-hide-small">
                     <button class="w3-padding-large w3-button" title="More"> MINHA CONTA  <i class="fa fa-caret-down"></i></button>     
                     <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                      <a href="/dashboard/meu-perfil" class="w3-bar-item w3-button">Meu perfil</a>
-                      <a href="/dashboard/mensagens" class="w3-bar-item w3-button">Mensagens</a>
-                      <a href="#" class="w3-bar-item w3-button">Configurações</a>
-                      <a href="#" class="w3-bar-item w3-button">Suporte</a>
-                      <a href="/logout" class="w3-bar-item w3-button">Logout</a>
+                    <a href="/dashboard/meu-perfil" class="w3-bar-item w3-button">Meu perfil</a>
+                    <a href="/dashboard/mensagens" class="w3-bar-item w3-button">Mensagens</a>
+                    <a href="#" class="w3-bar-item w3-button">Configurações</a>
+                    <a href="#" class="w3-bar-item w3-button">Suporte</a>
+                    <a href="/logout" class="w3-bar-item w3-button">Logout</a>
                     </div>
-                  </div>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <h1>Dietas</h1>
+        <h1>Receitas</h1>
 
         <div class="info-card">
-            <!-- Conteúdo da página de Dietas -->
-            <p>Aqui você pode adicionar o conteúdo relacionado às dietas.</p>
+            <!-- Conteúdo da página de Receitas -->
+            <div class="container">
+                <h1>Receitas Bulking</h1>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Descrição</th>
+                            <th scope="col">Calorias</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Refeição</th>
+                        </tr>
+                    </thead>
+                    <!-- Adicione um formulário de seleção para filtrar por refeição -->
+                    <form action="{{ url_for('receitas_bulking') }}" method="GET">
+                        <label for="refeicao">Filtrar por Refeição:</label>
+                        <select name="refeicao" id="refeicao">
+                            <option value="">Todas as Refeições</option>
+                            <option value="cafe_da_manha">Café da Manhã</option>
+                            <option value="almoco">Almoço</option>
+                            <option value="cafe_da_tarde">Café da Tarde</option>
+                            <option value="jantar">Jantar</option>
+                        </select>
+                        <button type="submit">Filtrar</button>
+                    </form>
+                    <tbody>
+                        {% for receita in receitas %}
+                        <tr>
+                            <th scope="row">{{ receita.nome }}</th>
+                            <td>{{ receita.descricao }}</td>
+                            <td>{{ receita.calorias }}</td>
+                            <td>{{ receita.categoria }}</td>
+                            <td>{{ receita.refeicao }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>
