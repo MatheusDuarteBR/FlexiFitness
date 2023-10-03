@@ -9,6 +9,8 @@ from flask_migrate import Migrate
 from datetime import datetime
 from reportlab.pdfgen import canvas
 from io import BytesIO
+from reportlab.lib.pagesizes import letter
+
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://pollux:pollux123@localhost/flexifitness'
@@ -54,33 +56,61 @@ class Receita(db.Model):
     data_criacao = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
     imagem = db.Column(db.String(255))
     tempo_de_preparo = db.Column(db.String(50))
+    ingredientes = db.Column(db.Text)
+    modo_de_preparo = db.Column(db.Text)
 
-@app.route('/gerar_pdf/<int:receita_id>')
+@app.route('/gerar_pdf/<int:receita_id>', methods=['GET'])
 def gerar_pdf(receita_id):
-    # Recupere os detalhes da receita do banco de dados
+    # Obtenha a receita do banco de dados
     receita = Receita.query.get(receita_id)
 
-    # Crie um objeto BytesIO para armazenar o conteúdo do PDF
-    pdf_buffer = BytesIO()
+    # Crie um buffer de bytes para armazenar o PDF
+    buffer = BytesIO()
 
-    # Crie o PDF usando reportlab
-    p = canvas.Canvas(pdf_buffer)
-    p.drawString(100, 100, f"Nome: {receita.nome}")
-    p.drawString(100, 80, f"Descrição: {receita.descricao}")
-    p.drawString(100, 60, f"Calorias: {receita.calorias}")
-    p.drawString(100, 40, f"Categoria: {receita.categoria}")
-    p.drawString(100, 20, f"Refeição: {receita.refeicao}")
+    # Crie o PDF usando o ReportLab
+    p = canvas.Canvas(buffer)
 
-    # Adicione mais informações conforme necessário
+    # Adicione o nome da receita ao título do PDF
+    p.setTitle(receita.nome)
 
+    # Adicione informações ao PDF
+    p.drawString(100, 800, f"Nome: {receita.nome}")
+    p.drawString(100, 780, f"Descrição: {receita.descricao}")
+    p.drawString(100, 760, f"Calorias: {receita.calorias}")
+    p.drawString(100, 740, f"Categoria: {receita.categoria}")
+    p.drawString(100, 720, f"Refeição: {receita.refeicao}")
+    p.drawString(100, 700, f"Tempo de Preparo: {receita.tempo_de_preparo}")
+
+     # Adicione ingredientes ao PDF
+    p.drawString(100, 680, "Ingredientes:")
+    ingredientes = receita.ingredientes.split('\n') if receita.ingredientes else []
+    y_position = 660
+    for ingrediente in ingredientes:
+        p.drawString(120, y_position, ingrediente)
+        y_position -= 20
+
+    # Adicione modo de preparo ao PDF
+    p.drawString(100, y_position, "Modo de Preparo:")
+    modo_de_preparo = receita.modo_de_preparo.split('\n') if receita.modo_de_preparo else []
+    y_position -= 20
+    for passo in modo_de_preparo:
+        p.drawString(120, y_position, passo)
+        y_position -= 20
+
+    # Adicione uma imagem ao PDF
+    if receita.imagem:
+        image_path = f"static/{receita.imagem}"  # Certifique-se de ajustar o caminho conforme necessário
+        p.drawInlineImage(image_path, 100, 400, width=200, height=200)
+
+    # Salve o PDF
     p.save()
 
-    # Volte ao início do buffer antes de enviar
-    pdf_buffer.seek(0)
+    # Defina o ponteiro do buffer no início
+    buffer.seek(0)
 
-    # Crie um objeto de resposta com o conteúdo do PDF
-    response = make_response(pdf_buffer.read())
-    response.headers['Content-Type'] = 'application/pdf'
+    # Crie uma resposta Flask com o PDF
+    response = make_response(buffer.read())
+    response.mimetype = 'application/pdf'
     response.headers['Content-Disposition'] = f'inline; filename={receita.nome}.pdf'
 
     return response
@@ -110,7 +140,7 @@ def receitas_bulking():
 def add_example_recipes():
     # Adicione algumas receitas de exemplo
     receitas = [
-        {"nome": "Bulking 1 SALADA MISTA COM PEIXE", "descricao": "Receita para bulking com 2300 kcal enrolado de carne", "calorias": 2300, "refeicao": "cafe_da_manha", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos"},
+        {"nome": "Bulking 1 SALADA MISTA COM PEIXE", "descricao": "Receita para bulking com 2300 kcal enrolado de carne", "calorias": 2300, "refeicao": "cafe_da_manha", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "1 xicara de sal, 2 colheres de sopa, 3kg de carne, 80 litros de agua.", "modo_de_preparo": "Coloque 1 xixara no bool, mexa por 15 segundos, 30 segundos no microondas."},
         {"nome": "Bulking 2 Arroz, file e frango a passarinho", "descricao": "Receita para bulking com 2500 kcal", "calorias": 2500, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos"},
         {"nome": "Bulking 3", "descricao": "Receita para bulking com 2700 kcal", "calorias": 2700, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos"},
         {"nome": "Bulking 4", "descricao": "Receita para bulking com 3000 kcal", "calorias": 3000, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos"},
@@ -120,7 +150,7 @@ def add_example_recipes():
         {"nome": "Bulking 8", "descricao": "Receita para bulking com 4000 kcal", "calorias": 4000, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "1 minuto"},
         {"nome": "Bulking 9", "descricao": "Receita para bulking com 4500 kcal", "calorias": 4500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos"},
         {"nome": "Bulking 10", "descricao": "Receita para bulking com 5000 kcal", "calorias": 5000, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos"},
-]
+] 
 
     for receita_data in receitas:
         nova_receita = Receita(**receita_data, categoria="bulking")
