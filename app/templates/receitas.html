@@ -56,6 +56,16 @@
             padding: 14px;
             text-decoration: none; /* Remove o sublinhado dos links */
         }
+        .btn-custom {
+            background-color: rgb(250, 217, 72);
+            color: black;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: grey;
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -137,7 +147,7 @@
                     <!-- Exibir as receitas -->
                         {% for receita in receitas %}
                         <tr>
-                            <td><img src="{{ url_for('static', filename=receita.imagem) }}" alt="{{ receita.nome }}" style="max-width: 50px; max-height: 50px;"></td>
+                            <td><img src="{{ url_for('static', filename=receita.imagem) }}" alt="{{ receita.nome }}" style="max-width: 50px; max-height: 50px; border-radius: 10%;"></td>
                             <th scope="row">{{ receita.nome }}</th>
                             <td>{{ receita.descricao }}</td>
                             <td>{{ receita.calorias }}</td>
@@ -145,9 +155,16 @@
                             <td>{{ receita.refeicao }}</td>
                             <td>{{ receita.tempo_de_preparo }}</td>
                             <td>
-                                <a href="{{ url_for('gerar_pdf', receita_id=receita.id) }}" class="btn btn-primary" target="_blank">Baixar PDF</a>
+                                <a href="{{ url_for('gerar_pdf', receita_id=receita.id) }}" class="btn btn-custom" target="_blank">Baixar PDF</a>
                             </td>
                         </tr>
+                        <!--
+                        <tr>
+                            <td colspan="6">
+                                <strong>Ingredientes:</strong> {{ receita.ingredientes }}
+                            </td>
+                        </tr>
+                        -->
                         {% endfor %}
                     </tbody>
                     </div>

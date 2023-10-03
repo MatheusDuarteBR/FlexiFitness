@@ -11481,3 +11481,1354 @@ AttributeError: 'Response' object has no attribute 'decode'
 2023-10-02 20:50:36,239 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:50:36] "GET /gerar_pdf/114 HTTP/1.1" 200 -
 2023-10-02 20:50:37,294 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:50:37] "GET /gerar_pdf/114 HTTP/1.1" 200 -
 2023-10-02 20:50:40,049 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:50:40] "GET /gerar_pdf/116 HTTP/1.1" 200 -
+2023-10-02 20:57:10,407 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:10] "[32mGET /dashboard/dietas HTTP/1.1[0m" 302 -
+2023-10-02 20:57:10,443 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:10] "GET /login HTTP/1.1" 200 -
+2023-10-02 20:57:10,492 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:10] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 20:57:10,493 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:10,530 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:10] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,209 [INFO] - Rota "/" foi acessada.
+2023-10-02 20:57:12,213 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "GET / HTTP/1.1" 200 -
+2023-10-02 20:57:12,225 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,227 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,237 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,240 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,249 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,255 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,259 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,306 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,342 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:12,360 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:12] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:15,905 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:15] "[32mGET /dashboard/dietas HTTP/1.1[0m" 302 -
+2023-10-02 20:57:15,927 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:15] "GET /login HTTP/1.1" 200 -
+2023-10-02 20:57:15,955 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-02 20:57:15,977 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-02 20:57:16,482 [INFO] - 127.0.0.1 - - [02/Oct/2023 20:57:16] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-03 08:46:20,391 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:20] "GET /login HTTP/1.1" 200 -
+2023-10-03 08:46:20,514 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:20] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-03 08:46:20,607 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:46:21,074 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:21] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-03 08:46:24,768 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-03 08:46:24,770 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-03 08:46:24,773 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-03 08:46:24,780 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:24] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 08:46:24,793 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:46:25,668 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:25] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:46:25,679 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:46:25,687 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:25] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:46:25,702 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:25] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:46:37,172 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:37] "GET /dashboard/receitas?categoria=bulking&refeicao=cafe_manha&calorias_max= HTTP/1.1" 200 -
+2023-10-03 08:46:37,182 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:46:37,200 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:37] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:46:41,968 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:41] "GET /dashboard/receitas?categoria=bulking&refeicao=almoco&calorias_max= HTTP/1.1" 200 -
+2023-10-03 08:46:41,995 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:46:41,997 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:41] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:46:42,016 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:46:42] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:08,243 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 08:48:08,243 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 08:48:09,628 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:09] "GET /dashboard/receitas?categoria=bulking&refeicao=almoco&calorias_max= HTTP/1.1" 200 -
+2023-10-03 08:48:09,654 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:09,657 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:09] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:48:09,680 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:09] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:09,838 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:09] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:18,338 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 08:48:18,339 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 08:48:19,266 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:19] "GET /dashboard/receitas?categoria=bulking&refeicao=almoco&calorias_max= HTTP/1.1" 200 -
+2023-10-03 08:48:19,277 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:19,283 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:19] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:48:19,290 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:19] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:19,366 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:19] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:26,100 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:26] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1" 200 -
+2023-10-03 08:48:26,117 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:26] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:48:26,119 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:26,144 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:26] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:48,007 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:48:48,024 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:48,027 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:48:48,062 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:48,284 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 08:48:48,294 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:48,853 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:48:48,863 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:48:48,866 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:48:48,883 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:48:48] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:52:03,270 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 08:52:03,270 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 08:52:04,716 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:52:04] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:52:04,744 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:52:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:52:04,744 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:52:04] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:52:04,766 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:52:04] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:52:04,958 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:52:04] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 08:52:07,111 [ERROR] - Exception on /gerar_pdf/113 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 79, in gerar_pdf
+    ingredientes = receita.ingredientes.split('\n') if receita.ingredientes else []
+AttributeError: 'Receita' object has no attribute 'ingredientes'
+2023-10-03 08:52:07,115 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:52:07] "[35m[1mGET /gerar_pdf/113 HTTP/1.1[0m" 500 -
+2023-10-03 08:52:10,008 [ERROR] - Exception on /gerar_pdf/114 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 79, in gerar_pdf
+    ingredientes = receita.ingredientes.split('\n') if receita.ingredientes else []
+AttributeError: 'Receita' object has no attribute 'ingredientes'
+2023-10-03 08:52:10,010 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:52:10] "[35m[1mGET /gerar_pdf/114 HTTP/1.1[0m" 500 -
+2023-10-03 08:52:13,510 [ERROR] - Exception on /gerar_pdf/115 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 79, in gerar_pdf
+    ingredientes = receita.ingredientes.split('\n') if receita.ingredientes else []
+AttributeError: 'Receita' object has no attribute 'ingredientes'
+2023-10-03 08:52:13,513 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:52:13] "[35m[1mGET /gerar_pdf/115 HTTP/1.1[0m" 500 -
+2023-10-03 08:52:15,708 [ERROR] - Exception on /gerar_pdf/113 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 79, in gerar_pdf
+    ingredientes = receita.ingredientes.split('\n') if receita.ingredientes else []
+AttributeError: 'Receita' object has no attribute 'ingredientes'
+2023-10-03 08:52:15,709 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:52:15] "[35m[1mGET /gerar_pdf/113 HTTP/1.1[0m" 500 -
+2023-10-03 08:54:50,857 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 08:54:50,857 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 08:54:52,872 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:54:52] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:54:52,900 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:54:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:54:52,921 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:54:52] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:54:53,532 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:54:53] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:54:53,550 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:54:53] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 08:54:54,413 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:54:54] "GET /gerar_pdf/113 HTTP/1.1" 200 -
+2023-10-03 08:56:06,345 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 08:56:06,345 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 08:56:07,064 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:56:07] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:56:07,095 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:56:07] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 08:56:07,099 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:56:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:56:07,134 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:56:07] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:56:07,217 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:56:07] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 08:58:03,523 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 08:58:03,523 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 08:58:05,077 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:05] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:58:05,117 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:05] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:58:05,144 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:05] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:58:05,218 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:05] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 08:58:07,682 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:07] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:58:07,698 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:58:07,709 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:07] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:58:07,722 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:07] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 08:58:11,201 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:11] "GET /dashboard/receitas?categoria=bulking&refeicao=almoco&calorias_max= HTTP/1.1" 200 -
+2023-10-03 08:58:11,221 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:58:11,245 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:58:11] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:45,800 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 08:59:45,800 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 08:59:46,824 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:46] "GET /dashboard/receitas?categoria=bulking&refeicao=almoco&calorias_max= HTTP/1.1" 200 -
+2023-10-03 08:59:46,847 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:46,873 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:46] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:47,011 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:47] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:48,567 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:48] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 08:59:48,577 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:49,269 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:49] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:59:49,279 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:49,296 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:49] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:49,901 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:49] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:59:49,916 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:49,930 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:49] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:50,853 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:50] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1" 200 -
+2023-10-03 08:59:50,863 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:50,879 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:50] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:53,042 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:53] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 08:59:53,050 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:53,807 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:53] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 08:59:53,822 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:54,601 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:54] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 08:59:54,610 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 08:59:54,625 [INFO] - 127.0.0.1 - - [03/Oct/2023 08:59:54] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:12,129 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:00:12,131 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:00:12,638 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:12] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:00:12,693 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:12,738 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:12] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:12,887 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:12] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:13,552 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:13] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:00:13,574 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:13,597 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:13] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:13,699 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:13] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:41,551 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:00:41,552 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:00:42,590 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:42] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:00:42,619 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:42,655 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:42] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:42,768 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:42] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:43,332 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:43] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:00:43,346 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:43,365 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:43] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:43,423 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:43] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:44,389 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:44] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1" 200 -
+2023-10-03 09:00:44,407 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:44,440 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:44] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:47,888 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:47] "GET /dashboard/receitas?categoria=bulking&refeicao=cafe_manha&calorias_max= HTTP/1.1" 200 -
+2023-10-03 09:00:47,916 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:47,963 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:47] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:49,688 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:49] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 09:00:49,700 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:50,734 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:50] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:00:50,749 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:50,781 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:50] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:51,918 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:51] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1" 200 -
+2023-10-03 09:00:51,929 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:00:51,949 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:00:51] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:01:03,218 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:03] "[32mGET /adicionar-bulking HTTP/1.1[0m" 302 -
+2023-10-03 09:01:03,228 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:03] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:01:03,275 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:01:03,277 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:03] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:01:03,287 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:03] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:01:34,631 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:01:34,632 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:01:35,347 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:35] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:01:35,388 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:01:35,398 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:35] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:01:35,426 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:35] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:01:35,542 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:35] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:01:37,183 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:01:37] "GET /gerar_pdf/123 HTTP/1.1" 200 -
+2023-10-03 09:02:03,621 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:02:03] "GET /gerar_pdf/123 HTTP/1.1" 200 -
+2023-10-03 09:02:55,830 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:02:55,831 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:03:01,099 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:03:01] "[32mGET /adicionar-bulking HTTP/1.1[0m" 302 -
+2023-10-03 09:03:01,126 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:03:01] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:03:01,219 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:03:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:03:01,224 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:03:01] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:03:01,237 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:03:01] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:03:05,060 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:03:05] "GET /gerar_pdf/133 HTTP/1.1" 200 -
+2023-10-03 09:06:22,342 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:06:22,343 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:07:26,826 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:07:26,826 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:07:30,700 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:07:30] "[32mGET /adicionar-bulking HTTP/1.1[0m" 302 -
+2023-10-03 09:07:30,716 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:07:30] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:07:30,792 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:07:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:07:30,794 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:07:30] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:07:30,800 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:07:30] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:07:33,402 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:07:33] "GET /gerar_pdf/143 HTTP/1.1" 200 -
+2023-10-03 09:13:04,979 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:13:04,979 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:13:06,972 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:06] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:13:06,995 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:13:06,999 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:06] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:13:07,026 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:07] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:13:07,043 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:07] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:13:08,011 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:08] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:13:08,020 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:08] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:13:08,021 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:13:08,040 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:08] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:13:08,047 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:08] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:13:09,138 [ERROR] - Exception on /gerar_pdf/143 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 90, in gerar_pdf
+    elements.append(Paragraph(f"<b>Nome:</b> {receita.nome}", styles['Normal']))
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paragraph.py", line 1541, in __init__
+    self._setup(text, style, bulletText or getattr(style,'bulletText',None), frags, cleanBlockQuotedText)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paragraph.py", line 1563, in _setup
+    style, frags, bulletTextFrags = _parser.parse(text,style)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3224, in parse
+    annotateException('\nparagraph text %s caused exception' % ascii(text))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3222, in parse
+    self.feed(text)
+  File "/usr/lib/python3.7/html/parser.py", line 111, in feed
+    self.goahead(0)
+  File "/usr/lib/python3.7/html/parser.py", line 171, in goahead
+    k = self.parse_starttag(i)
+  File "/usr/lib/python3.7/html/parser.py", line 345, in parse_starttag
+    self.handle_starttag(tag, attrs)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3245, in handle_starttag
+    start(attrs or {})
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 2910, in start_para
+    frag = self._initial_frag(attr,_paraAttrMap)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 2889, in _initial_frag
+    frag.fontName, frag.bold, frag.italic = ps2tt(style.fontName)
+AttributeError: 'dict' object has no attribute 'fontName'
+paragraph text '<para><b>Nome:</b> Bulking 1 SALADA MISTA COM PEIXE</para>' caused exception
+2023-10-03 09:13:09,158 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:13:09] "[35m[1mGET /gerar_pdf/143 HTTP/1.1[0m" 500 -
+2023-10-03 09:17:13,866 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:17:13,866 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:17:15,889 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:17:15] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:17:15,905 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:17:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:17:15,907 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:17:15] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:17:15,924 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:17:15] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:17:15,975 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:17:15] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:17:16,981 [ERROR] - Exception on /gerar_pdf/143 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 90, in gerar_pdf
+    elements.append(Paragraph(f"<b>Nome:</b> {receita.nome}", styles['Normal']))
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paragraph.py", line 1541, in __init__
+    self._setup(text, style, bulletText or getattr(style,'bulletText',None), frags, cleanBlockQuotedText)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paragraph.py", line 1563, in _setup
+    style, frags, bulletTextFrags = _parser.parse(text,style)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3224, in parse
+    annotateException('\nparagraph text %s caused exception' % ascii(text))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3222, in parse
+    self.feed(text)
+  File "/usr/lib/python3.7/html/parser.py", line 111, in feed
+    self.goahead(0)
+  File "/usr/lib/python3.7/html/parser.py", line 171, in goahead
+    k = self.parse_starttag(i)
+  File "/usr/lib/python3.7/html/parser.py", line 345, in parse_starttag
+    self.handle_starttag(tag, attrs)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3245, in handle_starttag
+    start(attrs or {})
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 2910, in start_para
+    frag = self._initial_frag(attr,_paraAttrMap)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 2889, in _initial_frag
+    frag.fontName, frag.bold, frag.italic = ps2tt(style.fontName)
+AttributeError: 'dict' object has no attribute 'fontName'
+paragraph text '<para><b>Nome:</b> Bulking 1 SALADA MISTA COM PEIXE</para>' caused exception
+2023-10-03 09:17:16,992 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:17:16] "[35m[1mGET /gerar_pdf/143 HTTP/1.1[0m" 500 -
+2023-10-03 09:18:11,649 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:18:11,649 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:18:13,616 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:13] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:18:13,648 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:13,651 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:13] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:18:13,665 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:13] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:13,737 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:13] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:14,369 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:14] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:18:14,380 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:14] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:18:14,381 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:14,390 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:14] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:14,404 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:14] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:15,780 [ERROR] - Exception on /gerar_pdf/143 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 96, in gerar_pdf
+    elements.append(Paragraph(f"<b>Nome:</b> {receita.nome}", styles['Normal']))
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paragraph.py", line 1541, in __init__
+    self._setup(text, style, bulletText or getattr(style,'bulletText',None), frags, cleanBlockQuotedText)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paragraph.py", line 1563, in _setup
+    style, frags, bulletTextFrags = _parser.parse(text,style)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3224, in parse
+    annotateException('\nparagraph text %s caused exception' % ascii(text))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3222, in parse
+    self.feed(text)
+  File "/usr/lib/python3.7/html/parser.py", line 111, in feed
+    self.goahead(0)
+  File "/usr/lib/python3.7/html/parser.py", line 171, in goahead
+    k = self.parse_starttag(i)
+  File "/usr/lib/python3.7/html/parser.py", line 345, in parse_starttag
+    self.handle_starttag(tag, attrs)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3245, in handle_starttag
+    start(attrs or {})
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 2910, in start_para
+    frag = self._initial_frag(attr,_paraAttrMap)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 2889, in _initial_frag
+    frag.fontName, frag.bold, frag.italic = ps2tt(style.fontName)
+AttributeError: 'dict' object has no attribute 'fontName'
+paragraph text '<para><b>Nome:</b> Bulking 1 SALADA MISTA COM PEIXE</para>' caused exception
+2023-10-03 09:18:15,783 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:15] "[35m[1mGET /gerar_pdf/143 HTTP/1.1[0m" 500 -
+2023-10-03 09:18:41,408 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:18:41,409 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:18:43,491 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:43] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:18:43,505 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:43,511 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:43] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:18:43,521 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:43] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:43,613 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:43] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:46,461 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:18:46,461 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:18:47,844 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:47] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:18:47,852 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:47,853 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:47] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:18:47,861 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:47] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:47,871 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:47] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:18:48,810 [ERROR] - Exception on /gerar_pdf/143 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 96, in gerar_pdf
+    info_style = styles.getSampleStyleSheet()['Normal']
+AttributeError: 'dict' object has no attribute 'getSampleStyleSheet'
+2023-10-03 09:18:48,819 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:18:48] "[35m[1mGET /gerar_pdf/143 HTTP/1.1[0m" 500 -
+2023-10-03 09:20:09,034 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:20:09,034 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:20:10,654 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:10] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:20:10,671 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:20:10,674 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:10] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:20:10,690 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:10] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:20:10,743 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:10] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:20:11,658 [ERROR] - Exception on /gerar_pdf/143 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 107, in gerar_pdf
+    elements.append(Paragraph("<b>Ingredientes:</b>", styles['Normal']))
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paragraph.py", line 1541, in __init__
+    self._setup(text, style, bulletText or getattr(style,'bulletText',None), frags, cleanBlockQuotedText)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paragraph.py", line 1563, in _setup
+    style, frags, bulletTextFrags = _parser.parse(text,style)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3224, in parse
+    annotateException('\nparagraph text %s caused exception' % ascii(text))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3222, in parse
+    self.feed(text)
+  File "/usr/lib/python3.7/html/parser.py", line 111, in feed
+    self.goahead(0)
+  File "/usr/lib/python3.7/html/parser.py", line 171, in goahead
+    k = self.parse_starttag(i)
+  File "/usr/lib/python3.7/html/parser.py", line 345, in parse_starttag
+    self.handle_starttag(tag, attrs)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 3245, in handle_starttag
+    start(attrs or {})
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 2910, in start_para
+    frag = self._initial_frag(attr,_paraAttrMap)
+  File "/usr/lib/python3/dist-packages/reportlab/platypus/paraparser.py", line 2889, in _initial_frag
+    frag.fontName, frag.bold, frag.italic = ps2tt(style.fontName)
+AttributeError: 'dict' object has no attribute 'fontName'
+paragraph text '<para><b>Ingredientes:</b></para>' caused exception
+2023-10-03 09:20:11,665 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:11] "[35m[1mGET /gerar_pdf/143 HTTP/1.1[0m" 500 -
+2023-10-03 09:20:39,270 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:20:39,271 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:20:40,744 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:40] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:20:40,762 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:20:40,763 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:40] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:20:40,780 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:40] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:20:40,838 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:40] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:20:42,053 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:20:42] "GET /gerar_pdf/143 HTTP/1.1" 200 -
+2023-10-03 09:28:24,816 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:28:24,816 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:28:25,910 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:28:25] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:28:25,928 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:28:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:28:25,931 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:28:25] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:28:25,947 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:28:25] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:28:26,058 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:28:26] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:28:27,036 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:28:27] "GET /gerar_pdf/143 HTTP/1.1" 200 -
+2023-10-03 09:32:25,015 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:32:25,015 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:32:26,177 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:32:26] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:32:26,200 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:32:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:32:26,201 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:32:26] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:32:26,222 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:32:26] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:32:26,336 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:32:26] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:32:26,996 [ERROR] - Exception on /gerar_pdf/143 [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 74, in gerar_pdf
+    p.drawInlineImage(image_path, 250, 750, width=100, height=100)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/canvas.py", line 859, in drawInlineImage
+    img_obj = PDFImage(image, x,y, width, height)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 40, in __init__
+    self.getImageData()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 158, in getImageData
+    imagedata, imgwidth, imgheight = self.non_jpg_imagedata(image)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 138, in non_jpg_imagedata
+    imagedata = pdfutils.cacheImageFile(image,returnInMemory=1)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 95, in cacheImageFile
+    code = makeA85Image(filename,IMG)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 31, in makeA85Image
+    img = ImageReader(filename)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 813, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 807, in __init__
+    annotateException('\nImaging Library not available, unable to import bitmaps only jpegs\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 805, in __init__
+    self._width,self._height,c=readJPEGInfo(self.fp)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 252, in readJPEGInfo
+    raise PDFError('JPEG must have 8 bits per component')
+reportlab.pdfbase.pdfdoc.PDFError: JPEG must have 8 bits per component
+Imaging Library not available, unable to import bitmaps only jpegs
+fileName='static/logo.png' identity=[ImageReader@0xffff88a1a890 filename='static/logo.png']
+fileName='static/logo.png' identity=[ImageReader@0xffff88a1a890 filename='static/logo.png']
+2023-10-03 09:32:26,999 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:32:26] "[35m[1mGET /gerar_pdf/143 HTTP/1.1[0m" 500 -
+2023-10-03 09:33:03,917 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:33:03,917 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:33:05,300 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:05] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:33:05,324 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:05] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:33:05,326 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:05] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:33:05,330 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:05] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:33:05,387 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:05] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:33:06,335 [ERROR] - Exception on /gerar_pdf/143 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 154, in getImageData
+    imagedata, imgwidth, imgheight = self.jpg_imagedata()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 47, in jpg_imagedata
+    result = self._jpg_imagedata(fp)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 53, in _jpg_imagedata
+    info = pdfutils.readJPEGInfo(imageFile)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 252, in readJPEGInfo
+    raise PDFError('JPEG must have 8 bits per component')
+reportlab.pdfbase.pdfdoc.PDFError: JPEG must have 8 bits per component
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 74, in gerar_pdf
+    p.drawInlineImage(image_path, 250, 750, width=100, height=100)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/canvas.py", line 859, in drawInlineImage
+    img_obj = PDFImage(image, x,y, width, height)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 40, in __init__
+    self.getImageData()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 156, in getImageData
+    imagedata, imgwidth, imgheight = self.non_jpg_imagedata(image)  #try for normal kind of image
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 138, in non_jpg_imagedata
+    imagedata = pdfutils.cacheImageFile(image,returnInMemory=1)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 95, in cacheImageFile
+    code = makeA85Image(filename,IMG)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 31, in makeA85Image
+    img = ImageReader(filename)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 813, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 807, in __init__
+    annotateException('\nImaging Library not available, unable to import bitmaps only jpegs\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 805, in __init__
+    self._width,self._height,c=readJPEGInfo(self.fp)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 252, in readJPEGInfo
+    raise PDFError('JPEG must have 8 bits per component')
+reportlab.pdfbase.pdfdoc.PDFError: JPEG must have 8 bits per component
+Imaging Library not available, unable to import bitmaps only jpegs
+fileName='static/logo.jpg' identity=[ImageReader@0xffff8953c410 filename='static/logo.jpg']
+fileName='static/logo.jpg' identity=[ImageReader@0xffff8953c410 filename='static/logo.jpg']
+2023-10-03 09:33:06,337 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:06] "[35m[1mGET /gerar_pdf/143 HTTP/1.1[0m" 500 -
+2023-10-03 09:33:31,639 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:33:31,640 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:33:33,105 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:33] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:33:33,118 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:33:33,124 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:33] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:33:33,136 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:33] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:33:33,228 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:33] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:33:34,028 [ERROR] - Exception on /gerar_pdf/143 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 154, in getImageData
+    imagedata, imgwidth, imgheight = self.jpg_imagedata()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 45, in jpg_imagedata
+    fp = open(self.image, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'logo.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 655, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 599, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'logo.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 658, in open_for_read
+    return getBytesIO(datareader(name) if name[:5].lower()=='data:' else urlopen(name).read())
+  File "/usr/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.7/urllib/request.py", line 510, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.7/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.7/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.7/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'logo.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 74, in gerar_pdf
+    p.drawInlineImage(image_path, 250, 750, width=100, height=100)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/canvas.py", line 859, in drawInlineImage
+    img_obj = PDFImage(image, x,y, width, height)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 40, in __init__
+    self.getImageData()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 156, in getImageData
+    imagedata, imgwidth, imgheight = self.non_jpg_imagedata(image)  #try for normal kind of image
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 138, in non_jpg_imagedata
+    imagedata = pdfutils.cacheImageFile(image,returnInMemory=1)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 95, in cacheImageFile
+    code = makeA85Image(filename,IMG)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 31, in makeA85Image
+    img = ImageReader(filename)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 813, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 777, in __init__
+    self.fp = open_for_read(fileName,'b')
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 660, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "logo.jpg"
+fileName='logo.jpg' identity=[ImageReader@0xffffa090d910 filename='logo.jpg']
+2023-10-03 09:33:34,032 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:33:34] "[35m[1mGET /gerar_pdf/143 HTTP/1.1[0m" 500 -
+2023-10-03 09:34:11,454 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:34:11,454 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:34:12,749 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:34:12] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:34:12,762 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:34:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:34:12,766 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:34:12] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:34:12,777 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:34:12] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:34:12,826 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:34:12] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:34:13,414 [ERROR] - Exception on /gerar_pdf/143 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 154, in getImageData
+    imagedata, imgwidth, imgheight = self.jpg_imagedata()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 47, in jpg_imagedata
+    result = self._jpg_imagedata(fp)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 53, in _jpg_imagedata
+    info = pdfutils.readJPEGInfo(imageFile)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 252, in readJPEGInfo
+    raise PDFError('JPEG must have 8 bits per component')
+reportlab.pdfbase.pdfdoc.PDFError: JPEG must have 8 bits per component
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 74, in gerar_pdf
+    p.drawInlineImage(image_path, 250, 750, width=100, height=100)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/canvas.py", line 859, in drawInlineImage
+    img_obj = PDFImage(image, x,y, width, height)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 40, in __init__
+    self.getImageData()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 156, in getImageData
+    imagedata, imgwidth, imgheight = self.non_jpg_imagedata(image)  #try for normal kind of image
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 138, in non_jpg_imagedata
+    imagedata = pdfutils.cacheImageFile(image,returnInMemory=1)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 95, in cacheImageFile
+    code = makeA85Image(filename,IMG)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 31, in makeA85Image
+    img = ImageReader(filename)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 813, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 807, in __init__
+    annotateException('\nImaging Library not available, unable to import bitmaps only jpegs\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 805, in __init__
+    self._width,self._height,c=readJPEGInfo(self.fp)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 252, in readJPEGInfo
+    raise PDFError('JPEG must have 8 bits per component')
+reportlab.pdfbase.pdfdoc.PDFError: JPEG must have 8 bits per component
+Imaging Library not available, unable to import bitmaps only jpegs
+fileName='static/logo.jpg' identity=[ImageReader@0xffff9d7691d0 filename='static/logo.jpg']
+fileName='static/logo.jpg' identity=[ImageReader@0xffff9d7691d0 filename='static/logo.jpg']
+2023-10-03 09:34:13,421 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:34:13] "[35m[1mGET /gerar_pdf/143 HTTP/1.1[0m" 500 -
+2023-10-03 09:36:27,736 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:36:27,736 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:36:29,258 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:36:29] "GET /gerar_pdf/143 HTTP/1.1" 200 -
+2023-10-03 09:36:30,198 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:36:30] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:36:30,221 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:36:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:36:30,223 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:36:30] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:36:30,235 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:36:30] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:36:30,297 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:36:30] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:36:31,385 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:36:31] "GET /gerar_pdf/143 HTTP/1.1" 200 -
+2023-10-03 09:37:02,476 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:37:02] "[32mGET /adicionar-bulking HTTP/1.1[0m" 302 -
+2023-10-03 09:37:02,486 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:37:02] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:37:02,510 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:37:02] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:37:02,515 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:37:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:37:02,530 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:37:02] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:38:07,568 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:38:07,568 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:38:08,940 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:38:08] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:38:08,956 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:38:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:38:08,957 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:38:08] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:38:08,970 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:38:08] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:38:09,083 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:38:09] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:38:10,232 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:38:10] "GET /gerar_pdf/143 HTTP/1.1" 200 -
+2023-10-03 09:38:15,750 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:38:15] "GET /gerar_pdf/144 HTTP/1.1" 200 -
+2023-10-03 09:38:17,150 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:38:17] "GET /gerar_pdf/144 HTTP/1.1" 200 -
+2023-10-03 09:38:17,872 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:38:17] "GET /gerar_pdf/145 HTTP/1.1" 200 -
+2023-10-03 09:40:17,135 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:40:17,135 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:40:18,490 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:18] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:40:18,505 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:40:18,510 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:18] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:40:18,522 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:18] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:40:18,665 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:18] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:40:21,930 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:21] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:40:21,940 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:21] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:40:21,943 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:40:21,986 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:21] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:40:22,097 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:22] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:40:33,810 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:40:33] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:42:18,717 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:18] "GET /gerar_pdf/155 HTTP/1.1" 200 -
+2023-10-03 09:42:25,622 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:25] "[32mGET /dashboard/dietas HTTP/1.1[0m" 302 -
+2023-10-03 09:42:25,635 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:25] "GET /login HTTP/1.1" 200 -
+2023-10-03 09:42:25,648 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-03 09:42:25,649 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:42:25,674 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:25] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-03 09:42:30,822 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-03 09:42:30,822 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-03 09:42:30,823 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-03 09:42:30,827 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:30] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 09:42:30,839 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:42:32,122 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:32] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 09:42:32,137 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:42:33,171 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:33] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:42:33,183 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:33] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:42:33,186 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:33] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:42:33,207 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:42:33] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:00,180 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:00] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 09:46:00,205 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:00,545 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:00] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 09:46:00,554 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:00,969 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:00] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 09:46:00,998 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:01,253 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:01] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 09:46:01,265 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:01,510 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:01] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 09:46:01,518 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:01,750 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:01] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:46:01,759 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:01] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:46:01,762 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:01] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:01,775 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:01] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:10,163 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:10] "GET /dashboard/receitas?categoria=bulking&refeicao=jantar&calorias_max= HTTP/1.1" 200 -
+2023-10-03 09:46:10,172 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:10,174 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:10] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:46:10,188 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:10] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:46:12,137 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:46:12] "GET /gerar_pdf/156 HTTP/1.1" 200 -
+2023-10-03 09:55:45,216 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:55:45,217 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:55:46,637 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:46] "GET /dashboard/receitas?categoria=bulking&refeicao=jantar&calorias_max= HTTP/1.1" 200 -
+2023-10-03 09:55:46,656 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:55:46,657 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:46] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:55:46,680 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:46] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:55:46,851 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:46] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:55:49,294 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:49] "GET /dashboard/receitas?categoria=bulking&refeicao=jantar&calorias_max= HTTP/1.1" 200 -
+2023-10-03 09:55:49,301 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:55:49,303 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:49] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:55:49,313 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:49] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:55:49,334 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:49] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:55:52,637 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:52] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1" 200 -
+2023-10-03 09:55:52,645 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:55:52,647 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:52] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:55:52,661 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:55:52] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:56:33,033 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:56:33,034 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:56:39,467 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "[32mGET /adicionar-bulking HTTP/1.1[0m" 302 -
+2023-10-03 09:56:39,481 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:56:39,511 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:56:39,512 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "[33mGET /static/miniatures/panquecas_banana.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:56:39,518 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "[33mGET /static/miniatures/omelete_vegetais.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:56:39,540 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "[33mGET /static/miniatures/salada_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:56:39,541 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "[33mGET /static/miniatures/smoothie_manga.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:56:39,545 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "[33mGET /static/miniatures/wrap_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:56:39,546 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:56:39,547 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:39] "[33mGET /static/miniatures/espaguete_abobrinha.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:56:52,492 [ERROR] - Exception on /gerar_pdf/166 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 154, in getImageData
+    imagedata, imgwidth, imgheight = self.jpg_imagedata()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 45, in jpg_imagedata
+    fp = open(self.image, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/miniatures/salada_frango.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 655, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 599, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'static/miniatures/salada_frango.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 658, in open_for_read
+    return getBytesIO(datareader(name) if name[:5].lower()=='data:' else urlopen(name).read())
+  File "/usr/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.7/urllib/request.py", line 510, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.7/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.7/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.7/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'static/miniatures/salada_frango.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 103, in gerar_pdf
+    p.drawInlineImage(image_path, 100, 400, width=200, height=200)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/canvas.py", line 859, in drawInlineImage
+    img_obj = PDFImage(image, x,y, width, height)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 40, in __init__
+    self.getImageData()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 156, in getImageData
+    imagedata, imgwidth, imgheight = self.non_jpg_imagedata(image)  #try for normal kind of image
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 138, in non_jpg_imagedata
+    imagedata = pdfutils.cacheImageFile(image,returnInMemory=1)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 95, in cacheImageFile
+    code = makeA85Image(filename,IMG)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 31, in makeA85Image
+    img = ImageReader(filename)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 813, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 777, in __init__
+    self.fp = open_for_read(fileName,'b')
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 660, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "static/miniatures/salada_frango.jpg"
+fileName='static/miniatures/salada_frango.jpg' identity=[ImageReader@0xffff8f127dd0 filename='static/miniatures/salada_frango.jpg']
+2023-10-03 09:56:52,499 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:52] "[35m[1mGET /gerar_pdf/166 HTTP/1.1[0m" 500 -
+2023-10-03 09:56:54,461 [ERROR] - Exception on /gerar_pdf/165 [GET]
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 154, in getImageData
+    imagedata, imgwidth, imgheight = self.jpg_imagedata()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 45, in jpg_imagedata
+    fp = open(self.image, 'rb')
+FileNotFoundError: [Errno 2] No such file or directory: 'static/miniatures/smoothie_manga.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 655, in open_for_read
+    return open_for_read_by_name(name,mode)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 599, in open_for_read_by_name
+    return open(name,mode)
+FileNotFoundError: [Errno 2] No such file or directory: 'static/miniatures/smoothie_manga.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 658, in open_for_read
+    return getBytesIO(datareader(name) if name[:5].lower()=='data:' else urlopen(name).read())
+  File "/usr/lib/python3.7/urllib/request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "/usr/lib/python3.7/urllib/request.py", line 510, in open
+    req = Request(fullurl, data)
+  File "/usr/lib/python3.7/urllib/request.py", line 328, in __init__
+    self.full_url = url
+  File "/usr/lib/python3.7/urllib/request.py", line 354, in full_url
+    self._parse()
+  File "/usr/lib/python3.7/urllib/request.py", line 383, in _parse
+    raise ValueError("unknown url type: %r" % self.full_url)
+ValueError: unknown url type: 'static/miniatures/smoothie_manga.jpg'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 103, in gerar_pdf
+    p.drawInlineImage(image_path, 100, 400, width=200, height=200)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/canvas.py", line 859, in drawInlineImage
+    img_obj = PDFImage(image, x,y, width, height)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 40, in __init__
+    self.getImageData()
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 156, in getImageData
+    imagedata, imgwidth, imgheight = self.non_jpg_imagedata(image)  #try for normal kind of image
+  File "/usr/lib/python3/dist-packages/reportlab/pdfgen/pdfimages.py", line 138, in non_jpg_imagedata
+    imagedata = pdfutils.cacheImageFile(image,returnInMemory=1)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 95, in cacheImageFile
+    code = makeA85Image(filename,IMG)
+  File "/usr/lib/python3/dist-packages/reportlab/pdfbase/pdfutils.py", line 31, in makeA85Image
+    img = ImageReader(filename)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 813, in __init__
+    annotateException('\nfileName=%r identity=%s'%(fileName,self.identity()))
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 1394, in annotateException
+    rl_reraise(t,v,b)
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 147, in rl_reraise
+    raise v
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 777, in __init__
+    self.fp = open_for_read(fileName,'b')
+  File "/usr/lib/python3/dist-packages/reportlab/lib/utils.py", line 660, in open_for_read
+    raise IOError('Cannot open resource "%s"' % name)
+OSError: Cannot open resource "static/miniatures/smoothie_manga.jpg"
+fileName='static/miniatures/smoothie_manga.jpg' identity=[ImageReader@0xffff8c478210 filename='static/miniatures/smoothie_manga.jpg']
+2023-10-03 09:56:54,462 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:56:54] "[35m[1mGET /gerar_pdf/165 HTTP/1.1[0m" 500 -
+2023-10-03 09:58:25,781 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:58:25,781 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:58:31,735 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:31] "[32mGET /adicionar-bulking HTTP/1.1[0m" 302 -
+2023-10-03 09:58:31,748 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:31] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:58:31,816 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:31] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:58:31,817 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:58:31,822 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:31] "[33mGET /static/miniatures/espaguete_abobrinha.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:58:31,823 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:31] "[33mGET /static/miniatures/wrap_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:58:31,824 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:31] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:58:34,468 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:34] "GET /gerar_pdf/169 HTTP/1.1" 200 -
+2023-10-03 09:58:54,738 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:54] "GET /dashboard/receitas?categoria=bulking&refeicao=almoco&calorias_max= HTTP/1.1" 200 -
+2023-10-03 09:58:54,758 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:58:54,759 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:54] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:58:54,767 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:54] "[33mGET /static/miniatures/espaguete_abobrinha.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:58:54,768 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:54] "[33mGET /static/miniatures/wrap_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:58:54,779 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:54] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:58:59,995 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:58:59] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2023-10-03 09:59:00,003 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:00] "GET /login HTTP/1.1" 200 -
+2023-10-03 09:59:00,013 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:00,014 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-03 09:59:00,024 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:00] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:04,397 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-03 09:59:04,398 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-03 09:59:04,399 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:04] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-03 09:59:04,402 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:04] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 09:59:04,411 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:04] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:05,228 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:05] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:59:05,235 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:05] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:59:05,235 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:05] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:05,244 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:05] "[33mGET /static/miniatures/espaguete_abobrinha.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:59:05,245 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:05] "[33mGET /static/miniatures/wrap_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:59:05,248 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:05] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:17,072 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 09:59:17,073 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 09:59:18,117 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:18] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:59:18,142 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:18,145 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:18] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:59:18,164 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:18] "[33mGET /static/miniatures/espaguete_abobrinha.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:59:18,165 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:18] "[33mGET /static/miniatures/wrap_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:59:18,170 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:18] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:18,195 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:18] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:18,912 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:18] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 09:59:18,918 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:19,614 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:19] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 09:59:19,624 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:19,625 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:19] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:59:19,636 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:19] "[33mGET /static/miniatures/espaguete_abobrinha.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:59:19,637 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:19] "[33mGET /static/miniatures/wrap_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:59:19,642 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:19] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:27,857 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:27] "GET /dashboard/receitas?categoria=bulking&refeicao=almoco&calorias_max= HTTP/1.1" 200 -
+2023-10-03 09:59:27,866 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:27] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 09:59:27,868 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:27,878 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:27] "[33mGET /static/miniatures/espaguete_abobrinha.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:59:27,879 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:27] "[33mGET /static/miniatures/wrap_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 09:59:27,883 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:27] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 09:59:45,388 [INFO] - 127.0.0.1 - - [03/Oct/2023 09:59:45] "GET /gerar_pdf/172 HTTP/1.1" 200 -
+2023-10-03 10:00:18,663 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:18] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 10:00:18,673 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:19,281 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:19] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 10:00:19,287 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:19,288 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:19] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 10:00:19,299 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:19] "[33mGET /static/miniatures/espaguete_abobrinha.jpg HTTP/1.1[0m" 404 -
+2023-10-03 10:00:19,300 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:19] "[33mGET /static/miniatures/wrap_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 10:00:19,303 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:19] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:21,241 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:21] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1" 200 -
+2023-10-03 10:00:21,248 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:21,251 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:21] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 10:00:21,261 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:21] "[33mGET /static/miniatures/wrap_frango.jpg HTTP/1.1[0m" 404 -
+2023-10-03 10:00:21,262 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:21] "[33mGET /static/miniatures/espaguete_abobrinha.jpg HTTP/1.1[0m" 404 -
+2023-10-03 10:00:21,265 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:21] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:27,190 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 10:00:27,190 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 10:00:30,064 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:30] "[32mGET /adicionar-bulking HTTP/1.1[0m" 302 -
+2023-10-03 10:00:30,074 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:30] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 10:00:30,102 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:30,103 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:30] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 10:00:30,108 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:30] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:37,535 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:37] "[32mGET /adicionar-bulking HTTP/1.1[0m" 302 -
+2023-10-03 10:00:37,541 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:37] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 10:00:37,584 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:37,586 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:37] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 10:00:37,593 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:37] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:46,101 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:46] "GET /gerar_pdf/177 HTTP/1.1" 200 -
+2023-10-03 10:00:48,209 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:48] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 10:00:48,216 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:48,585 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:48] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 10:00:48,601 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:48,605 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:48] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 10:00:48,616 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:48] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:50,219 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-10-03 10:00:50,225 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:50] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-03 10:00:50,240 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:50,844 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:50] "GET /dashboard/mensagens HTTP/1.1" 200 -
+2023-10-03 10:00:50,851 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:51,392 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:51] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 10:00:51,399 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:51] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 10:00:51,403 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:51,421 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:51] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:54,346 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:54] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 10:00:54,366 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:54,367 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:54] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 10:00:54,375 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:54] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:54,666 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:54] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 10:00:54,671 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:55,039 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:55] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 10:00:55,047 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:55,303 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:55] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 10:00:55,313 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:55,314 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:55] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 10:00:55,325 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:55] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:59,472 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:59] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 10:00:59,479 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:00:59,973 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:59] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 10:00:59,987 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:00:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:01:00,207 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:01:00] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 10:01:00,216 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:01:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 10:01:00,217 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:01:00] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 10:01:00,229 [INFO] - 127.0.0.1 - - [03/Oct/2023 10:01:00] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:05,386 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:05] "[32mGET /dashboard/meu-perfil HTTP/1.1[0m" 302 -
+2023-10-03 11:00:05,403 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:05] "GET /login HTTP/1.1" 200 -
+2023-10-03 11:00:05,434 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:05] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-03 11:00:05,437 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:05] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:05,458 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:05] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:09,847 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-03 11:00:09,848 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-03 11:00:09,849 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-03 11:00:09,852 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:09] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 11:00:09,862 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:09] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:10,836 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:10] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:00:10,844 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:10,846 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:10] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:00:10,859 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:10] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:16,117 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:16] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:00:16,126 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:17,350 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:17] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:00:17,360 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:17,362 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:17] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:00:17,394 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:17] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:18,744 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:18] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:00:18,754 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:19,334 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:19] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:00:19,345 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:00:19,351 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:19] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:00:19,371 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:00:19] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:48,565 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:48] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 11:04:48,622 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,851 [INFO] - Rota "/" foi acessada.
+2023-10-03 11:04:51,861 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "GET / HTTP/1.1" 200 -
+2023-10-03 11:04:51,881 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,888 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,897 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,898 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,903 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,903 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,905 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,950 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,952 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-10-03 11:04:51,984 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:04:51] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-10-03 11:05:45,676 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 11:05:45,676 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 11:05:50,941 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:05:50] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:05:50,958 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:05:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:05:50,960 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:05:50] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:05:50,986 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:05:50] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:05:51,071 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:05:51] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 11:06:05,154 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 11:06:05,154 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 11:06:06,290 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:06] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:06:06,320 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:06] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:06:06,324 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:06:06,341 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:06] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:06:06,400 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:06] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 11:06:51,834 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 11:06:51,834 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 11:06:53,399 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:53] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:06:53,415 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:06:53,419 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:53] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:06:53,432 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:53] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:06:53,485 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:53] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 11:06:57,628 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:06:57] "GET /gerar_pdf/175 HTTP/1.1" 200 -
+2023-10-03 11:07:11,833 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:11] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1" 200 -
+2023-10-03 11:07:11,855 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:07:11,858 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:11] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:07:11,871 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:11] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:07:17,388 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:17] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:07:17,398 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:07:17,898 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:17] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 11:07:17,907 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:07:18,384 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:18] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 11:07:18,394 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:07:18,816 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:18] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:07:18,823 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:18] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:07:19,170 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:19] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:07:19,177 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:07:19,180 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:19] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:07:19,194 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:07:19] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:08:48,689 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:48] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:08:48,714 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:08:48,715 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:48] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:08:48,732 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:48] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:08:49,092 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:49] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:08:49,102 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:08:49,104 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:49] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:08:49,119 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:49] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:08:49,337 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:49] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:08:49,350 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:08:49,684 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:49] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 11:08:49,693 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:08:50,028 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:50] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:08:50,039 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:08:50,313 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:50] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:08:50,319 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:08:50,321 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:50] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:08:50,334 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:08:50] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:10:48,357 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:48] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:10:48,384 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:10:48,386 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:48] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:10:48,420 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:48] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:10:49,433 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:49] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:10:49,448 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:10:49,872 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:49] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 11:10:49,885 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:10:50,315 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:50] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 11:10:50,324 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:10:50,943 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:50] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:10:50,956 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:50] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:10:50,961 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:10:50,971 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:10:50] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:27,574 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:27] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 11:11:27,589 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:29,008 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:29] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 11:11:29,022 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:29,807 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:29] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 11:11:29,825 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:30,151 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:30] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:11:30,163 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:30,896 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:30] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:11:30,910 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:30,913 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:30] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:11:30,929 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:30] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:42,932 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-10-03 11:11:42,962 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:42] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-03 11:11:42,984 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:47,762 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:47] "GET /dashboard/mensagens HTTP/1.1" 200 -
+2023-10-03 11:11:47,780 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:50,529 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-10-03 11:11:50,532 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:50] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-03 11:11:50,547 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:51,506 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:51] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:11:51,518 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:51,526 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:51] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:11:51,545 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:51] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:52,258 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:52] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:11:52,272 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:52,880 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:52] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 11:11:52,889 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:53,728 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:53] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 11:11:53,741 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:54,392 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:54] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-03 11:11:54,406 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:54,893 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:54] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-03 11:11:54,908 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:55,358 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:55] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:11:55,369 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:11:55,371 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:55] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:11:55,389 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:11:55] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:12:00,786 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:00] "GET /gerar_pdf/176 HTTP/1.1" 200 -
+2023-10-03 11:12:02,152 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:02] "GET /gerar_pdf/176 HTTP/1.1" 200 -
+2023-10-03 11:12:07,495 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:07] "GET /gerar_pdf/176 HTTP/1.1" 200 -
+2023-10-03 11:12:14,907 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:14] "GET /gerar_pdf/176 HTTP/1.1" 200 -
+2023-10-03 11:12:16,249 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:16] "GET /gerar_pdf/176 HTTP/1.1" 200 -
+2023-10-03 11:12:17,884 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:17] "GET /gerar_pdf/177 HTTP/1.1" 200 -
+2023-10-03 11:12:22,826 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:22] "GET /gerar_pdf/175 HTTP/1.1" 200 -
+2023-10-03 11:12:25,443 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:25] "GET /gerar_pdf/182 HTTP/1.1" 200 -
+2023-10-03 11:12:54,928 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:54] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:12:54,955 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:12:54,957 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:54] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:12:54,973 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:12:54] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:14:26,236 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:26] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 11:14:26,264 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:14:27,574 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:27] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 11:14:27,585 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:14:27,592 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:27] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:14:27,607 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:27] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:14:38,749 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:38] "GET /dashboard/receitas?categoria=bulking&refeicao=jantar&calorias_max= HTTP/1.1" 200 -
+2023-10-03 11:14:38,758 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 11:14:38,761 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:38] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 11:14:38,772 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:38] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-03 11:14:54,137 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:54] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 11:14:54,145 [INFO] - 127.0.0.1 - - [03/Oct/2023 11:14:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:28,867 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-03 14:41:28,867 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-03 14:41:30,001 [INFO] - Rota "/" foi acessada.
+2023-10-03 14:41:30,005 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "GET / HTTP/1.1" 200 -
+2023-10-03 14:41:30,024 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,039 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,040 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,041 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,041 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,042 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,560 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,561 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,562 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,564 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:30,773 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:30] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:31,676 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:31] "GET /login HTTP/1.1" 200 -
+2023-10-03 14:41:31,690 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:31] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-03 14:41:31,706 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:31,721 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:31] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:35,581 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-03 14:41:35,581 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-03 14:41:35,582 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-03 14:41:35,586 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:35] "GET /dashboard HTTP/1.1" 200 -
+2023-10-03 14:41:35,597 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:36,584 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:36] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-03 14:41:36,593 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:36] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-03 14:41:36,595 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-03 14:41:36,615 [INFO] - 127.0.0.1 - - [03/Oct/2023 14:41:36] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
