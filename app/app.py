@@ -1,128 +1,88 @@
 from flask import Flask, render_template, request, redirect, url_for, flash, session, make_response
-from flask_sqlalchemy import SQLAlchemy
 from flask_bcrypt import Bcrypt
 import re
 import logging
 from functools import wraps
 from datetime import timedelta
 from flask_migrate import Migrate
-from datetime import datetime
 from reportlab.pdfgen import canvas
 from io import BytesIO
 from reportlab.lib.pagesizes import letter
-
+from models.models import Usuario, Perfil, Dieta, Dashboard_user, Receita, db
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://pollux:pollux123@localhost/flexifitness'
-db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 bcrypt = Bcrypt(app)
+db.init_app(app)
 
 # Chave secreta para sessões
 app.secret_key = '28782878'
-app.permanent_session_lifetime = timedelta(minutes=15)
+app.permanent_session_lifetime = timedelta(minutes=55)
 
 with app.app_context():
     db.create_all()
 
-class Usuario(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    username = db.Column(db.String(50), unique=True, nullable=False)
-    email = db.Column(db.String(100), unique=True, nullable=False)
-    password = db.Column(db.String(60), nullable=False)
-    perfil = db.relationship('Perfil', backref='usuario', uselist=False)
-
-class Perfil(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    primeiro_nome = db.Column(db.String(50))
-    sobrenome = db.Column(db.String(50))
-    celular = db.Column(db.String(20))
-    endereco = db.Column(db.String(200))
-    cep = db.Column(db.String(10))
-    idade = db.Column(db.Integer)
-    peso = db.Column(db.Float)
-    altura = db.Column(db.Float)
-    sexo = db.Column(db.String(10))
-    estado = db.Column(db.String(50))
-    user_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
-
-class Receita(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    nome = db.Column(db.String(255), nullable=False)
-    descricao = db.Column(db.Text, nullable=False)
-    calorias = db.Column(db.Integer, nullable=False)
-    categoria = db.Column(db.String(50), nullable=True)
-    refeicao = db.Column(db.String(20), nullable=True)
-    data_criacao = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
-    imagem = db.Column(db.String(255))
-    tempo_de_preparo = db.Column(db.String(50))
-    ingredientes = db.Column(db.Text)
-    modo_de_preparo = db.Column(db.Text)
-
 @app.route('/gerar_pdf/<int:receita_id>', methods=['GET'])
 def gerar_pdf(receita_id):
-    # Obtenha a receita do banco de dados
     receita = Receita.query.get(receita_id)
-
-    # Crie um buffer de bytes para armazenar o PDF
     buffer = BytesIO()
-
-    # Crie o PDF usando o ReportLab
     p = canvas.Canvas(buffer)
 
-    # Adicione o nome da receita ao título do PDF
     p.setTitle(receita.nome)
 
     # Adicione informações ao PDF
-    p.drawString(100, 800, f"Nome: {receita.nome}")
-    p.drawString(100, 780, f"Descrição: {receita.descricao}")
-    p.drawString(100, 760, f"Calorias: {receita.calorias}")
-    p.drawString(100, 740, f"Categoria: {receita.categoria}")
-    p.drawString(100, 720, f"Refeição: {receita.refeicao}")
-    p.drawString(100, 700, f"Tempo de Preparo: {receita.tempo_de_preparo}")
+    p.drawString(40, 800, f"Nome: {receita.nome}")
+    p.drawString(40, 780, f"Descrição: {receita.descricao}")
+    p.drawString(40, 760, f"Calorias: {receita.calorias}")
+    p.drawString(40, 740, f"Categoria: {receita.categoria}")
+    p.drawString(40, 720, f"Refeição: {receita.refeicao}")
+    p.drawString(40, 700, f"Tempo de Preparo: {receita.tempo_de_preparo}")
 
-     # Adicione ingredientes ao PDF
-    p.drawString(100, 680, "Ingredientes:")
+    # Adicione ingredientes ao PDF
+    p.drawString(40, 680, "Ingredientes:")
     ingredientes = receita.ingredientes.split('\n') if receita.ingredientes else []
     y_position = 660
     for ingrediente in ingredientes:
-        p.drawString(120, y_position, ingrediente)
+        p.drawString(60, y_position, ingrediente)
         y_position -= 20
 
-    # Adicione modo de preparo ao PDF
-    p.drawString(100, y_position, "Modo de Preparo:")
+    # Adicione o modo de preparo ao PDF
+    p.drawString(40, y_position, "Modo de Preparo:")
     modo_de_preparo = receita.modo_de_preparo.split('\n') if receita.modo_de_preparo else []
     y_position -= 20
     for passo in modo_de_preparo:
-        p.drawString(120, y_position, passo)
+        p.drawString(60, y_position, passo)
         y_position -= 20
 
-    # Adicione uma imagem ao PDF
     if receita.imagem:
-        image_path = f"static/{receita.imagem}"  # Certifique-se de ajustar o caminho conforme necessário
-        p.drawInlineImage(image_path, 100, 400, width=200, height=200)
+        image_path = f"static/{receita.imagem}"
+        p.drawInlineImage(image_path, 200, 400, width=200, height=200)
 
-    # Salve o PDF
     p.save()
 
-    # Defina o ponteiro do buffer no início
     buffer.seek(0)
 
-    # Crie uma resposta Flask com o PDF
     response = make_response(buffer.read())
     response.mimetype = 'application/pdf'
     response.headers['Content-Disposition'] = f'inline; filename={receita.nome}.pdf'
 
     return response
 
-@app.route('/dashboard/receitas')
-def receitas_bulking():
+@app.route('/dashboard/receitas', methods=['GET'])
+def receitas():
+    if 'user_id' not in session:
+        flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
+        return redirect(url_for('login'))
+
     categoria_filtrada = request.args.get('categoria', default=None, type=str)
     refeicao_filtrada = request.args.get('refeicao', default=None, type=str)
     calorias_max = request.args.get('calorias_max', default=None, type=int)
 
+    # Aqui você recupera todas as receitas
     query = Receita.query
 
+    # Filtragem com base nos parâmetros
     if categoria_filtrada:
         query = query.filter_by(categoria=categoria_filtrada)
 
@@ -136,28 +96,25 @@ def receitas_bulking():
 
     return render_template('receitas.html', receitas=receitas)
 
-@app.route('/adicionar-bulking')
-def add_example_recipes():
-    # Adicione algumas receitas de exemplo
-    receitas = [
-        {"nome": "Bulking 1 SALADA MISTA COM PEIXE", "descricao": "Receita para bulking com 2300 kcal enrolado de carne", "calorias": 2300, "refeicao": "cafe_da_manha", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "1 xicara de sal, 2 colheres de sopa, 3kg de carne, 80 litros de agua.", "modo_de_preparo": "Coloque 1 xixara no bool, mexa por 15 segundos, 30 segundos no microondas."},
-        {"nome": "Bulking 2 Arroz, file e frango a passarinho", "descricao": "Receita para bulking com 2500 kcal", "calorias": 2500, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos"},
-        {"nome": "Bulking 3", "descricao": "Receita para bulking com 2700 kcal", "calorias": 2700, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos"},
-        {"nome": "Bulking 4", "descricao": "Receita para bulking com 3000 kcal", "calorias": 3000, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos"},
-        {"nome": "Bulking 5", "descricao": "Receita para bulking com 3300 kcal", "calorias": 3300, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "7 minutos"},
-        {"nome": "Bulking 6", "descricao": "Receita para bulking com 3500 kcal", "calorias": 3500, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "12 minutos"},
-        {"nome": "Bulking 7", "descricao": "Receita para bulking com 3800 kcal", "calorias": 3800, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "13  minutos"},
-        {"nome": "Bulking 8", "descricao": "Receita para bulking com 4000 kcal", "calorias": 4000, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "1 minuto"},
-        {"nome": "Bulking 9", "descricao": "Receita para bulking com 4500 kcal", "calorias": 4500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos"},
-        {"nome": "Bulking 10", "descricao": "Receita para bulking com 5000 kcal", "calorias": 5000, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos"},
-] 
+# Adicione esta função no mesmo arquivo onde você tem seus modelos e rotas
+def calcular_tmb(idade, genero, nivel_atividade):
+    # Fórmula para calcular TMB (exemplo simples, pode ser ajustado conforme necessário)
+    # As fórmulas reais podem ser mais complexas e levar em consideração mais fatores
+    if genero.lower() == 'masculino':
+        tmb = 10 * idade + 5  # Exemplo simples, ajuste conforme necessário
+    else:
+        tmb = 10 * idade - 161  # Exemplo simples, ajuste conforme necessário
 
-    for receita_data in receitas:
-        nova_receita = Receita(**receita_data, categoria="bulking")
-        db.session.add(nova_receita)
+    if nivel_atividade.lower() == 'intenso':
+        tmb *= 1.5
+    elif nivel_atividade.lower() == 'moderado':
+        tmb *= 1.3
+    elif nivel_atividade.lower() == 'pouco':
+        tmb *= 1.2
 
-    db.session.commit()
-    return redirect(url_for('receitas'))
+    return tmb
+
+
 # Função de verificação de autenticação
 def verifica_autenticacao(f):
     @wraps(f)
@@ -342,22 +299,108 @@ def treinos():
     
     return render_template('treinos.html')
 
-@app.route('/dashboard/dietas')
+def calcular_dieta(idade, genero, nivel_atividade, objetivo, tipo_atividade):
+    # Aqui você deve implementar a lógica para calcular a dieta
+    # Esta é uma implementação básica apenas para exemplo
+    
+    # Valores fictícios, você precisa substituir pelos cálculos reais
+    calorias_diarias = 2000
+    proteina_percentual = 30
+    carboidrato_percentual = 50
+    gordura_percentual = 20
+    
+    # Calculando as quantidades de macronutrientes
+    proteina = (proteina_percentual / 100) * calorias_diarias / 4
+    carboidrato = (carboidrato_percentual / 100) * calorias_diarias / 4
+    gordura = (gordura_percentual / 100) * calorias_diarias / 9
+    
+    # Supondo valores fixos para cada refeição
+    proporcao_cafe_manha = 0.2
+    proporcao_almoco = 0.4
+    proporcao_janta = 0.3
+    proporcao_lanches = 0.1
+    
+    cafe_manha = {
+        'proteina': proporcao_cafe_manha * proteina,
+        'carboidrato': proporcao_cafe_manha * carboidrato,
+        'gordura': proporcao_cafe_manha * gordura
+    }
+    
+    almoco = {
+        'proteina': proporcao_almoco * proteina,
+        'carboidrato': proporcao_almoco * carboidrato,
+        'gordura': proporcao_almoco * gordura
+    }
+    
+    janta = {
+        'proteina': proporcao_janta * proteina,
+        'carboidrato': proporcao_janta * carboidrato,
+        'gordura': proporcao_janta * gordura
+    }
+    
+    lanche_manha = {
+        'proteina': proporcao_lanches * proteina,
+        'carboidrato': proporcao_lanches * carboidrato,
+        'gordura': proporcao_lanches * gordura
+    }
+    
+    cafe_tarde = {
+        'proteina': proporcao_lanches * proteina,
+        'carboidrato': proporcao_lanches * carboidrato,
+        'gordura': proporcao_lanches * gordura
+    }
+    
+    ceia = {
+        'proteina': proporcao_lanches * proteina,
+        'carboidrato': proporcao_lanches * carboidrato,
+        'gordura': proporcao_lanches * gordura
+    }
+    
+    return cafe_manha, lanche_manha, almoco, cafe_tarde, janta, ceia
+
+@app.route('/dashboard/dietas', methods=['GET', 'POST'])
 def dietas():
     if 'user_id' not in session:
         flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
         return redirect(url_for('login'))
-    
+
+    if request.method == 'POST':
+        nome = request.form.get('nome')
+        idade = int(request.form.get('idade'))
+        genero = request.form.get('genero')
+        nivel_atividade = request.form.get('nivel_atividade')
+        objetivo = request.form.get('objetivo')
+        tipo_atividade = request.form.get('tipo_atividade')
+
+        # Aqui você precisa calcular a dieta com base nas informações fornecidas
+        # e obter os valores dos alimentos da tabela que você vai cadastrar
+
+        # Supondo que você tenha uma função calcular_dieta que retorna os valores
+        # dos alimentos para cada refeição
+        cafe_manha, lanche_manha, almoco, cafe_tarde, janta, ceia = calcular_dieta()
+
+        # Obtendo o usuário atual
+        usuario = Usuario.query.filter_by(id=session['user_id']).first()
+
+        # Criando uma nova Dieta
+        nova_dieta = Dieta(
+            usuario_id=usuario.id,
+            nome=nome,
+            cafe_manha=cafe_manha,
+            lanche_manha=lanche_manha,
+            almoco=almoco,
+            cafe_tarde=cafe_tarde,
+            janta=janta,
+            ceia=ceia
+        )
+
+        # Adicionando a dieta ao banco de dados
+        db.session.add(nova_dieta)
+        db.session.commit()
+
+        flash('Dieta gerada com sucesso!', 'success')
+
     return render_template('dietas.html')
-
-@app.route('/dashboard/receitas')
-def receitas():
-    if 'user_id' not in session:
-        flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
-        return redirect(url_for('login'))
-    
-    return render_template('receitas.html')
-
 
 # Rota de logout
 @app.route('/logout')
@@ -390,6 +433,81 @@ def termos_de_servico():
 
 # Configurar o log para escrever em um arquivo
 logging.basicConfig(filename='app.log', level=logging.DEBUG, format='%(asctime)s [%(levelname)s] - %(message)s')
+
+@app.route('/adicionar-bulking')
+def add_example_recipes():
+    receitas = [
+        {"nome": "Salada de Frango", "descricao": "Salada de frango com vegetais frescos para aumentar as calorias. Uma opção saudável para o bulking.", "calorias": 800, "refeicao": "cafe_da_manha", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Peito de frango, alface, tomate, cenoura, azeite, sal, pimenta.", "modo_de_preparo": "Cozinhe o peito de frango, corte em pedaços e misture com os vegetais. Tempere com azeite, sal e pimenta."},
+        {"nome": "Arroz Integral com Salmão", "descricao": "Arroz integral nutritivo acompanhado de salmão grelhado, proporcionando uma refeição rica em proteínas e carboidratos.", "calorias": 900, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Arroz integral, salmão, azeite, alho, sal, limão.", "modo_de_preparo": "Cozinhe o arroz integral. Tempere o salmão com alho, sal e limão. Grelhe o salmão e sirva sobre o arroz."},
+        {"nome": "Omelete de Espinafre", "descricao": "Omelete saudável e recheado com espinafre, uma opção rica em proteínas e vitaminas.", "calorias": 600, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Ovos, espinafre, queijo, sal, pimenta.", "modo_de_preparo": "Bata os ovos, adicione o espinafre e o queijo. Tempere com sal e pimenta. Cozinhe em fogo médio até ficar pronto."},
+        {"nome": "Smoothie de Banana e Amendoim", "descricao": "Smoothie energético com banana e amendoim para um lanche reforçado durante o dia.", "calorias": 500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos", "ingredientes": "Banana, leite, amendoim, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura homogênea."},
+        {"nome": "Frango Grelhado com Batata Doce", "descricao": "Prato principal de frango grelhado acompanhado de batata doce, fornecendo proteínas e carboidratos complexos.", "calorias": 850, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Peito de frango, batata doce, azeite, sal, ervas.", "modo_de_preparo": "Tempere o frango e a batata doce com azeite, sal e ervas. Grelhe o frango e asse a batata."},
+        {"nome": "Wrap de Atum", "descricao": "Wrap saudável recheado com atum, vegetais e molho de iogurte, ideal para uma refeição leve e rica em proteínas.", "calorias": 750, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Tortilla integral, atum, alface, tomate, iogurte, limão.", "modo_de_preparo": "Misture o atum com vegetais e molho de iogurte. Coloque no interior da tortilla e enrole."},
+        {"nome": "Smoothie de Manga e Aveia", "descricao": "Smoothie refrescante com manga e aveia para um lanche rápido e nutritivo.", "calorias": 400, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Manga, leite, aveia, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa."},
+        {"nome": "Quinoa com Legumes", "descricao": "Prato de quinoa com legumes coloridos, uma opção vegetariana rica em proteínas e fibras.", "calorias": 900, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Quinoa, abobrinha, cenoura, pimentão, azeite, sal.", "modo_de_preparo": "Cozinhe a quinoa e refogue os legumes no azeite. Misture tudo."},
+        {"nome": "Smoothie de Morango e Banana", "descricao": "Smoothie delicioso com morango e banana para uma opção doce e nutritiva.", "calorias": 450, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos", "ingredientes": "Morango, banana, iogurte, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Frango Assado com Quinoa", "descricao": "Peito de frango assado acompanhado de quinoa, proporcionando uma refeição completa e nutritiva.", "calorias": 950, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "40 minutos", "ingredientes": "Peito de frango, quinoa, brócolis, azeite, sal.", "modo_de_preparo": "Tempere o frango e a quinoa. Asse o frango e misture com a quinoa e brócolis."},
+        {"nome": "Wrap de Frango e Abacate", "descricao": "Wrap recheado com frango grelhado, abacate e vegetais frescos, uma opção saudável e saborosa.", "calorias": 800, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Tortilla integral, peito de frango, abacate, alface, tomate.", "modo_de_preparo": "Grelhe o frango e monte o wrap com os ingredientes."},
+        {"nome": "Smoothie de Pêssego e Aveia", "descricao": "Smoothie nutritivo com pêssego e aveia para um lanche rápido e saudável.", "calorias": 500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Pêssego, leite, aveia, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa."},
+        {"nome": "Macarrão Integral com Frango", "descricao": "Macarrão integral com peito de frango grelhado, uma opção rica em carboidratos e proteínas.", "calorias": 900, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Macarrão integral, peito de frango, molho de tomate, azeite.", "modo_de_preparo": "Cozinhe o macarrão e grelhe o frango. Misture com molho de tomate e azeite."},
+        {"nome": "Smoothie de Abacaxi e Coco", "descricao": "Smoothie tropical com abacaxi e coco para uma opção refrescante e calórica.", "calorias": 450, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "7 minutos", "ingredientes": "Abacaxi, leite de coco, iogurte, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Sopa de Lentilhas", "descricao": "Sopa nutritiva de lentilhas, uma opção rica em proteínas e fibras.", "calorias": 700, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Lentilhas, cebola, alho, cenoura, caldo de legumes.", "modo_de_preparo": "Cozinhe as lentilhas com os vegetais e caldo de legumes até ficar macio."},
+        {"nome": "Salada de Quinoa", "descricao": "Salada de quinoa com vegetais frescos para uma opção saudável e rica em proteínas.", "calorias": 750, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Quinoa, pepino, tomate, azeitonas, azeite, sal, limão.", "modo_de_preparo": "Cozinhe a quinoa e misture com os vegetais. Tempere com azeite, sal e limão."},
+        {"nome": "Panquecas de Aveia", "descricao": "Panquecas leves e saudáveis feitas com aveia, ideais para o café da manhã.", "calorias": 500, "refeicao": "cafe_da_manha", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Aveia, banana, ovo, leite, canela.", "modo_de_preparo": "Misture a aveia, banana, ovo, leite e canela. Cozinhe em uma frigideira até dourar dos dois lados."},
+        {"nome": "Tigela de Açaí", "descricao": "Tigela de açaí com granola, frutas e mel, proporcionando um lanche energético e delicioso.", "calorias": 600, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Açaí, granola, banana, morango, mel.", "modo_de_preparo": "Misture o açaí com granola e decore com frutas. Regue com mel."},
+        {"nome": "Hambúrguer de Quinoa", "descricao": "Hambúrguer vegetariano feito com quinoa, uma opção saudável e rica em proteínas.", "calorias": 700, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Quinoa, feijão preto, cenoura, cebola, alho, cominho.", "modo_de_preparo": "Cozinhe a quinoa e misture com feijão preto, cenoura, cebola, alho e cominho. Forme hambúrgueres e grelhe."},
+        {"nome": "Salada de Frutas", "descricao": "Salada refrescante de frutas variadas para um lanche saudável e colorido.", "calorias": 400, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Morango, kiwi, manga, uva, mel.", "modo_de_preparo": "Corte as frutas e misture em uma tigela. Regue com mel e sirva gelado."},
+        {"nome": "Couscous Marroquino com Vegetais", "descricao": "Couscous marroquino com vegetais grelhados, uma opção leve e saborosa para o almoço.", "calorias": 800, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Couscous marroquino, abobrinha, pimentão, berinjela, azeite, hortelã.", "modo_de_preparo": "Prepare o couscous conforme as instruções e misture com vegetais grelhados. Tempere com azeite e hortelã."},
+        {"nome": "Smoothie de Melancia e Menta", "descricao": "Smoothie refrescante com melancia e menta para uma bebida veranil e hidratante.", "calorias": 450, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos", "ingredientes": "Melancia, menta, limão, água.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Wraps de Legumes", "descricao": "Wraps vegetarianos recheados com legumes frescos e molho de iogurte, uma opção leve para o jantar.", "calorias": 650, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Tortilla integral, abobrinha, cenoura, cogumelos, iogurte.", "modo_de_preparo": "Grelhe os legumes e monte os wraps com molho de iogurte."},
+        {"nome": "Bowl de Salmão Grelhado", "descricao": "Bowl nutritivo com salmão grelhado, arroz integral, abacate e vegetais, uma refeição completa.", "calorias": 900, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Salmão, arroz integral, abacate, brócolis, cenoura.", "modo_de_preparo": "Grelhe o salmão e prepare os ingredientes. Monte o bowl com todos os elementos."},
+        {"nome": "Smoothie de Framboesa e Chia", "descricao": "Smoothie antioxidante com framboesa e sementes de chia para um lanche saudável e nutritivo.", "calorias": 500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "8 minutos", "ingredientes": "Framboesa, banana, chia, leite de amêndoas.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa."},
+]
+
+    for receita_data in receitas:
+        nova_receita = Receita(**receita_data, categoria="bulking")
+        db.session.add(nova_receita)
+
+    db.session.commit()
+    return redirect(url_for('receitas'))
+
+@app.route('/adicionar-cutting')
+def add_cutting_recipes():
+    receitas = [
+        {"nome": "Tigela de Quinoa com Abacate", "descricao": "Tigela nutritiva com quinoa, abacate e vegetais frescos.", "calorias": 600, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Quinoa, abacate, tomate cereja, pepino, azeite, sal.", "modo_de_preparo": "Cozinhe a quinoa e misture com os vegetais. Adicione abacate e tempere."},
+        {"nome": "Frango com Brócolis", "descricao": "Prato principal de frango grelhado com brócolis, uma opção rica em proteínas.", "calorias": 550, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Peito de frango, brócolis, azeite, alho, sal, pimenta.", "modo_de_preparo": "Grelhe o frango e cozinhe o brócolis. Misture com azeite, alho, sal e pimenta."},
+        {"nome": "Salada de Atum", "descricao": "Salada leve e proteica com atum, ovos e vegetais variados.", "calorias": 450, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Atum em lata, ovos cozidos, alface, tomate, azeitonas, azeite, sal.", "modo_de_preparo": "Misture todos os ingredientes em uma tigela. Tempere com azeite e sal."},
+        {"nome": "Smoothie de Blueberry", "descricao": "Smoothie antioxidante com blueberries, banana e iogurte.", "calorias": 380, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "8 minutos", "ingredientes": "Blueberries, banana, iogurte, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Peito de Peru com Aspargos", "descricao": "Peito de peru grelhado com aspargos, uma opção magra e saudável.", "calorias": 500, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Peito de peru, aspargos, azeite, limão, sal, pimenta.", "modo_de_preparo": "Grelhe o peito de peru e os aspargos. Tempere com azeite, limão, sal e pimenta."},
+        {"nome": "Wrap de Legumes Grelhados", "descricao": "Wrap vegetariano com legumes grelhados e molho de iogurte.", "calorias": 520, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Tortilla integral, abobrinha, cenoura, pimentão, iogurte.", "modo_de_preparo": "Grelhe os legumes e monte o wrap com molho de iogurte."},
+        {"nome": "Smoothie de Maçã e Canela", "descricao": "Smoothie energético com maçã, banana e toque de canela.", "calorias": 400, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "7 minutos", "ingredientes": "Maçã, banana, leite, canela, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Salada de Camarão", "descricao": "Salada fresca com camarões, abacate e molho de limão.", "calorias": 600, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Camarões cozidos, abacate, alface, tomate cereja, limão, azeite, sal.", "modo_de_preparo": "Misture os camarões com os vegetais. Adicione abacate, regue com molho de limão."},
+        {"nome": "Macarrão de Abobrinha com Frango", "descricao": "Macarrão de abobrinha com pedaços de frango, uma opção baixa em carboidratos.", "calorias": 480, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Abobrinha, peito de frango, molho de tomate, alho, azeite.", "modo_de_preparo": "Faça macarrão de abobrinha e misture com frango, molho de tomate e alho."},
+        {"nome": "Smoothie de Pera e Espinafre", "descricao": "Smoothie saudável com pera, espinafre e toque de gengibre.", "calorias": 350, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "8 minutos", "ingredientes": "Pera, espinafre, gengibre, iogurte.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Hambúrguer de Frango", "descricao": "Hambúrguer de frango grelhado com guacamole, uma opção leve e saborosa.", "calorias": 550, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Peito de frango moído, abacate, tomate, cebola, alface.", "modo_de_preparo": "Grelhe o hambúrguer de frango e monte com guacamole e vegetais."},
+        {"nome": "Salada de Lentilhas com Feta", "descricao": "Salada de lentilhas com queijo feta, uma opção rica em proteínas e fibras.", "calorias": 450, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Lentilhas cozidas, queijo feta, pepino, tomate, azeite, limão.", "modo_de_preparo": "Misture as lentilhas com os vegetais. Adicione queijo feta e tempere."},
+        {"nome": "Tacos de Peixe", "descricao": "Tacos leves com peixe grelhado, repolho roxo e molho de iogurte.", "calorias": 500, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Filé de peixe, tortillas de milho, repolho roxo, molho de iogurte.", "modo_de_preparo": "Grelhe o peixe e monte os tacos com repolho roxo e molho de iogurte."},
+        {"nome": "Smoothie de Kiwi e Coco", "descricao": "Smoothie tropical com kiwi, coco e água de coco.", "calorias": 380, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "8 minutos", "ingredientes": "Kiwi, coco ralado, água de coco, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Bruschetta de Tomate e Manjericão", "descricao": "Bruschettas leves com tomate fresco e manjericão.", "calorias": 350, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Pão integral, tomate, manjericão, alho, azeite.", "modo_de_preparo": "Toste o pão e cubra com tomate, manjericão, alho e azeite."},
+        {"nome": "Salada de Quinoa com Manga", "descricao": "Salada de quinoa com manga, uma opção tropical e nutritiva.", "calorias": 480, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Quinoa cozida, manga, rúcula, cebola roxa, azeite, limão.", "modo_de_preparo": "Misture a quinoa com os vegetais. Adicione manga e tempere."},
+        {"nome": "Sanduíche de Frango Grelhado", "descricao": "Sanduíche saudável com frango grelhado, abacate e tomate.", "calorias": 550, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Peito de frango, pão integral, abacate, tomate, alface.", "modo_de_preparo": "Grelhe o frango e monte o sanduíche com os ingredientes."},
+        {"nome": "Smoothie de Manga e Hortelã", "descricao": "Smoothie refrescante com manga, hortelã e iogurte.", "calorias": 350, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "8 minutos", "ingredientes": "Manga, hortelã, iogurte, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Salada Caprese", "descricao": "Salada clássica caprese com tomate, mussarela de búfala e manjericão.", "calorias": 400, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Tomate, mussarela de búfala, manjericão, azeite, balsâmico.", "modo_de_preparo": "Arrume os ingredientes em um prato. Regue com azeite e balsâmico."},
+        {"nome": "Tigela de Frutas com Iogurte", "descricao": "Tigela refrescante com frutas variadas e iogurte.", "calorias": 300, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Morango, kiwi, abacaxi, iogurte, granola.", "modo_de_preparo": "Corte as frutas e coloque em uma tigela. Adicione iogurte e granola."},
+        {"nome": "Sopa de Abóbora", "descricao": "Sopa cremosa de abóbora com um toque de gengibre.", "calorias": 350, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Abóbora, cebola, alho, gengibre, caldo de legumes.", "modo_de_preparo": "Cozinhe os ingredientes e bata no liquidificador até obter um creme."},
+        {"nome": "Bowl de Frango com Quinoa", "descricao": "Bowl saudável com frango grelhado, quinoa, abacate e vegetais.", "calorias": 520, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Peito de frango, quinoa, abacate, cenoura, brócolis.", "modo_de_preparo": "Grelhe o frango e prepare os ingredientes. Monte o bowl com todos os elementos."},
+        {"nome": "Smoothie de Melão e Manjericão", "descricao": "Smoothie refrescante com melão, manjericão e iogurte.", "calorias": 320, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "7 minutos", "ingredientes": "Melão, manjericão, iogurte, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Salada de Cuscuz", "descricao": "Salada de cuscuz com grão-de-bico, tomate e hortelã.", "calorias": 450, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Cuscuz, grão-de-bico cozido, tomate, hortelã, azeite, limão.", "modo_de_preparo": "Misture o cuscuz com os vegetais. Adicione grão-de-bico e tempere."},
+        {"nome": "Sanduíche Aberto de Abacate", "descricao": "Sanduíche saudável e delicioso com abacate, tomate e ovo pochê.", "calorias": 480, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Pão integral, abacate, tomate, ovo, azeite.", "modo_de_preparo": "Toste o pão e cubra com abacate, tomate e ovo pochê. Regue com azeite."},
+        {"nome": "Wrap de Salmão Defumado", "descricao": "Wrap leve com salmão defumado, cream cheese e rúcula.", "calorias": 420, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "12 minutos", "ingredientes": "Tortilla integral, salmão defumado, cream cheese, rúcula.", "modo_de_preparo": "Espalhe cream cheese na tortilla e adicione salmão e rúcula. Enrole o wrap."},
+    ]
+
+    for receita_data in receitas:
+        nova_receita = Receita(**receita_data, categoria="cutting")
+        db.session.add(nova_receita)
+
+    db.session.commit()
+    return redirect(url_for('receitas'))
 
 if __name__ == '__main__':
     app.run()
