@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="{{ url_for('static', filename='../static/favicon.png') }}" type="image/x-icon">
     <style>
-        /* Estilos CSS personalizados para a página de Termos de Serviço */
         body {
             background-color: #f4f4f4;
             font-family: "Raleway", sans-serif;
+            overflow: hidden;
         }
-
         .container {
             background-color: #fff;
             padding: 20px;
@@ -26,13 +25,11 @@
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             margin-top: 30px;
         }
-
         h1 {
             text-align: center;
             margin-bottom: 30px;
             font-family: "Raleway", sans-serif;
         }
-
         .info-card {
             background-color: #fff;
             border: 1px solid #ddd;
@@ -41,22 +38,14 @@
             margin: 10px;
             text-align: center;
         }
-
         .logout-btn {
             float: right;
             margin-top: 10px;
         }
-
-        /* Estilo para o espaço de texto dos Termos de Serviço */
         .terms-text {
             padding: 20px;
             text-align: justify;
         }
-
-        body {
-            overflow: hidden;
-        }
-
         .w3-bar .w3-button {
             padding: 14px;
             text-decoration: none; /* Remove o sublinhado dos links */
