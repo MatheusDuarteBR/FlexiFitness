@@ -97,25 +97,6 @@ def receitas():
 
     return render_template('receitas.html', receitas=receitas)
 
-# Adicione esta função no mesmo arquivo onde você tem seus modelos e rotas
-def calcular_tmb(idade, genero, nivel_atividade):
-    # Fórmula para calcular TMB (exemplo simples, pode ser ajustado conforme necessário)
-    # As fórmulas reais podem ser mais complexas e levar em consideração mais fatores
-    if genero.lower() == 'masculino':
-        tmb = 10 * idade + 5  # Exemplo simples, ajuste conforme necessário
-    else:
-        tmb = 10 * idade - 161  # Exemplo simples, ajuste conforme necessário
-
-    if nivel_atividade.lower() == 'intenso':
-        tmb *= 1.5
-    elif nivel_atividade.lower() == 'moderado':
-        tmb *= 1.3
-    elif nivel_atividade.lower() == 'pouco':
-        tmb *= 1.2
-
-    return tmb
-
-
 # Função de verificação de autenticação
 def verifica_autenticacao(f):
     @wraps(f)
@@ -300,107 +281,12 @@ def treinos():
     
     return render_template('treinos.html')
 
-def calcular_dieta(idade, genero, nivel_atividade, objetivo, tipo_atividade):
-    # Aqui você deve implementar a lógica para calcular a dieta
-    # Esta é uma implementação básica apenas para exemplo
-    
-    # Valores fictícios, você precisa substituir pelos cálculos reais
-    calorias_diarias = 2000
-    proteina_percentual = 30
-    carboidrato_percentual = 50
-    gordura_percentual = 20
-    
-    # Calculando as quantidades de macronutrientes
-    proteina = (proteina_percentual / 100) * calorias_diarias / 4
-    carboidrato = (carboidrato_percentual / 100) * calorias_diarias / 4
-    gordura = (gordura_percentual / 100) * calorias_diarias / 9
-    
-    # Supondo valores fixos para cada refeição
-    proporcao_cafe_manha = 0.2
-    proporcao_almoco = 0.4
-    proporcao_janta = 0.3
-    proporcao_lanches = 0.1
-    
-    cafe_manha = {
-        'proteina': proporcao_cafe_manha * proteina,
-        'carboidrato': proporcao_cafe_manha * carboidrato,
-        'gordura': proporcao_cafe_manha * gordura
-    }
-    
-    almoco = {
-        'proteina': proporcao_almoco * proteina,
-        'carboidrato': proporcao_almoco * carboidrato,
-        'gordura': proporcao_almoco * gordura
-    }
-    
-    janta = {
-        'proteina': proporcao_janta * proteina,
-        'carboidrato': proporcao_janta * carboidrato,
-        'gordura': proporcao_janta * gordura
-    }
-    
-    lanche_manha = {
-        'proteina': proporcao_lanches * proteina,
-        'carboidrato': proporcao_lanches * carboidrato,
-        'gordura': proporcao_lanches * gordura
-    }
-    
-    cafe_tarde = {
-        'proteina': proporcao_lanches * proteina,
-        'carboidrato': proporcao_lanches * carboidrato,
-        'gordura': proporcao_lanches * gordura
-    }
-    
-    ceia = {
-        'proteina': proporcao_lanches * proteina,
-        'carboidrato': proporcao_lanches * carboidrato,
-        'gordura': proporcao_lanches * gordura
-    }
-    
-    return cafe_manha, lanche_manha, almoco, cafe_tarde, janta, ceia
 
 @app.route('/dashboard/dietas', methods=['GET', 'POST'])
 def dietas():
     if 'user_id' not in session:
         flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
         return redirect(url_for('login'))
-
-    if request.method == 'POST':
-        nome = request.form.get('nome')
-        idade = int(request.form.get('idade'))
-        genero = request.form.get('genero')
-        nivel_atividade = request.form.get('nivel_atividade')
-        objetivo = request.form.get('objetivo')
-        tipo_atividade = request.form.get('tipo_atividade')
-
-        # Aqui você precisa calcular a dieta com base nas informações fornecidas
-        # e obter os valores dos alimentos da tabela que você vai cadastrar
-
-        # Supondo que você tenha uma função calcular_dieta que retorna os valores
-        # dos alimentos para cada refeição
-        cafe_manha, lanche_manha, almoco, cafe_tarde, janta, ceia = calcular_dieta()
-
-        # Obtendo o usuário atual
-        usuario = Usuario.query.filter_by(id=session['user_id']).first()
-
-        # Criando uma nova Dieta
-        nova_dieta = Dieta(
-            usuario_id=usuario.id,
-            nome=nome,
-            cafe_manha=cafe_manha,
-            lanche_manha=lanche_manha,
-            almoco=almoco,
-            cafe_tarde=cafe_tarde,
-            janta=janta,
-            ceia=ceia
-        )
-
-        # Adicionando a dieta ao banco de dados
-        db.session.add(nova_dieta)
-        db.session.commit()
-
-        flash('Dieta gerada com sucesso!', 'success')
-
     return render_template('dietas.html')
 
 # Rota de logout
