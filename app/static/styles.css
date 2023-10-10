@@ -56,13 +56,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
     width: 400px;
     margin: 0 auto;
-    margin-top: 50px; 
+    margin-top: 110px; 
 }
 .registro-container h2 {
     text-align: center;
-}
-.registro-container {
-  margin-top: 110px;
 }
 #registrar-btn {
   background-color: rgba(237, 227, 124, 1.0); 
