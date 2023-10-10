@@ -17317,3 +17317,191 @@ fileName='static/favicon.ico' identity=[ImageReader@0xffff83513e50 filename='sta
 2023-10-09 19:14:55,250 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:14:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
 2023-10-09 19:14:55,252 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:14:55] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
 2023-10-09 19:14:55,271 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:14:55] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:18:28,884 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:18:28] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1" 200 -
+2023-10-09 19:18:28,953 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:18:28] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:18:28,985 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:18:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:18:29,056 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:18:29] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:29:27,870 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:27] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-09 19:29:27,897 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:27] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:29:27,905 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:29:27,935 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:27] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:29:29,193 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:29] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-09 19:29:29,213 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:29:29,214 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:29] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:29:29,225 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:29] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:29:37,174 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:37] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:29:37,197 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:29:39,434 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:39] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:29:39,442 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:29:40,019 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:40] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:29:40,029 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:29:40,527 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:40] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-09 19:29:40,535 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:40] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:29:40,537 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:40] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:29:40,559 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:29:40] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:30:54,060 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-09 19:30:54,060 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-09 19:30:54,954 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:30:54] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-09 19:30:54,992 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:30:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:30:55,003 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:30:55] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:30:55,059 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:30:55] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:30:55,439 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:30:55] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-09 19:32:49,595 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:32:49] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1" 200 -
+2023-10-09 19:32:49,623 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:32:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:32:49,625 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:32:49] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:32:49,655 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:32:49] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:32:59,473 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:32:59] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:32:59,481 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:32:59] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:33:00,019 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:00] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-09 19:33:00,028 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:33:00,546 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:00] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-09 19:33:00,554 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:33:00,557 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:00] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:33:00,576 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:00] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:33:17,575 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:17] "GET /gerar_pdf/638 HTTP/1.1" 200 -
+2023-10-09 19:33:34,787 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:34] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max=800 HTTP/1.1" 200 -
+2023-10-09 19:33:34,798 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:34] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:33:34,802 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:33:34,812 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:33:34] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:34:27,553 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-09 19:34:27,554 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-09 19:34:28,537 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:34:28] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max=800 HTTP/1.1" 200 -
+2023-10-09 19:34:28,572 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:34:28] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:34:28,573 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:34:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:34:28,607 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:34:28] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:34:28,932 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:34:28] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-09 19:35:33,257 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-09 19:35:33,257 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-09 19:35:34,280 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:35:34] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max=800 HTTP/1.1" 200 -
+2023-10-09 19:35:34,296 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:35:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:35:34,302 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:35:34] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:35:34,318 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:35:34] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:35:34,448 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:35:34] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-09 19:37:37,616 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:37:37] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max=800 HTTP/1.1" 200 -
+2023-10-09 19:37:37,701 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:37:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:37:37,713 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:37:37] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:37:37,791 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:37:37] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:37:38,238 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:37:38] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-09 19:39:39,496 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:39:39] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max=800 HTTP/1.1" 200 -
+2023-10-09 19:39:39,610 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:39:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:39:39,613 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:39:39] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:39:39,665 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:39:39] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:39:39,956 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:39:39] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:21,082 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-09 19:41:21,083 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-09 19:41:21,805 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:21] "GET /dashboard/receitas?categoria=&refeicao=&calorias_max=800 HTTP/1.1" 200 -
+2023-10-09 19:41:21,830 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:21,835 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:21] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:41:21,862 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:21] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:22,128 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:22] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:28,632 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:28] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:41:28,642 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:29,213 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:29] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-09 19:41:29,222 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:29,700 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:29] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:41:29,710 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:30,172 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:30] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-09 19:41:30,180 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:30] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:30,181 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:30] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:41:30,201 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:30] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:34,473 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-10-09 19:41:34,477 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:34] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-09 19:41:34,487 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:34] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:35,378 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:35] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-09 19:41:35,391 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:35] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:41:35,394 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:35,413 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:35] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:36,118 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:36] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:41:36,132 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:36,733 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:36] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-09 19:41:36,744 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:37,169 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:37] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:41:37,182 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:37,604 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:37] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-09 19:41:37,620 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:37,624 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:37] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:41:37,639 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:37] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:41,319 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:41] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:41:41,328 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:41,920 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:41] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-09 19:41:41,929 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:42,417 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:42] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:41:42,429 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:42,948 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:42] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-09 19:41:42,958 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:42] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:44,206 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:44] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:41:44,214 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:44,773 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:44] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-09 19:41:44,782 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:41:45,319 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:45] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-09 19:41:45,327 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:41:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:48:51,693 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:48:51] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-09 19:48:51,721 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:48:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-09 19:48:51,725 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:48:51] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-09 19:48:51,758 [INFO] - 127.0.0.1 - - [09/Oct/2023 19:48:51] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-10 08:09:58,486 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:09:58] "[32mGET /dashboard/receitas?categoria=&refeicao=&calorias_max= HTTP/1.1[0m" 302 -
+2023-10-10 08:09:58,539 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:09:58] "GET /login HTTP/1.1" 200 -
+2023-10-10 08:09:58,623 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:09:58] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-10 08:09:58,677 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:09:58] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:09:59,155 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:09:59] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:02,989 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-10 08:10:02,990 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-10 08:10:02,994 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:02] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-10 08:10:03,001 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:03] "GET /dashboard HTTP/1.1" 200 -
+2023-10-10 08:10:03,016 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:03,921 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:03] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-10 08:10:03,932 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:03] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-10 08:10:03,935 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:03,953 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:03] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:10,477 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:10] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-10 08:10:10,488 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:10] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:10,493 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:10] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-10 08:10:10,504 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:10] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:11,430 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:11] "GET /dashboard/mensagens HTTP/1.1" 200 -
+2023-10-10 08:10:11,446 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:12,097 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-10-10 08:10:12,098 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:12] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-10 08:10:12,110 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:12,521 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:12] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-10 08:10:12,534 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:12] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-10 08:10:12,538 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:12,559 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:12] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:14,940 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:14] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-10 08:10:14,949 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:15,710 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:15] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-10 08:10:15,726 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:10:16,605 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:16] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-10 08:10:16,612 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:10:16] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:10,830 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-10 08:23:10,831 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-10 08:23:12,680 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:12] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-10 08:23:12,698 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:12,742 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:12] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:13,419 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:13] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-10 08:23:13,429 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:13] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:13,447 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:13] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:14,041 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:14] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-10 08:23:14,048 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:14,541 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:14] "GET /dashboard HTTP/1.1" 200 -
+2023-10-10 08:23:14,550 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:14,924 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:14] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-10 08:23:14,931 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:15,159 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:15] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-10 08:23:15,165 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:15,440 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:15] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-10 08:23:15,447 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:15,449 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:15] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-10 08:23:15,462 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:15] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:47,336 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-10 08:23:47,336 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-10 08:23:48,583 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:48] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-10 08:23:48,598 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:48,599 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:48] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-10 08:23:48,609 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:48] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-10 08:23:48,694 [INFO] - 127.0.0.1 - - [10/Oct/2023 08:23:48] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -

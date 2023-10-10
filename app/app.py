@@ -9,15 +9,16 @@ from reportlab.pdfgen import canvas
 from io import BytesIO
 from reportlab.lib.pagesizes import letter
 from models.models import Usuario, Perfil, Dieta, Dashboard_user, Receita, db
+from config import SQLALCHEMY_DATABASE_URI, SECRET_KEY
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://pollux:pollux123@localhost/flexifitness'
+app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 migrate = Migrate(app, db)
 bcrypt = Bcrypt(app)
 db.init_app(app)
 
 # Chave secreta para sessões
-app.secret_key = '28782878'
+app.secret_key = SECRET_KEY
 app.permanent_session_lifetime = timedelta(minutes=55)
 
 with app.app_context():
