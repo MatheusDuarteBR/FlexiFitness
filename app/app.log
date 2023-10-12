@@ -50,3 +50,318 @@
 2023-10-12 15:26:11,308 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:26:11] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
 2023-10-12 15:26:11,605 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:26:11] "GET /dashboard/dietas HTTP/1.1" 200 -
 2023-10-12 15:26:11,615 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:26:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:43,371 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:43] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-12 15:35:43,428 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:43] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:44,044 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:44] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:44,702 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:44] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-12 15:35:44,728 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:44] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:44,738 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:44] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-12 15:35:44,752 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:44] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:45,509 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:45] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-12 15:35:45,518 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:45,855 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:45] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-12 15:35:45,863 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:45] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:46,278 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:46] "GET /dashboard HTTP/1.1" 200 -
+2023-10-12 15:35:46,284 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:47,024 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-10-12 15:35:47,028 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:47] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-12 15:35:47,038 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:47,590 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:47] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-12 15:35:47,597 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:47,598 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:47] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-12 15:35:47,613 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:47] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-12 15:35:48,527 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:48] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-12 15:35:48,534 [INFO] - 127.0.0.1 - - [12/Oct/2023 15:35:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 15:54:57,553 [ERROR] - Error: Directory migrations already exists and is not empty
+2023-10-12 16:03:00,049 [ERROR] - Error: Directory migrations already exists and is not empty
+2023-10-12 16:04:34,993 [ERROR] - Error: Directory migrations already exists and is not empty
+2023-10-12 16:11:06,749 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:11:06,750 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:11:06,750 [INFO] -  * Restarting with stat
+2023-10-12 16:11:09,679 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:11:09,679 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:15:40,153 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:15:40,153 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:15:42,030 [ERROR] - Exception on /dashboard/dietas [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 362, in dietas
+    return render_template('dietas.html')
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/parallels/Desktop/TCC_Full/FlexiFitness/app/templates/dietas.html", line 116, in template
+    <td>{{ dieta.dieta_calculada }}</td
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2023-10-12 16:15:42,031 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:42] "[35m[1mGET /dashboard/dietas HTTP/1.1[0m" 500 -
+2023-10-12 16:15:46,499 [INFO] - Rota "/" foi acessada.
+2023-10-12 16:15:46,503 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "GET / HTTP/1.1" 200 -
+2023-10-12 16:15:46,528 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/treinamento.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,529 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,530 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/dieta.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,535 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/bulking.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,539 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/cutting.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,541 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/receitas-fit.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,544 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/background-image.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,574 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/servicos.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,576 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/nutricao.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,591 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/contact.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:46,654 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:46] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:50,300 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:50] "GET /login HTTP/1.1" 200 -
+2023-10-12 16:15:50,322 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:50] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:15:50,358 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:50,375 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:50] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-10-12 16:15:53,129 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:53] "GET /registro HTTP/1.1" 200 -
+2023-10-12 16:15:53,135 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:53] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:15:53,139 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:15:53] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:16:07,495 [INFO] - Registro bem-sucedido para o usuário: Duarteex
+2023-10-12 16:16:07,496 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:07] "[32mPOST /registro HTTP/1.1[0m" 302 -
+2023-10-12 16:16:07,500 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:07] "GET /login HTTP/1.1" 200 -
+2023-10-12 16:16:07,514 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:07] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:16:07,526 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:07] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:16:08,814 [WARNING] - Usuário não encontrado para o email: 
+2023-10-12 16:16:08,815 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:08] "POST /login HTTP/1.1" 200 -
+2023-10-12 16:16:08,827 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:16:08,827 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:16:39,298 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:16:39,299 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:16:41,852 [WARNING] - Usuário não encontrado para o email: 
+2023-10-12 16:16:41,858 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:41] "POST /login HTTP/1.1" 200 -
+2023-10-12 16:16:41,875 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:41] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:16:41,877 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:41] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:16:41,901 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:41] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-12 16:16:49,322 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:16:49,322 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:16:52,766 [WARNING] - Usuário não encontrado para o email: 
+2023-10-12 16:16:52,773 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:52] "POST /login HTTP/1.1" 200 -
+2023-10-12 16:16:52,787 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:16:52,787 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:16:52,808 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:16:52] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-12 16:16:58,400 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:16:58,400 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:17:00,050 [WARNING] - Usuário não encontrado para o email: 
+2023-10-12 16:17:00,055 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:00] "POST /login HTTP/1.1" 200 -
+2023-10-12 16:17:00,065 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:00] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:17:00,066 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:00] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:00,077 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:00] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:02,612 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:02] "GET /registro HTTP/1.1" 200 -
+2023-10-12 16:17:02,633 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:02] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:17:02,633 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:02] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:03,707 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:03] "GET /login HTTP/1.1" 200 -
+2023-10-12 16:17:03,716 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:03] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:17:03,717 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:03] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:11,587 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:17:11,587 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:17:12,566 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:12] "GET /login HTTP/1.1" 200 -
+2023-10-12 16:17:12,581 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:12] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:12,583 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:12] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:17:12,641 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:12] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:14,436 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:14] "GET /registro HTTP/1.1" 200 -
+2023-10-12 16:17:14,445 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:14] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:14,447 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:14] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:17:15,428 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:15] "GET /login HTTP/1.1" 200 -
+2023-10-12 16:17:15,436 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:15] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:15,437 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:15] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:17:17,671 [WARNING] - Senha incorreta para o usuário: Duarteex
+2023-10-12 16:17:17,672 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:17] "POST /login HTTP/1.1" 200 -
+2023-10-12 16:17:17,679 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:17] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-10-12 16:17:17,680 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:17] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:20,678 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-10-12 16:17:20,678 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-10-12 16:17:20,679 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:20] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-10-12 16:17:20,683 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:20] "GET /dashboard HTTP/1.1" 200 -
+2023-10-12 16:17:20,689 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:21,677 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:21] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-12 16:17:21,682 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:21] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:22,282 [ERROR] - Exception on /dashboard/dietas [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 362, in dietas
+    return render_template('dietas.html')
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/parallels/Desktop/TCC_Full/FlexiFitness/app/templates/dietas.html", line 116, in template
+    <td>{{ dieta.dieta_calculada }}</td
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2023-10-12 16:17:22,283 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:22] "[35m[1mGET /dashboard/dietas HTTP/1.1[0m" 500 -
+2023-10-12 16:17:26,296 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:26] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-12 16:17:26,302 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:26,316 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:26] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:29,866 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:29] "[32mGET /adicionar-bulking HTTP/1.1[0m" 302 -
+2023-10-12 16:17:29,870 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:29] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-12 16:17:29,880 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:29] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-12 16:17:29,881 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:29,889 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:29] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:31,965 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:31] "[32mGET /adicionar-cutting HTTP/1.1[0m" 302 -
+2023-10-12 16:17:31,970 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:31] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-12 16:17:31,983 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:31,983 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:31] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-12 16:17:31,993 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:31] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:35,112 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:35] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-10-12 16:17:35,120 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:35] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:36,323 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:36] "GET /dashboard/mensagens HTTP/1.1" 200 -
+2023-10-12 16:17:36,329 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:37,318 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:37] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-12 16:17:37,326 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:37,330 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:37] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-12 16:17:37,342 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:37] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-12 16:17:37,581 [ERROR] - Exception on /dashboard/dietas [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 362, in dietas
+    return render_template('dietas.html')
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/parallels/Desktop/TCC_Full/FlexiFitness/app/templates/dietas.html", line 116, in template
+    <td>{{ dieta.dieta_calculada }}</td
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2023-10-12 16:17:37,582 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:17:37] "[35m[1mGET /dashboard/dietas HTTP/1.1[0m" 500 -
+2023-10-12 16:18:09,255 [ERROR] - Exception on /dashboard/dietas [GET]
+Traceback (most recent call last):
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 2529, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1825, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1823, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "app.py", line 362, in dietas
+    return render_template('dietas.html')
+  File "/home/parallels/.local/lib/python3.7/site-packages/flask/templating.py", line 146, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1081, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 1010, in get_template
+    return self._load_template(name, globals)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 969, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/loaders.py", line 138, in load
+    code = environment.compile(source, name, filename)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 768, in compile
+    self.handle_exception(source=source_hint)
+  File "/home/parallels/.local/lib/python3.7/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/parallels/Desktop/TCC_Full/FlexiFitness/app/templates/dietas.html", line 116, in template
+    <td>{{ dieta.dieta_calculada }}</td
+jinja2.exceptions.TemplateSyntaxError: Unexpected end of template. Jinja was looking for the following tags: 'endfor' or 'else'. The innermost block that needs to be closed is 'for'.
+2023-10-12 16:18:09,258 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:18:09] "[35m[1mGET /dashboard/dietas HTTP/1.1[0m" 500 -
+2023-10-12 16:19:18,609 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:19:18,609 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:19:20,177 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:19:20] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-12 16:19:20,224 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:19:20] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:22:55,125 [WARNING] -  * Debugger is active!
+2023-10-12 16:22:55,125 [INFO] -  * Debugger PIN: 128-314-917
+2023-10-12 16:22:55,243 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:22:55,244 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:22:55,244 [INFO] -  * Restarting with stat
+2023-10-12 16:22:56,002 [WARNING] -  * Debugger is active!
+2023-10-12 16:22:56,002 [INFO] -  * Debugger PIN: 128-314-917
+2023-10-12 16:24:11,196 [WARNING] -  * Debugger is active!
+2023-10-12 16:24:11,197 [INFO] -  * Debugger PIN: 128-314-917
+2023-10-12 16:24:11,317 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:24:11,317 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:24:11,317 [INFO] -  * Restarting with stat
+2023-10-12 16:33:17,849 [WARNING] -  * Debugger is active!
+2023-10-12 16:33:17,850 [INFO] -  * Debugger PIN: 128-314-917
+2023-10-12 16:33:18,031 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:33:18,032 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:33:18,032 [INFO] -  * Restarting with stat
+2023-10-12 16:33:18,907 [WARNING] -  * Debugger is active!
+2023-10-12 16:33:18,907 [INFO] -  * Debugger PIN: 128-314-917
+2023-10-12 16:36:15,200 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:36:15,200 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:36:15,200 [INFO] -  * Restarting with stat
+2023-10-12 16:36:22,106 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-10-12 16:36:22,106 [INFO] - [33mPress CTRL+C to quit[0m
+2023-10-12 16:36:24,472 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:36:24] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-12 16:36:24,507 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:36:24] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:36:24,625 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:36:24] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-10-12 16:41:49,256 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:41:49] "[33mPOST /gerar_dieta HTTP/1.1[0m" 404 -
+2023-10-12 16:46:26,299 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:26] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-12 16:46:26,334 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:46:26,937 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:26] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-12 16:46:26,960 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:26] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:46:27,512 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:27] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-10-12 16:46:27,519 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:27] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:46:27,521 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:27] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-10-12 16:46:27,535 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:27] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-10-12 16:46:31,039 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:31] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-12 16:46:31,053 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:46:31,312 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:31] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-12 16:46:31,318 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:31] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:46:32,709 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:32] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-12 16:46:32,723 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:46:32] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:47:54,068 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:47:54] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-10-12 16:47:54,132 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:47:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-10-12 16:47:54,690 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:47:54] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-10-12 16:47:54,705 [INFO] - 127.0.0.1 - - [12/Oct/2023 16:47:54] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -

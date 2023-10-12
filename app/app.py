@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash, session, make_response
+from flask import Flask, render_template, request, redirect, url_for, flash, session, make_response, jsonify
 from flask_bcrypt import Bcrypt
 import re
 import logging
@@ -8,10 +8,24 @@ from flask_migrate import Migrate
 from reportlab.pdfgen import canvas
 from io import BytesIO
 from reportlab.lib.pagesizes import letter
-from models.models import Usuario, Perfil, Receita, db
-from config import SQLALCHEMY_DATABASE_URI, SECRET_KEY
+#from models.models import Usuario, Perfil, Receita, db
+#from config import SQLALCHEMY_DATABASE_URI, SECRET_KEY
 from logging.handlers import RotatingFileHandler
+from flask_sqlalchemy import SQLAlchemy
+from datetime import datetime
 
+DEBUG = True
+USERNAME = 'pollux'
+PASSWORD = 'pollux123'
+SERVER = '127.0.0.1'
+DB = 'flexifitness'
+
+SQLALCHEMY_DATABASE_URI = f"postgresql://{USERNAME}:{PASSWORD}@{SERVER}/{DB}"
+SQLACHEMY_TRACK_MODIFICATIONS = True
+
+SECRET_KEY="28782878"
+
+db = SQLAlchemy()
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 migrate = Migrate(app, db)
@@ -21,6 +35,52 @@ db.init_app(app)
 # Chave secreta para sessões
 app.secret_key = SECRET_KEY
 app.permanent_session_lifetime = timedelta(minutes=55)
+
+class Usuario(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    username = db.Column(db.String(50), unique=True, nullable=False)
+    email = db.Column(db.String(100), unique=True, nullable=False)
+    password = db.Column(db.String(60), nullable=False)
+    perfil = db.relationship('Perfil', backref='usuario', uselist=False)
+
+class Perfil(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    primeiro_nome = db.Column(db.String(50))
+    sobrenome = db.Column(db.String(50))
+    celular = db.Column(db.String(20))
+    endereco = db.Column(db.String(200))
+    cep = db.Column(db.String(10))
+    idade = db.Column(db.Integer)
+    peso = db.Column(db.Float)
+    altura = db.Column(db.Float)
+    sexo = db.Column(db.String(10))
+    estado = db.Column(db.String(50))
+    user_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
+
+class Dieta(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    idade = db.Column(db.Integer)
+    sexo = db.Column(db.String(10))
+    peso_atual = db.Column(db.Float)
+    altura = db.Column(db.Float)
+    nivel_atividade_fisica = db.Column(db.String(20))
+    objetivo = db.Column(db.String(20))
+    condicoes_medicas = db.Column(db.String(200))
+    preferencias_alimentares = db.Column(db.String(200))
+    estado_saude_geral = db.Column(db.String(20))
+
+class Receita(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(255), nullable=False)
+    descricao = db.Column(db.Text, nullable=False)
+    calorias = db.Column(db.Integer, nullable=False)
+    categoria = db.Column(db.String(50), nullable=True)
+    refeicao = db.Column(db.String(20), nullable=True)
+    data_criacao = db.Column(db.DateTime, default=datetime.utcnow, nullable=False)
+    imagem = db.Column(db.String(255))
+    tempo_de_preparo = db.Column(db.String(50))
+    ingredientes = db.Column(db.Text)
+    modo_de_preparo = db.Column(db.Text)
 
 with app.app_context():
     db.create_all()
@@ -283,12 +343,89 @@ def treinos():
     return render_template('treinos.html')
 
 
+#########==================DIETAS=================#########
+
+
 @app.route('/dashboard/dietas', methods=['GET', 'POST'])
 def dietas():
     if 'user_id' not in session:
-        flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
+        flash('Você precisa fazer login para acessar esta página.')
         return redirect(url_for('login'))
-    return render_template('dietas.html')
+
+    if request.method == 'POST':
+        dados_usuario = request.json
+        nova_dieta = Dieta(**dados_usuario)
+
+        # Lógica para calcular a dieta (um exemplo simples)
+        dieta_calculada = calcular_dieta(dados_usuario)
+        nova_dieta.dieta_calculada = dieta_calculada
+
+        db.session.add(nova_dieta)
+        db.session.commit()
+
+        return jsonify({'mensagem': 'Dieta calculada com sucesso!', 'dieta': dieta_calculada})
+
+    dietas = Dieta.query.all()
+    return render_template('dietas.html', dietas=dietas)
+
+def calcular_dieta(dados_usuario):
+    # Lógica simplificada de cálculo da dieta
+    # Aqui você deve implementar um algoritmo mais complexo e preciso
+    idade = dados_usuario['idade']
+    peso = dados_usuario['peso_atual']
+    altura = dados_usuario['altura']
+    nivel_atividade = dados_usuario['nivel_atividade_fisica']
+    objetivo = dados_usuario['objetivo']
+
+    # Lógica de cálculo fictícia
+    calorias_diarias = calcular_calorias_diarias(idade, peso, altura, nivel_atividade, objetivo)
+    proteina_diaria = calorias_diarias * 0.3
+    carboidrato_diario = calorias_diarias * 0.5
+    gordura_diaria = calorias_diarias * 0.2
+
+    dieta_calculada = f"Calorias: {calorias_diarias}, Proteína: {proteina_diaria}g, Carboidrato: {carboidrato_diario}g, Gordura: {gordura_diaria}g"
+
+    return dieta_calculada
+
+def calcular_calorias_diarias(idade, peso, altura, sexo, nivel_atividade, objetivo):
+    # Constantes para o cálculo
+    fator_atividade = {'sedentario': 1.2, 'leve': 1.375, 'moderado': 1.55, 'ativo': 1.725, 'muito_ativo': 1.9}
+    calorias_por_grama_proteina = 4
+    calorias_por_grama_carboidrato = 4
+    calorias_por_grama_gordura = 9
+
+    # Fator de atividade
+    fator_atividade = fator_atividade[nivel_atividade]
+
+    # Cálculo do metabolismo basal (BMR)
+    if sexo.lower() == 'masculino':
+        bmr = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade)
+    else:
+        bmr = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * idade)
+
+    # Cálculo das calorias diárias
+    calorias_diarias = bmr * fator_atividade
+
+    # Ajuste com base no objetivo (ganhar peso, perder peso, manter peso)
+    if objetivo.lower() == 'ganhar_peso':
+        calorias_diarias += 500  # Aumento calórico para ganho de peso
+    elif objetivo.lower() == 'perder_peso':
+        calorias_diarias -= 500  # Redução calórica para perda de peso
+
+    return calorias_diarias
+
+# Exemplo de uso:
+idade = 25
+peso = 70
+altura = 170
+sexo = 'masculino'
+nivel_atividade = 'ativo'
+objetivo = 'manter_peso'
+
+calorias_diarias = calcular_calorias_diarias(idade, peso, altura, sexo, nivel_atividade, objetivo)
+print(f"Calorias diárias recomendadas: {calorias_diarias} kcal")
+
+#########==================DIETAS=================#########
 
 # Rota de logout
 @app.route('/logout')
