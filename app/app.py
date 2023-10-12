@@ -8,8 +8,9 @@ from flask_migrate import Migrate
 from reportlab.pdfgen import canvas
 from io import BytesIO
 from reportlab.lib.pagesizes import letter
-from models.models import Usuario, Perfil, Dieta, Dashboard_user, Receita, db
+from models.models import Usuario, Perfil, Receita, db
 from config import SQLALCHEMY_DATABASE_URI, SECRET_KEY
+from logging.handlers import RotatingFileHandler
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
@@ -318,8 +319,9 @@ def termos_de_servico():
     logging.info('Rota "/termos-de-servico" foi acessada.')
     return render_template('termos-de-servico.html')
 
-# Configurar o log para escrever em um arquivo
-logging.basicConfig(filename='app.log', level=logging.DEBUG, format='%(asctime)s [%(levelname)s] - %(message)s')
+log_file_path = 'app.log'
+handler = RotatingFileHandler(log_file_path, maxBytes=100000, backupCount=5)
+logging.basicConfig(handlers=[handler], level=logging.DEBUG, format='%(asctime)s [%(levelname)s] - %(message)s')
 
 @app.route('/adicionar-bulking')
 def add_example_recipes():
