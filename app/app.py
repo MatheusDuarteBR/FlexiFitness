@@ -13,6 +13,7 @@ from reportlab.lib.pagesizes import letter
 from logging.handlers import RotatingFileHandler
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
+from weasyprint import HTML
 
 DEBUG = True
 USERNAME = 'pollux'
@@ -42,6 +43,7 @@ class Usuario(db.Model):
     email = db.Column(db.String(100), unique=True, nullable=False)
     password = db.Column(db.String(60), nullable=False)
     perfil = db.relationship('Perfil', backref='usuario', uselist=False)
+    treinos = db.relationship('TreinoUsuario', backref='usuario')
 
 class Perfil(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -82,48 +84,41 @@ class Receita(db.Model):
     ingredientes = db.Column(db.Text)
     modo_de_preparo = db.Column(db.Text)
 
+class Exercicio(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    nome = db.Column(db.String(100), nullable=False)
+    descricao = db.Column(db.Text, nullable=False)
+    categoria = db.Column(db.String(50), nullable=False)
+
+class Treino(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    objetivo = db.Column(db.String(50), nullable=False)
+    nivel = db.Column(db.String(20), nullable=False)
+    duracao = db.Column(db.String(20), nullable=False)
+    dia_semana = db.Column(db.String(20), nullable=False)
+    exercicios = db.relationship('Exercicio', secondary='treino_exercicio', backref='treinos')
+    treino_exercicio = db.Table('treino_exercicio',
+    db.Column('treino_id', db.Integer, db.ForeignKey('treino.id')),
+    db.Column('exercicio_id', db.Integer, db.ForeignKey('exercicio.id'))
+)
+
+class TreinoUsuario(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    usuario_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
+    treino_id = db.Column(db.Integer, db.ForeignKey('treino.id'))
+    gerado_em = db.Column(db.DateTime, default=db.func.now())
+
 with app.app_context():
     db.create_all()
 
 @app.route('/gerar_pdf/<int:receita_id>', methods=['GET'])
 def gerar_pdf(receita_id):
     receita = Receita.query.get(receita_id)
-    buffer = BytesIO()
-    p = canvas.Canvas(buffer)
 
-    p.setTitle(receita.nome)
+    html_template = render_template('template.html', receita=receita)
+    pdf = HTML(string=html_template).write_pdf()
 
-    # Adicione informações ao PDF
-    p.drawString(40, 800, f"Nome: {receita.nome}")
-    p.drawString(40, 780, f"Descrição: {receita.descricao}")
-    p.drawString(40, 760, f"Calorias: {receita.calorias}")
-    p.drawString(40, 740, f"Categoria: {receita.categoria}")
-    p.drawString(40, 720, f"Refeição: {receita.refeicao}")
-    p.drawString(40, 700, f"Tempo de Preparo: {receita.tempo_de_preparo}")
-
-    # Adicione ingredientes ao PDF
-    p.drawString(40, 680, "Ingredientes:")
-    ingredientes = receita.ingredientes.split('\n') if receita.ingredientes else []
-    y_position = 660
-    for ingrediente in ingredientes:
-        p.drawString(60, y_position, ingrediente)
-        y_position -= 20
-
-    # Adicione o modo de preparo ao PDF
-    p.drawString(40, y_position, "Modo de Preparo:")
-    modo_de_preparo = receita.modo_de_preparo.split('\n') if receita.modo_de_preparo else []
-    y_position -= 20
-    for passo in modo_de_preparo:
-        p.drawString(60, y_position, passo)
-        y_position -= 20
-
-    if receita.imagem:
-        image_path = f"static/{receita.imagem}"
-        p.drawInlineImage(image_path, 200, 400, width=200, height=200)
-
-    p.save()
-
-    buffer.seek(0)
+    buffer = BytesIO(pdf)
 
     response = make_response(buffer.read())
     response.mimetype = 'application/pdf'
@@ -342,8 +337,7 @@ def treinos():
     
     return render_template('treinos.html')
 
-
-#########==================DIETAS=================#########
+#########==================DIETAS_START=================#########
 
 
 @app.route('/dashboard/dietas', methods=['GET', 'POST'])
@@ -425,7 +419,7 @@ objetivo = 'manter_peso'
 calorias_diarias = calcular_calorias_diarias(idade, peso, altura, sexo, nivel_atividade, objetivo)
 print(f"Calorias diárias recomendadas: {calorias_diarias} kcal")
 
-#########==================DIETAS=================#########
+#########==================DIETAS_END=================#########
 
 # Rota de logout
 @app.route('/logout')
@@ -457,37 +451,37 @@ def termos_de_servico():
     return render_template('termos-de-servico.html')
 
 log_file_path = 'app.log'
-handler = RotatingFileHandler(log_file_path, maxBytes=100000, backupCount=5)
+handler = RotatingFileHandler(log_file_path, maxBytes=1000000, backupCount=5)
 logging.basicConfig(handlers=[handler], level=logging.DEBUG, format='%(asctime)s [%(levelname)s] - %(message)s')
 
 @app.route('/adicionar-bulking')
 def add_example_recipes():
     receitas = [
-        {"nome": "Salada de Frango", "descricao": "Salada de frango com vegetais frescos para aumentar as calorias. Uma opção saudável para o bulking.", "calorias": 800, "refeicao": "cafe_da_manha", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Peito de frango, alface, tomate, cenoura, azeite, sal, pimenta.", "modo_de_preparo": "Cozinhe o peito de frango, corte em pedaços e misture com os vegetais. Tempere com azeite, sal e pimenta."},
-        {"nome": "Arroz Integral com Salmão", "descricao": "Arroz integral nutritivo acompanhado de salmão grelhado, proporcionando uma refeição rica em proteínas e carboidratos.", "calorias": 900, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Arroz integral, salmão, azeite, alho, sal, limão.", "modo_de_preparo": "Cozinhe o arroz integral. Tempere o salmão com alho, sal e limão. Grelhe o salmão e sirva sobre o arroz."},
-        {"nome": "Omelete de Espinafre", "descricao": "Omelete saudável e recheado com espinafre, uma opção rica em proteínas e vitaminas.", "calorias": 600, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Ovos, espinafre, queijo, sal, pimenta.", "modo_de_preparo": "Bata os ovos, adicione o espinafre e o queijo. Tempere com sal e pimenta. Cozinhe em fogo médio até ficar pronto."},
-        {"nome": "Smoothie de Banana e Amendoim", "descricao": "Smoothie energético com banana e amendoim para um lanche reforçado durante o dia.", "calorias": 500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos", "ingredientes": "Banana, leite, amendoim, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura homogênea."},
-        {"nome": "Frango Grelhado com Batata Doce", "descricao": "Prato principal de frango grelhado acompanhado de batata doce, fornecendo proteínas e carboidratos complexos.", "calorias": 850, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Peito de frango, batata doce, azeite, sal, ervas.", "modo_de_preparo": "Tempere o frango e a batata doce com azeite, sal e ervas. Grelhe o frango e asse a batata."},
-        {"nome": "Wrap de Atum", "descricao": "Wrap saudável recheado com atum, vegetais e molho de iogurte, ideal para uma refeição leve e rica em proteínas.", "calorias": 750, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Tortilla integral, atum, alface, tomate, iogurte, limão.", "modo_de_preparo": "Misture o atum com vegetais e molho de iogurte. Coloque no interior da tortilla e enrole."},
-        {"nome": "Smoothie de Manga e Aveia", "descricao": "Smoothie refrescante com manga e aveia para um lanche rápido e nutritivo.", "calorias": 400, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Manga, leite, aveia, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa."},
-        {"nome": "Quinoa com Legumes", "descricao": "Prato de quinoa com legumes coloridos, uma opção vegetariana rica em proteínas e fibras.", "calorias": 900, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Quinoa, abobrinha, cenoura, pimentão, azeite, sal.", "modo_de_preparo": "Cozinhe a quinoa e refogue os legumes no azeite. Misture tudo."},
-        {"nome": "Smoothie de Morango e Banana", "descricao": "Smoothie delicioso com morango e banana para uma opção doce e nutritiva.", "calorias": 450, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos", "ingredientes": "Morango, banana, iogurte, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
-        {"nome": "Frango Assado com Quinoa", "descricao": "Peito de frango assado acompanhado de quinoa, proporcionando uma refeição completa e nutritiva.", "calorias": 950, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "40 minutos", "ingredientes": "Peito de frango, quinoa, brócolis, azeite, sal.", "modo_de_preparo": "Tempere o frango e a quinoa. Asse o frango e misture com a quinoa e brócolis."},
-        {"nome": "Wrap de Frango e Abacate", "descricao": "Wrap recheado com frango grelhado, abacate e vegetais frescos, uma opção saudável e saborosa.", "calorias": 800, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Tortilla integral, peito de frango, abacate, alface, tomate.", "modo_de_preparo": "Grelhe o frango e monte o wrap com os ingredientes."},
-        {"nome": "Smoothie de Pêssego e Aveia", "descricao": "Smoothie nutritivo com pêssego e aveia para um lanche rápido e saudável.", "calorias": 500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Pêssego, leite, aveia, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa."},
-        {"nome": "Macarrão Integral com Frango", "descricao": "Macarrão integral com peito de frango grelhado, uma opção rica em carboidratos e proteínas.", "calorias": 900, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Macarrão integral, peito de frango, molho de tomate, azeite.", "modo_de_preparo": "Cozinhe o macarrão e grelhe o frango. Misture com molho de tomate e azeite."},
-        {"nome": "Smoothie de Abacaxi e Coco", "descricao": "Smoothie tropical com abacaxi e coco para uma opção refrescante e calórica.", "calorias": 450, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "7 minutos", "ingredientes": "Abacaxi, leite de coco, iogurte, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
-        {"nome": "Sopa de Lentilhas", "descricao": "Sopa nutritiva de lentilhas, uma opção rica em proteínas e fibras.", "calorias": 700, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Lentilhas, cebola, alho, cenoura, caldo de legumes.", "modo_de_preparo": "Cozinhe as lentilhas com os vegetais e caldo de legumes até ficar macio."},
-        {"nome": "Salada de Quinoa", "descricao": "Salada de quinoa com vegetais frescos para uma opção saudável e rica em proteínas.", "calorias": 750, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Quinoa, pepino, tomate, azeitonas, azeite, sal, limão.", "modo_de_preparo": "Cozinhe a quinoa e misture com os vegetais. Tempere com azeite, sal e limão."},
-        {"nome": "Panquecas de Aveia", "descricao": "Panquecas leves e saudáveis feitas com aveia, ideais para o café da manhã.", "calorias": 500, "refeicao": "cafe_da_manha", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Aveia, banana, ovo, leite, canela.", "modo_de_preparo": "Misture a aveia, banana, ovo, leite e canela. Cozinhe em uma frigideira até dourar dos dois lados."},
-        {"nome": "Tigela de Açaí", "descricao": "Tigela de açaí com granola, frutas e mel, proporcionando um lanche energético e delicioso.", "calorias": 600, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Açaí, granola, banana, morango, mel.", "modo_de_preparo": "Misture o açaí com granola e decore com frutas. Regue com mel."},
-        {"nome": "Hambúrguer de Quinoa", "descricao": "Hambúrguer vegetariano feito com quinoa, uma opção saudável e rica em proteínas.", "calorias": 700, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Quinoa, feijão preto, cenoura, cebola, alho, cominho.", "modo_de_preparo": "Cozinhe a quinoa e misture com feijão preto, cenoura, cebola, alho e cominho. Forme hambúrgueres e grelhe."},
-        {"nome": "Salada de Frutas", "descricao": "Salada refrescante de frutas variadas para um lanche saudável e colorido.", "calorias": 400, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Morango, kiwi, manga, uva, mel.", "modo_de_preparo": "Corte as frutas e misture em uma tigela. Regue com mel e sirva gelado."},
-        {"nome": "Couscous Marroquino com Vegetais", "descricao": "Couscous marroquino com vegetais grelhados, uma opção leve e saborosa para o almoço.", "calorias": 800, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Couscous marroquino, abobrinha, pimentão, berinjela, azeite, hortelã.", "modo_de_preparo": "Prepare o couscous conforme as instruções e misture com vegetais grelhados. Tempere com azeite e hortelã."},
-        {"nome": "Smoothie de Melancia e Menta", "descricao": "Smoothie refrescante com melancia e menta para uma bebida veranil e hidratante.", "calorias": 450, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "5 minutos", "ingredientes": "Melancia, menta, limão, água.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
-        {"nome": "Wraps de Legumes", "descricao": "Wraps vegetarianos recheados com legumes frescos e molho de iogurte, uma opção leve para o jantar.", "calorias": 650, "refeicao": "jantar", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Tortilla integral, abobrinha, cenoura, cogumelos, iogurte.", "modo_de_preparo": "Grelhe os legumes e monte os wraps com molho de iogurte."},
-        {"nome": "Bowl de Salmão Grelhado", "descricao": "Bowl nutritivo com salmão grelhado, arroz integral, abacate e vegetais, uma refeição completa.", "calorias": 900, "refeicao": "almoco", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Salmão, arroz integral, abacate, brócolis, cenoura.", "modo_de_preparo": "Grelhe o salmão e prepare os ingredientes. Monte o bowl com todos os elementos."},
-        {"nome": "Smoothie de Framboesa e Chia", "descricao": "Smoothie antioxidante com framboesa e sementes de chia para um lanche saudável e nutritivo.", "calorias": 500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/imagem1.jpg", "tempo_de_preparo": "8 minutos", "ingredientes": "Framboesa, banana, chia, leite de amêndoas.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa."},
+        {"nome": "Salada de Frango", "descricao": "Salada de frango com vegetais frescos para aumentar as calorias. Uma opção saudável para o bulking.", "calorias": 800, "refeicao": "cafe_da_manha", "imagem": "miniatures/chicken_salad.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Peito de frango, alface, tomate, cenoura, azeite, sal, pimenta.", "modo_de_preparo": "Cozinhe o peito de frango, corte em pedaços e misture com os vegetais. Tempere com azeite, sal e pimenta."},
+        {"nome": "Arroz Integral com Salmão", "descricao": "Arroz integral nutritivo acompanhado de salmão grelhado, proporcionando uma refeição rica em proteínas e carboidratos.", "calorias": 900, "refeicao": "jantar", "imagem": "miniatures/rice_salmao.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Arroz integral, salmão, azeite, alho, sal, limão.", "modo_de_preparo": "Cozinhe o arroz integral. Tempere o salmão com alho, sal e limão. Grelhe o salmão e sirva sobre o arroz."},
+        {"nome": "Omelete de Espinafre", "descricao": "Omelete saudável e recheado com espinafre, uma opção rica em proteínas e vitaminas.", "calorias": 600, "refeicao": "almoco", "imagem": "miniatures/omelete_espinafre.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Ovos, espinafre, queijo, sal, pimenta.", "modo_de_preparo": "Bata os ovos, adicione o espinafre e o queijo. Tempere com sal e pimenta. Cozinhe em fogo médio até ficar pronto."},
+        {"nome": "Smoothie de Banana e Amendoim", "descricao": "Smoothie energético com banana e amendoim para um lanche reforçado durante o dia.", "calorias": 500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/smoothie_amendoim.jpg", "tempo_de_preparo": "5 minutos", "ingredientes": "Banana, leite, amendoim, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura homogênea."},
+        {"nome": "Frango Grelhado com Batata Doce", "descricao": "Prato principal de frango grelhado acompanhado de batata doce, fornecendo proteínas e carboidratos complexos.", "calorias": 850, "refeicao": "almoco", "imagem": "miniatures/batata_doce_frango.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Peito de frango, batata doce, azeite, sal, ervas.", "modo_de_preparo": "Tempere o frango e a batata doce com azeite, sal e ervas. Grelhe o frango e asse a batata."},
+        {"nome": "Wrap de Atum", "descricao": "Wrap saudável recheado com atum, vegetais e molho de iogurte, ideal para uma refeição leve e rica em proteínas.", "calorias": 750, "refeicao": "jantar", "imagem": "miniatures/wrap_atum.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Tortilla integral, atum, alface, tomate, iogurte, limão.", "modo_de_preparo": "Misture o atum com vegetais e molho de iogurte. Coloque no interior da tortilla e enrole."},
+        {"nome": "Smoothie de Manga e Aveia", "descricao": "Smoothie refrescante com manga e aveia para um lanche rápido e nutritivo.", "calorias": 400, "refeicao": "cafe_da_tarde", "imagem": "miniatures/smoothie_manga_aveia.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Manga, leite, aveia, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa."},
+        {"nome": "Quinoa com Legumes", "descricao": "Prato de quinoa com legumes coloridos, uma opção vegetariana rica em proteínas e fibras.", "calorias": 900, "refeicao": "almoco", "imagem": "miniatures/quinoa_legumes.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Quinoa, abobrinha, cenoura, pimentão, azeite, sal.", "modo_de_preparo": "Cozinhe a quinoa e refogue os legumes no azeite. Misture tudo."},
+        {"nome": "Smoothie de Morango e Banana", "descricao": "Smoothie delicioso com morango e banana para uma opção doce e nutritiva.", "calorias": 450, "refeicao": "cafe_da_tarde", "imagem": "miniatures/smoothie_morango_banana.jpg", "tempo_de_preparo": "5 minutos", "ingredientes": "Morango, banana, iogurte, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Frango Assado com Quinoa", "descricao": "Peito de frango assado acompanhado de quinoa, proporcionando uma refeição completa e nutritiva.", "calorias": 950, "refeicao": "jantar", "imagem": "miniatures/frango_quinoa.jpg", "tempo_de_preparo": "40 minutos", "ingredientes": "Peito de frango, quinoa, brócolis, azeite, sal.", "modo_de_preparo": "Tempere o frango e a quinoa. Asse o frango e misture com a quinoa e brócolis."},
+        {"nome": "Wrap de Frango e Abacate", "descricao": "Wrap recheado com frango grelhado, abacate e vegetais frescos, uma opção saudável e saborosa.", "calorias": 800, "refeicao": "almoco", "imagem": "miniatures/wrap_frango_abacate.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Tortilla integral, peito de frango, abacate, alface, tomate.", "modo_de_preparo": "Grelhe o frango e monte o wrap com os ingredientes."},
+        {"nome": "Smoothie de Pêssego e Aveia", "descricao": "Smoothie nutritivo com pêssego e aveia para um lanche rápido e saudável.", "calorias": 500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/smoothie_pessego_aveia.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Pêssego, leite, aveia, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa."},
+        {"nome": "Macarrão Integral com Frango", "descricao": "Macarrão integral com peito de frango grelhado, uma opção rica em carboidratos e proteínas.", "calorias": 900, "refeicao": "almoco", "imagem": "miniatures/macarrao_com_frango.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Macarrão integral, peito de frango, molho de tomate, azeite.", "modo_de_preparo": "Cozinhe o macarrão e grelhe o frango. Misture com molho de tomate e azeite."},
+        {"nome": "Smoothie de Abacaxi e Coco", "descricao": "Smoothie tropical com abacaxi e coco para uma opção refrescante e calórica.", "calorias": 450, "refeicao": "cafe_da_tarde", "imagem": "miniatures/smoothie_abacaxi_coco.jpg", "tempo_de_preparo": "7 minutos", "ingredientes": "Abacaxi, leite de coco, iogurte, mel.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Sopa de Lentilhas", "descricao": "Sopa nutritiva de lentilhas, uma opção rica em proteínas e fibras.", "calorias": 700, "refeicao": "jantar", "imagem": "miniatures/sopa_de_lentilha.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Lentilhas, cebola, alho, cenoura, caldo de legumes.", "modo_de_preparo": "Cozinhe as lentilhas com os vegetais e caldo de legumes até ficar macio."},
+        {"nome": "Salada de Quinoa", "descricao": "Salada de quinoa com vegetais frescos para uma opção saudável e rica em proteínas.", "calorias": 750, "refeicao": "almoco", "imagem": "miniatures/salada_quinoa.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Quinoa, pepino, tomate, azeitonas, azeite, sal, limão.", "modo_de_preparo": "Cozinhe a quinoa e misture com os vegetais. Tempere com azeite, sal e limão."},
+        {"nome": "Panquecas de Aveia", "descricao": "Panquecas leves e saudáveis feitas com aveia, ideais para o café da manhã.", "calorias": 500, "refeicao": "cafe_da_manha", "imagem": "miniatures/panquecas_aveia.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Aveia, banana, ovo, leite, canela.", "modo_de_preparo": "Misture a aveia, banana, ovo, leite e canela. Cozinhe em uma frigideira até dourar dos dois lados."},
+        {"nome": "Tigela de Açaí", "descricao": "Tigela de açaí com granola, frutas e mel, proporcionando um lanche energético e delicioso.", "calorias": 600, "refeicao": "cafe_da_tarde", "imagem": "miniatures/acai.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Açaí, granola, banana, morango, mel.", "modo_de_preparo": "Misture o açaí com granola e decore com frutas. Regue com mel."},
+        {"nome": "Hambúrguer de Quinoa", "descricao": "Hambúrguer vegetariano feito com quinoa, uma opção saudável e rica em proteínas.", "calorias": 700, "refeicao": "jantar", "imagem": "miniatures/hamburguer_quinoa.jpg", "tempo_de_preparo": "25 minutos", "ingredientes": "Quinoa, feijão preto, cenoura, cebola, alho, cominho.", "modo_de_preparo": "Cozinhe a quinoa e misture com feijão preto, cenoura, cebola, alho e cominho. Forme hambúrgueres e grelhe."},
+        {"nome": "Salada de Frutas", "descricao": "Salada refrescante de frutas variadas para um lanche saudável e colorido.", "calorias": 400, "refeicao": "cafe_da_tarde", "imagem": "miniatures/salada_frutas.jpg", "tempo_de_preparo": "10 minutos", "ingredientes": "Morango, kiwi, manga, uva, mel.", "modo_de_preparo": "Corte as frutas e misture em uma tigela. Regue com mel e sirva gelado."},
+        {"nome": "Couscous Marroquino com Vegetais", "descricao": "Couscous marroquino com vegetais grelhados, uma opção leve e saborosa para o almoço.", "calorias": 800, "refeicao": "almoco", "imagem": "miniatures/couscus.jpg", "tempo_de_preparo": "20 minutos", "ingredientes": "Couscous marroquino, abobrinha, pimentão, berinjela, azeite, hortelã.", "modo_de_preparo": "Prepare o couscous conforme as instruções e misture com vegetais grelhados. Tempere com azeite e hortelã."},
+        {"nome": "Smoothie de Melancia e Menta", "descricao": "Smoothie refrescante com melancia e menta para uma bebida veranil e hidratante.", "calorias": 450, "refeicao": "cafe_da_tarde", "imagem": "miniatures/smoothie_melancia.jpg", "tempo_de_preparo": "5 minutos", "ingredientes": "Melancia, menta, limão, água.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura suave."},
+        {"nome": "Wraps de Legumes", "descricao": "Wraps vegetarianos recheados com legumes frescos e molho de iogurte, uma opção leve para o jantar.", "calorias": 650, "refeicao": "jantar", "imagem": "miniatures/wrap_legumes.jpg", "tempo_de_preparo": "15 minutos", "ingredientes": "Tortilla integral, abobrinha, cenoura, cogumelos, iogurte.", "modo_de_preparo": "Grelhe os legumes e monte os wraps com molho de iogurte."},
+        {"nome": "Bowl de Salmão Grelhado", "descricao": "Bowl nutritivo com salmão grelhado, arroz integral, abacate e vegetais, uma refeição completa.", "calorias": 900, "refeicao": "almoco", "imagem": "miniatures/bowl_salmao.jpg", "tempo_de_preparo": "30 minutos", "ingredientes": "Salmão, arroz integral, abacate, brócolis, cenoura.", "modo_de_preparo": "Grelhe o salmão e prepare os ingredientes. Monte o bowl com todos os elementos."},
+        {"nome": "Smoothie de Framboesa e Chia", "descricao": "Smoothie antioxidante com framboesa e sementes de chia para um lanche saudável e nutritivo.", "calorias": 500, "refeicao": "cafe_da_tarde", "imagem": "miniatures/smoothie_framboesa.jpg", "tempo_de_preparo": "8 minutos", "ingredientes": "Framboesa, banana, chia, leite de amêndoas.", "modo_de_preparo": "Bata todos os ingredientes no liquidificador até obter uma mistura cremosa."},
 ]
 
     for receita_data in receitas:

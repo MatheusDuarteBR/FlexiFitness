@@ -76,12 +76,98 @@
     </div>
 
     <div class="container">
-        <h1>Treinos</h1>
+        <h1>Gerador de Treinos</h1>
 
         <div class="info-card">
-            <!-- Conteúdo da página de Treinos -->
-            <p>Aqui você pode adicionar o conteúdo relacionado aos treinos.</p>
-        </div>
+            <form id="treinoForm">
+                <label for="objetivo">Objetivo:</label>
+                <select id="objetivo" name="objetivo" required>
+                    <option value="emagrecimento">Emagrecimento</option>
+                    <option value="hipertrofia">Hipertrofia</option>
+                    <option value="condicionamento">Condicionamento Físico</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+
+                <label for="nivel">Nível:</label>
+                <select id="nivel" name="nivel" required>
+                    <option value="iniciante">Iniciante</option>
+                    <option value="intermediario">Intermediário</option>
+                    <option value="avançado">Avançado</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+
+                <label for="duracao">Duração:</label>
+                <select id="duracao" name="duracao" required>
+                    <option value="curto">Curto (até 30 minutos)</option>
+                    <option value="medio">Médio (30-60 minutos)</option>
+                    <option value="longo">Longo (mais de 60 minutos)</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+
+                <label for="diaSemana">Dia da Semana:</label>
+                <select id="diaSemana" name="diaSemana" required>
+                    <option value="segunda">Segunda-feira</option>
+                    <option value="terca">Terça-feira</option>
+                    <option value="quarta">Quarta-feira</option>
+                    <option value="quinta">Quinta-feira</option>
+                    <option value="sexta">Sexta-feira</option>
+                    <option value="sabado">Sábado</option>
+                    <option value="domingo">Domingo</option>
+                </select>
+
+                <button type="button" onclick="gerarTreino()">Gerar Treino</button>
+        </form>
     </div>
+
+    <div id="resultadoTreino">
+        <!-- Tabela para exibir os exercícios -->
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Exercício</th>
+                    <th>Descrição</th>
+                    <th>Categoria</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaExercicios">
+                <!-- Os exercícios serão adicionados aqui dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        function gerarTreino() {
+            var dadosTreino = {
+                objetivo: $('#objetivo').val(),
+                nivel: $('#nivel').val(),
+                duracao: $('#duracao').val(),
+                diaSemana: $('#diaSemana').val(),
+            };
+
+            $.ajax({
+                type: 'POST',
+                url: '/gerar_treino',
+                contentType: 'application/json;charset=UTF-8',
+                data: JSON.stringify(dadosTreino),
+                success: function (response) {
+                    alert('Treino gerado com sucesso!\n' + response.detalhes);
+
+                    // Limpa a tabela antes de adicionar os novos exercícios
+                    $('#tabelaExercicios').empty();
+
+                    // Adiciona os exercícios à tabela
+                    for (var i = 0; i < response.exercicios.length; i++) {
+                        var exercicio = response.exercicios[i];
+                        var newRow = '<tr><td>' + exercicio.nome + '</td><td>' + exercicio.descricao + '</td><td>' + exercicio.categoria + '</td></tr>';
+                        $('#tabelaExercicios').append(newRow);
+                    }
+                },
+                error: function (error) {
+                    alert('Erro ao gerar o treino. Verifique os dados fornecidos.');
+                }
+            });
+        }
+    </script>
+</div>
 </body>
 </html>
