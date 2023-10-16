@@ -152,7 +152,7 @@
                     <!-- Exibir as receitas -->
                         {% for receita in receitas %}
                         <tr>
-                            <td><img src="{{ url_for('static', filename=receita.imagem) }}" alt="{{ receita.nome }}" style="max-width: 50px; max-height: 50px; border-radius: 10%;"></td>
+                            <td><img src="{{ url_for('static', filename=receita.imagem) }}" alt="{{ receita.nome }}" style="max-width: 60px; max-height: 60px; border-radius: 10%;"></td>
                             <th scope="row">{{ receita.nome }}</th>
                             <td>{{ receita.descricao }}</td>
                             <td>{{ receita.calorias }}</td>

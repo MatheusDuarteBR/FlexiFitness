@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center; /* Centralizar o conteúdo na página */
+        }
+        img {
+            max-width: 100%; /* Ajustar a largura da imagem para não ultrapassar a largura da página */
+            height: auto; /* Manter a proporção original da imagem */
+            display: block; /* Remover espaços adicionais ao redor da imagem */
+            margin: 0 auto; /* Centralizar a imagem horizontalmente */
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ receita.nome }}</h1>
+    <p><strong>Descrição:</strong> {{ receita.descricao }}</p>
+    <p><strong>Calorias:</strong> {{ receita.calorias }}</p>
+    <p><strong>Categoria:</strong> {{ receita.categoria }}</p>
+    <p><strong>Refeição:</strong> {{ receita.refeicao }}</p>
+    <p><strong>Tempo de Preparo:</strong> {{ receita.tempo_de_preparo }}</p>
+
+    <h2>Ingredientes</h2>
+    <ul>
+        {% for ingrediente in receita.ingredientes.split('\n') %}
+            <li>{{ ingrediente }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Modo de Preparo</h2>
+    <ol>
+        {% for passo in receita.modo_de_preparo.split('\n') %}
+            <li>{{ passo }}</li>
+        {% endfor %}
+    </ol>
+
+    {% if receita.imagem %}
+    <img src="{{ url_for('static', filename=receita.imagem, _external=True) }}" alt="{{ receita.nome }}">
+    {% endif %}
+</body>
+</html>
