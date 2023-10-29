@@ -3,7 +3,7 @@ Flask==2.2.5
 Flask_Bcrypt==1.0.1
 Flask_Migrate==4.0.5
 flask_sqlalchemy
-reportlab==3.5.34
+reportlab
 SQLAlchemy
 weasyprint==60.1
 psycopg2 ==2.9.5
