@@ -1,1 +1,1 @@
-web: gunicorn wsgi:app && streamlit run app.py
+web: gunicorn wsgi: app
