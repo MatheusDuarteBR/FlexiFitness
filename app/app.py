@@ -43,7 +43,6 @@ class Usuario(db.Model):
     email = db.Column(db.String(100), unique=True, nullable=False)
     password = db.Column(db.String(60), nullable=False)
     perfil = db.relationship('Perfil', backref='usuario', uselist=False)
-    treinos = db.relationship('TreinoUsuario', backref='usuario')
 
 class Perfil(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -59,18 +58,6 @@ class Perfil(db.Model):
     estado = db.Column(db.String(50))
     user_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
 
-class Dieta(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    idade = db.Column(db.Integer)
-    sexo = db.Column(db.String(10))
-    peso_atual = db.Column(db.Float)
-    altura = db.Column(db.Float)
-    nivel_atividade_fisica = db.Column(db.String(20))
-    objetivo = db.Column(db.String(20))
-    condicoes_medicas = db.Column(db.String(200))
-    preferencias_alimentares = db.Column(db.String(200))
-    estado_saude_geral = db.Column(db.String(20))
-
 class Receita(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     nome = db.Column(db.String(255), nullable=False)
@@ -84,29 +71,28 @@ class Receita(db.Model):
     ingredientes = db.Column(db.Text)
     modo_de_preparo = db.Column(db.Text)
 
-class Exercicio(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    nome = db.Column(db.String(100), nullable=False)
-    descricao = db.Column(db.Text, nullable=False)
-    categoria = db.Column(db.String(50), nullable=False)
-
-class Treino(db.Model):
+class Dieta(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     objetivo = db.Column(db.String(50), nullable=False)
-    nivel = db.Column(db.String(20), nullable=False)
-    duracao = db.Column(db.String(20), nullable=False)
-    dia_semana = db.Column(db.String(20), nullable=False)
-    exercicios = db.relationship('Exercicio', secondary='treino_exercicio', backref='treinos')
-    treino_exercicio = db.Table('treino_exercicio',
-    db.Column('treino_id', db.Integer, db.ForeignKey('treino.id')),
-    db.Column('exercicio_id', db.Integer, db.ForeignKey('exercicio.id'))
-)
+    nivel_atividade = db.Column(db.String(20), nullable=False)
+    calorias_diarias = db.Column(db.Integer, nullable=False)
+    proteinas_diarias = db.Column(db.Float, nullable=False)
+    gorduras_diarias = db.Column(db.Float, nullable=False)
+    carboidratos_diarios = db.Column(db.Float, nullable=False)
+    refeicoes = db.relationship('Refeicao', secondary='dieta_refeicao', backref='dietas')
 
-class TreinoUsuario(db.Model):
+class Refeicao(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    usuario_id = db.Column(db.Integer, db.ForeignKey('usuario.id'))
-    treino_id = db.Column(db.Integer, db.ForeignKey('treino.id'))
-    gerado_em = db.Column(db.DateTime, default=db.func.now())
+    nome = db.Column(db.String(50), nullable=False)
+    calorias = db.Column(db.Integer, nullable=False)
+    proteinas = db.Column(db.Float, nullable=False)
+    gorduras = db.Column(db.Float, nullable=False)
+    carboidratos = db.Column(db.Float, nullable=False)
+
+class DietaRefeicao(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    dieta_id = db.Column(db.Integer, db.ForeignKey('dieta.id'), nullable=False)
+    refeicao_id = db.Column(db.Integer, db.ForeignKey('refeicao.id'), nullable=False)
 
 with app.app_context():
     db.create_all()
@@ -343,81 +329,104 @@ def treinos():
 @app.route('/dashboard/dietas', methods=['GET', 'POST'])
 def dietas():
     if 'user_id' not in session:
-        flash('Você precisa fazer login para acessar esta página.')
+        flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
         return redirect(url_for('login'))
+    return render_template('dietas.html')
 
+@app.route('/gerar_dieta', methods=['POST'])
+def gerar_dieta():
     if request.method == 'POST':
-        dados_usuario = request.json
-        nova_dieta = Dieta(**dados_usuario)
+        dados_formulario = request.form
 
-        # Lógica para calcular a dieta (um exemplo simples)
-        dieta_calculada = calcular_dieta(dados_usuario)
-        nova_dieta.dieta_calculada = dieta_calculada
+        objetivo = dados_formulario['objetivo']
+        nivel_atividade = dados_formulario['nivel_atividade']
 
+        # Lógica de cálculo de dieta (exemplo simplificado)
+        calorias_diarias = calcular_calorias_diarias(objetivo, nivel_atividade)
+        proteinas_diarias = calcular_proteinas_diarias(calorias_diarias)
+        gorduras_diarias = calcular_gorduras_diarias(calorias_diarias)
+        carboidratos_diarios = calcular_carboidratos_diarios(calorias_diarias)
+
+        # Adiciona a dieta ao banco de dados
+        nova_dieta = Dieta(
+            objetivo=objetivo,
+            nivel_atividade=nivel_atividade,
+            calorias_diarias=calorias_diarias,
+            proteinas_diarias=proteinas_diarias,
+            gorduras_diarias=gorduras_diarias,
+            carboidratos_diarios=carboidratos_diarios
+        )
         db.session.add(nova_dieta)
         db.session.commit()
 
-        return jsonify({'mensagem': 'Dieta calculada com sucesso!', 'dieta': dieta_calculada})
+        # Adicione refeições à dieta (exemplo: adicione refeições associadas a essa dieta)
+        adicionar_refeicoes_a_dieta(nova_dieta)
 
-    dietas = Dieta.query.all()
-    return render_template('dietas.html', dietas=dietas)
+        flash('Dieta gerada com sucesso!', 'success')
+        return redirect(url_for('dietas'))
 
-def calcular_dieta(dados_usuario):
-    # Lógica simplificada de cálculo da dieta
-    # Aqui você deve implementar um algoritmo mais complexo e preciso
-    idade = dados_usuario['idade']
-    peso = dados_usuario['peso_atual']
-    altura = dados_usuario['altura']
-    nivel_atividade = dados_usuario['nivel_atividade_fisica']
-    objetivo = dados_usuario['objetivo']
-
-    # Lógica de cálculo fictícia
-    calorias_diarias = calcular_calorias_diarias(idade, peso, altura, nivel_atividade, objetivo)
-    proteina_diaria = calorias_diarias * 0.3
-    carboidrato_diario = calorias_diarias * 0.5
-    gordura_diaria = calorias_diarias * 0.2
-
-    dieta_calculada = f"Calorias: {calorias_diarias}, Proteína: {proteina_diaria}g, Carboidrato: {carboidrato_diario}g, Gordura: {gordura_diaria}g"
-
-    return dieta_calculada
-
-def calcular_calorias_diarias(idade, peso, altura, sexo, nivel_atividade, objetivo):
-    # Constantes para o cálculo
-    fator_atividade = {'sedentario': 1.2, 'leve': 1.375, 'moderado': 1.55, 'ativo': 1.725, 'muito_ativo': 1.9}
-    calorias_por_grama_proteina = 4
-    calorias_por_grama_carboidrato = 4
-    calorias_por_grama_gordura = 9
-
-    # Fator de atividade
-    fator_atividade = fator_atividade[nivel_atividade]
-
-    # Cálculo do metabolismo basal (BMR)
-    if sexo.lower() == 'masculino':
-        bmr = 88.362 + (13.397 * peso) + (4.799 * altura) - (5.677 * idade)
+def calcular_calorias_diarias(objetivo, nivel_atividade):
+    # Lógica de cálculo de calorias diárias (exemplo simplificado)
+    if objetivo == 'emagrecimento':
+        fator_objetivo = 0.8
+    elif objetivo == 'hipertrofia':
+        fator_objetivo = 1.2
     else:
-        bmr = 447.593 + (9.247 * peso) + (3.098 * altura) - (4.330 * idade)
+        fator_objetivo = 1.0
 
-    # Cálculo das calorias diárias
-    calorias_diarias = bmr * fator_atividade
+    if nivel_atividade == 'sedentario':
+        fator_atividade = 1.2
+    elif nivel_atividade == 'moderado':
+        fator_atividade = 1.5
+    else:
+        fator_atividade = 1.8
 
-    # Ajuste com base no objetivo (ganhar peso, perder peso, manter peso)
-    if objetivo.lower() == 'ganhar_peso':
-        calorias_diarias += 500  # Aumento calórico para ganho de peso
-    elif objetivo.lower() == 'perder_peso':
-        calorias_diarias -= 500  # Redução calórica para perda de peso
+    calorias_diarias = 2000  # Substitua pelo cálculo real
+    return int(calorias_diarias * fator_objetivo * fator_atividade)
 
-    return calorias_diarias
+def calcular_proteinas_diarias(calorias_diarias):
+    # Lógica de cálculo de proteínas diárias (exemplo simplificado)
+    return int(calorias_diarias * 0.3 / 4)  # 30% das calorias diárias de proteínas, 4 calorias por grama
 
-# Exemplo de uso:
-idade = 25
-peso = 70
-altura = 170
-sexo = 'masculino'
-nivel_atividade = 'ativo'
-objetivo = 'manter_peso'
+def calcular_gorduras_diarias(calorias_diarias):
+    # Lógica de cálculo de gorduras diárias (exemplo simplificado)
+    return int(calorias_diarias * 0.25 / 9)  # 25% das calorias diárias de gorduras, 9 calorias por grama
 
-calorias_diarias = calcular_calorias_diarias(idade, peso, altura, sexo, nivel_atividade, objetivo)
-print(f"Calorias diárias recomendadas: {calorias_diarias} kcal")
+def calcular_carboidratos_diarios(calorias_diarias):
+    # Lógica de cálculo de carboidratos diários (exemplo simplificado)
+    return int(calorias_diarias * 0.45 / 4)  # 45% das calorias diárias de carboidratos, 4 calorias por grama
+
+def adicionar_refeicoes_a_dieta(dieta):
+    # Adiciona refeições à dieta (exemplo simplificado)
+    refeicao1 = Refeicao(nome='Café da Manhã', calorias=400, proteinas=20, gorduras=15, carboidratos=60)
+    refeicao2 = Refeicao(nome='Almoço', calorias=600, proteinas=30, gorduras=20, carboidratos=80)
+    refeicao3 = Refeicao(nome='Lanche da Tarde', calorias=200, proteinas=10, gorduras=5, carboidratos=30)
+    refeicao4 = Refeicao(nome='Jantar', calorias=500, proteinas=25, gorduras=18, carboidratos=70)
+
+    dieta.refeicoes.extend([refeicao1, refeicao2, refeicao3, refeicao4])
+    db.session.commit()
+
+@app.route('/detalhes_dietas', methods=['GET'])
+def detalhes_dietas():
+    # Consulte o banco de dados para obter detalhes das dietas (substitua por sua lógica real)
+    dietas = Dieta.query.all()
+
+    # Crie uma lista para armazenar os detalhes das dietas
+    detalhes_dietas = []
+
+    # Preencha a lista com os detalhes das dietas
+    for dieta in dietas:
+        detalhes_dietas.append({
+            'objetivo': dieta.objetivo,
+            'nivel_atividade': dieta.nivel_atividade,
+            'calorias_diarias': dieta.calorias_diarias,
+            'proteinas_diarias': dieta.proteinas_diarias,
+            'gorduras_diarias': dieta.gorduras_diarias,
+            'carboidratos_diarios': dieta.carboidratos_diarios
+        })
+
+    # Retorne os detalhes das dietas como JSON
+    return jsonify(detalhes_dietas)
 
 #########==================DIETAS_END=================#########
 
