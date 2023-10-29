@@ -3,140 +3,93 @@
 
 ## 🧠 Sobre
 
-Flexi Fitness é uma plataforma revolucionária que combina Engenharia de Software e saúde, proporcionando aos usuários ferramentas poderosas para um estilo de vida saudável. Melhore sua qualidade de vida com o Flexi Fitness. 
+Flexi Fitness é uma plataforma que combina Engenharia de Software e saúde, proporcionando aos usuários ferramentas poderosas para um estilo de vida saudável. Melhore sua qualidade de vida com o Flexi Fitness. 
 
 Hoje, mais do que nunca, é essencial tornar a saúde e o bem-estar acessíveis a todos. A Flexi Fitness é a resposta a esse desafio, capacitando as pessoas a conquistar uma vida mais saudável, mais ativa e mais feliz. Junte-se a nós nessa jornada emocionante para alcançar o seu melhor você!
 
-## Visão Geral da plataforma Flexi Fitness
+## 🔥 Como rodar a aplicação 
+Criação do banco de dados usando PostgreSQL:
+1. Abra o banco padrão "psql -U 'usuário do banco'"
+2. create database flexifitness;
 
-O Flexi Fitness é uma plataforma abrangente e intuitiva que reúne recursos essenciais para a promoção da saúde física e mental. Através dessa plataforma, os usuários terão acesso a uma variedade de funcionalidades que incluem:
+Comandos para baixar todos os pacotes necessários:
+1. Faça o clone da aplicação.
+2. "cd NOME_DO_DIRETORIO".
+3. python3.7 -mvenv venv
+4. venv/bin/pip install -r requirements.txt
+5. cp .env.example .env
+6. Inicie a aplicação usando "python app.py"
+7. Abra um navegador da web e vá para http://localhost:5000
 
-- Treinamento Personalizado
-- Cálculo de Dietas
-- Receitas Saudáveis
+Você deve conseguir rodar um servidor/aplicação de testes.
 
-## Docker
+## 🔥 Como rodar a aplicação via Docker
 
+Lembre-se de já ter baixado e instalado corretamente o docker em sua máquina!
 
+Dentro do projeto digite os seguintes comandos:
+1. docker build -t meu_projeto:latest .
+2. docker run -p 5000:5000 meu_projeto:latest
+3. Sua aplicação Flask deve agora estar acessível em http://localhost:5000
 
-## Objetivo
+## 🔥 Pacotes e dependências
 
-- Promover a saúde e o bem-estar, tornando o fitness acessível a todos, oferecendo planos personalizados, flexibilidade, medição de resultados e garantindo sustentabilidade financeira.
+alembic==1.12.0
 
-## Escopo
+Flask==2.2.5
 
-- Cadastro de Usuários: A plataforma permitirá que os usuários se cadastrem, criem perfis personalizados e acessem a plataforma com autenticação segura.
+Flask_Bcrypt==1.0.1
 
-- Perfis de Usuário: Os usuários terão a capacidade de preencher informações sobre seus objetivos de fitness, histórico médico, preferências alimentares e nível de condicionamento físico atual para uma experiência mais personalizada.
+Flask_Migrate==4.0.5
 
-- Planos de Treino Personalizados: Com base nas informações fornecidas pelos usuários, a plataforma gerará planos de treino personalizados, incluindo exercícios, séries, repetições e duração. Os planos podem ser adaptados à disponibilidade de tempo e ao nível de experiência do usuário.
+flask_sqlalchemy
 
-- Dietas Personalizadas: A plataforma oferecerá recomendações alimentares com base nos objetivos do usuário, restrições dietéticas e preferências pessoais. Isso incluirá sugestões de refeições e contagem de calorias.
+reportlab
 
-- Acompanhamento de Progresso: Os usuários poderão registrar seu progresso de fitness, incluindo peso, medidas corporais, registros de treino e consumo de alimentos. Gráficos e relatórios simples mostrarão o progresso ao longo do tempo.
+SQLAlchemy
 
-- Conteúdo Educativo: A inclusão de artigos, vídeos ou recursos educacionais sobre fitness, nutrição e bem-estar para fornecer informações adicionais aos usuários.
+weasyprint==60.1
 
-- Avaliação de Resultados: Coletar feedback dos usuários e realizar pesquisas de satisfação para avaliar a eficácia da plataforma na melhoria da saúde e bem-estar dos usuários.
+psycopg2 ==2.9.5
 
-## Contexto
+psycopg2-binary ==2.9.5
 
-- Tendência de Saúde e Bem-Estar: No cenário atual, há uma crescente conscientização sobre a importância da saúde e do bem-estar. As pessoas estão mais dispostas a investir em seu condicionamento físico e saúde em busca de uma vida mais saudável e equilibrada.
+gunicorn
 
-- Acesso à Internet: A disseminação da internet e o acesso generalizado a dispositivos conectados tornam possível oferecer serviços de saúde e fitness online, permitindo que as pessoas acessem informações e recursos de qualquer lugar.
+## 🔥 Documentação
 
-- Dificuldades no Acesso ao Fitness Tradicional: Muitas pessoas enfrentam obstáculos para participar de academias ou contratar personal trainers, como restrições financeiras, falta de tempo ou desconforto em ambientes de academia.
+## 🔥 Further Help
 
-- Necessidade de Personalização: Cada indivíduo é único, com diferentes necessidades e metas de saúde. Há uma demanda crescente por programas de treino e dietas personalizadas que levem em consideração as características individuais.
+Se você precisa de mais ajuda, olhe a documentação necessária dos pacotes que podem estar gerando o problema. Segue algumas que podem lhe ajudar:
 
-- Concorrência e Inovação: O setor de saúde e fitness online é altamente competitivo, com uma série de aplicativos e plataformas disponíveis. A inovação é essencial para se destacar e atrair usuários.
+Alembic (Migrações de Banco de Dados):
+[Alembic Documentation](https://alembic.sqlalchemy.org/en/latest/)
 
-## Restrições
+Flask (Framework Web):
+[Flask Documentation](https://flask.palletsprojects.com/en/3.0.x/)
 
-- Orçamento Limitado: Se o projeto for realizado com recursos financeiros limitados, isso pode restringir a contratação de desenvolvedores, designers ou aquisição de tecnologias específicas.
+Flask-Bcrypt (Criptografia de Senhas no Flask):
+[Bcrypt Documentation](https://flask-bcrypt.readthedocs.io/en/1.0.1/)
 
-- Tempo Limitado: Restrições de tempo podem ser impostas pela data de conclusão do TCC ou por prazos fixos para entrega de resultados. Isso pode afetar a complexidade da plataforma e a quantidade de recursos que podem ser implementados.
+Flask-Migrate (Extensão para Migrações no Flask):
+[Flask-Migrate Documentation](https://flask-migrate.readthedocs.io/en/latest/)
 
-- Requisitos Legais e Regulatórios: Regulamentações governamentais relacionadas à saúde, segurança de dados e privacidade do usuário devem ser rigorosamente seguidas, o que pode adicionar complexidade ao projeto.
+Flask-SQLAlchemy (Extensão para Integração do SQLAlchemy com Flask):
+[SQLAlchemy Documentation](https://flask-sqlalchemy.palletsprojects.com/en/3.1.x/)
 
-- Acesso a Dados e Conteúdo: A obtenção de dados de qualidade, como informações nutricionais ou programas de treinamento, pode ser um desafio. Além disso, a criação de conteúdo original e de alta qualidade pode ser trabalhosa.
+ReportLab (Criação de PDFs com Python):
+[ReportLab Documentation](https://www.reportlab.com/docs/reportlab-userguide.pdf)
 
-- Infraestrutura Tecnológica: Restrições relacionadas à infraestrutura de hospedagem, largura de banda e segurança podem afetar o desempenho da plataforma.
+SQLAlchemy (Biblioteca de SQL para Python):
+[SQLAlchemy Documentation](https://docs.sqlalchemy.org/en/)
 
-- Manutenção Contínua: A plataforma exigirá manutenção, atualizações e suporte contínuos, o que pode ser uma restrição de recursos a longo prazo.
+WeasyPrint (Renderização de HTML para PDF em Python):
+[WeasyPrint Documentation](https://weasyprint.readthedocs.io/)
 
-## Backlog
+Psycopg2 (Driver PostgreSQL para Python):
+[Psycopg2 Documentation](https://www.psycopg.org/docs/)
 
-- Fase 1: Planejamento e Design Inicial
-
-   - Definir os objetivos específicos da plataforma.
-   - Realizar uma pesquisa de mercado para entender as necessidades dos usuários.
-   - Criar um fluxograma de navegação da plataforma.
-   - Esboçar o design da interface do usuário (UI) e protótipos iniciais.
-   - Determinar as tecnologias e linguagens de programação a serem usadas.
-    
-- Fase 2: Desenvolvimento Básico
-   - Estabelecer a infraestrutura de hospedagem.
-   - Criar um sistema de gerenciamento de usuários e autenticação.
-   - Desenvolver a base de dados para armazenar perfis de usuário e dados de progresso.
-   - Implementar a funcionalidade de cadastro de usuários.
-     
-- Fase 3: Personalização e Recomendações
-   - Desenvolver algoritmos para gerar planos de treino personalizados.
-   - Implementar a criação e edição de perfis de usuário com informações pessoais.
-   - Criar um sistema de recomendação de dietas com base nas preferências e objetivos dos usuários.
-     
-- Fase 4: Funcionalidades de Acompanhamento
-   - Desenvolver ferramentas de registro de progresso, incluindo entrada de dados de treino e alimentação.
-   - Implementar notificações de acompanhamento de progresso e incentivo.
-     
-- Fase 5: Conteúdo Educativo e Monetização
-   - Desenvolver e publicar conteúdo educativo sobre fitness e nutrição.
-   - Explorar modelos de monetização, como assinaturas premium ou publicidade.
-     
-- Fase 6: Testes e Ajustes
-   - Realizar testes de usabilidade e correções de bugs.
-   - Coletar feedback dos usuários e fazer ajustes com base nas avaliações.
-   - Realizar testes de desempenho e otimização da plataforma.
-     
-- Fase 7: Lançamento e Promoção
-   - Lançar a plataforma para um grupo inicial de usuários.
-   - Monitorar o desempenho e a aceitação do mercado e fazer melhorias conforme necessário.
-     
-- Fase 8: Manutenção Contínua
-   - Continuar a realizar atualizações regulares da plataforma.
-   - Fornecer suporte técnico aos usuários e resolver problemas.
-   - Expandir a plataforma com base no feedback dos usuários e na evolução das necessidades do mercado.
- 
-## Requisitos
-
-### Não Funcionais
-
-- A plataforma deve carregar rapidamente e responder prontamente às solicitações dos usuários;
-- Implementar medidas de segurança, como criptografia de dados e autenticação robusta, para proteger as informações do usuário;
-- Respeitar regulamentações de privacidade de dados, como o Regulamento Geral de Proteção de Dados (GDPR) da União Europeia;
-- Fornecer aos usuários a capacidade de controlar suas configurações de privacidade e o que desejam compartilhar;
-- Garantir que a interface de usuário seja intuitiva e acessível para todos;
-- Fornecer documentação completa para administradores e usuários finais, incluindo manuais de uso e guias de solução de problemas;
-- Manter um registro detalhado de mudanças, atualizações e correções no sistema para fins de rastreabilidade e auditoria;
-- Cumprir com todas as regulamentações e requisitos legais relacionados à saúde, privacidade e segurança de dados, se aplicável.
-
-### Funcionais
-
-- Os usuários devem ser capazes de criar contas com informações pessoais, como nome, idade, sexo e objetivo de condicionamento físico.
-- Os usuários devem poder editar e atualizar seus perfis, incluindo informações de contato, preferências alimentares e histórico médico.
-- A plataforma deve gerar planos de treino personalizados com base nas informações do usuário, incluindo nível de condicionamento físico, metas e disponibilidade de tempo.
-- A plataforma deve fornecer recomendações de dietas personalizadas com base nas preferências alimentares, restrições dietéticas e metas de saúde dos usuários.
-- Os usuários devem poder registrar seu progresso de treino, incluindo exercícios realizados, peso corporal e medidas corporais.
-- Fornecer artigos, vídeos e recursos educativos relacionados a fitness, nutrição e saúde.
-- Implementar ferramentas de busca e filtros para facilitar a localização de exercícios, receitas ou conteúdo específico.
-- Fornecer um sistema de suporte ao cliente para ajudar os usuários com dúvidas, problemas técnicos ou outras preocupações.
-- Ter um sistema de gerenciamento de conteúdo para adicionar, editar ou remover artigos, vídeos e outros recursos educativos.
-- Fornecer ferramentas para administradores analisarem dados de uso e métricas de desempenho da plataforma.
-
-
-
-
-
+Gunicorn (Servidor Web HTTP para WSGI):
+[Gunicorn Documentation](https://docs.gunicorn.org/en/stable/)
 
 
