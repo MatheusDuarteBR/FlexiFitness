@@ -15,6 +15,10 @@ O Flexi Fitness é uma plataforma abrangente e intuitiva que reúne recursos ess
 - Cálculo de Dietas
 - Receitas Saudáveis
 
+## Docker
+
+
+
 ## Objetivo
 
 - Promover a saúde e o bem-estar, tornando o fitness acessível a todos, oferecendo planos personalizados, flexibilidade, medição de resultados e garantindo sustentabilidade financeira.
@@ -89,7 +93,6 @@ O Flexi Fitness é uma plataforma abrangente e intuitiva que reúne recursos ess
 - Fase 5: Conteúdo Educativo e Monetização
    - Desenvolver e publicar conteúdo educativo sobre fitness e nutrição.
    - Explorar modelos de monetização, como assinaturas premium ou publicidade.
-   - Integrar mecanismos de pagamento para assinaturas premium, se aplicável.
      
 - Fase 6: Testes e Ajustes
    - Realizar testes de usabilidade e correções de bugs.
@@ -97,7 +100,6 @@ O Flexi Fitness é uma plataforma abrangente e intuitiva que reúne recursos ess
    - Realizar testes de desempenho e otimização da plataforma.
      
 - Fase 7: Lançamento e Promoção
-   - Preparar uma estratégia de lançamento e marketing.
    - Lançar a plataforma para um grupo inicial de usuários.
    - Monitorar o desempenho e a aceitação do mercado e fazer melhorias conforme necessário.
      
