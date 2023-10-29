@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>{{ receita.nome }}</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,10 +12,21 @@
             height: auto; /* Manter a proporção original da imagem */
             display: block; /* Remover espaços adicionais ao redor da imagem */
             margin: 0 auto; /* Centralizar a imagem horizontalmente */
+            page-break-inside: avoid; /* Evitar que a imagem seja dividida entre as páginas */
+        }
+        .footer {
+            margin-top: 20px; /* Adicionar espaço entre o conteúdo e o rodapé */
+            padding-top: 10px; /* Adicionar espaço interno no topo do rodapé */
+            border-top: 1px solid #ddd; /* Adicionar uma borda superior ao rodapé */
+        }
+        .company-name {
+            font-size: 12px;
+            color: #555;
         }
     </style>
 </head>
 <body>
+
     <h1>{{ receita.nome }}</h1>
     <p><strong>Descrição:</strong> {{ receita.descricao }}</p>
     <p><strong>Calorias:</strong> {{ receita.calorias }}</p>
@@ -39,5 +51,9 @@
     {% if receita.imagem %}
     <img src="{{ url_for('static', filename=receita.imagem, _external=True) }}" alt="{{ receita.nome }}">
     {% endif %}
+
+    <div class="footer">
+        <div class="company-name">Direitos Reservados &copy; {{ current_year }} FlexiFitness</div>
+    </div>
 </body>
 </html>

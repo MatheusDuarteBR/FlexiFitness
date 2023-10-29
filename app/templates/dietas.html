@@ -83,79 +83,114 @@
         </div>
     </div>
 
-    <div class="container">
-        <h1>Dietas</h1>
-
-        <div class="info-card">
-            <h1>Calculadora de Dietas</h1>
-
-            <form id="dietaForm">
-                <label for="idade">Idade:</label>
-                <input type="number" id="idade" name="idade" required>
+    <div class="container mt-5">
+        <h1 class="text-center">Gerador de Dietas</h1>
         
-                <label for="peso">Peso (kg):</label>
-                <input type="number" id="peso" name="peso" step="0.01" required>
-        
-                <label for="altura">Altura (cm):</label>
-                <input type="number" id="altura" name="altura" step="0.01" required>
-        
-                <label for="nivelAtividade">Nível de Atividade:</label>
-                <select id="nivelAtividade" name="nivelAtividade" required>
-                    <option value="sedentario">Sedentário</option>
-                    <option value="leve">Leve (1-3 dias/semana)</option>
-                    <option value="moderado">Moderado (3-5 dias/semana)</option>
-                    <option value="ativo">Ativo (6-7 dias/semana)</option>
-                    <option value="muitoAtivo">Muito Ativo (duas vezes por dia)</option>
-                </select>
-        
+        <!-- Formulário para gerar dieta -->
+        <form id="dietaForm" class="mt-4">
+            <div class="form-group">
                 <label for="objetivo">Objetivo:</label>
-                <select id="objetivo" name="objetivo" required>
-                    <option value="perdaPeso">Perda de Peso</option>
-                    <option value="manutencao">Manutenção</option>
-                    <option value="ganhoPeso">Ganho de Peso</option>
+                <select class="form-control" id="objetivo" name="objetivo" required>
+                    <option value="emagrecimento">Emagrecimento</option>
+                    <option value="hipertrofia">Hipertrofia</option>
+                    <!-- Adicione mais opções conforme necessário -->
                 </select>
+            </div>
+
+            <div class="form-group">
+                <label for="nivel_atividade">Nível de Atividade:</label>
+                <select class="form-control" id="nivel_atividade" name="nivel_atividade" required>
+                    <option value="sedentario">Sedentário</option>
+                    <option value="moderado">Moderado</option>
+                    <!-- Adicione mais opções conforme necessário -->
+                </select>
+            </div>
+
+            <button type="button" class="btn btn-primary" onclick="gerarDieta()">Gerar Dieta</button>
+        </form>
+
+        <!-- Exibir mensagens de sucesso ou erro -->
+        <div id="mensagem" class="mt-4"></div>
+
+        <!-- Tabela para exibir detalhes da última dieta gerada -->
+        <div id="resultadoDietas" class="mt-4">
+            <h2>Dietas Geradas:</h2>
+            <div class="container">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Objetivo</th>
+                            <th>Nível de Atividade</th>
+                            <th>Calorias Diárias</th>
+                            <th>Proteínas Diárias</th>
+                            <th>Gorduras Diárias</th>
+                            <th>Carboidratos Diários</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detalhesDietas">
+                        <!-- Os detalhes das dietas serão adicionados aqui dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
         
-                <label for="condicoesMedicas">Condições Médicas:</label>
-                <textarea id="condicoesMedicas" name="condicoesMedicas"></textarea>
-        
-                <label for="preferenciasAlimentares">Preferências Alimentares:</label>
-                <textarea id="preferenciasAlimentares" name="preferenciasAlimentares"></textarea>
-        
-                <label for="estadoSaudeGeral">Estado de Saúde Geral:</label>
-                <textarea id="estadoSaudeGeral" name="estadoSaudeGeral"></textarea>
-        
-                <button type="button" onclick="gerarDieta()">Gerar Dieta</button>
-            </form>
-        
-            <script>
-                function gerarDieta() {
-                    // Obtenha os dados do formulário (ajuste conforme necessário)
-                    var dadosUsuario = {
-                        idade: $('#idade').val(),
-                        peso: $('#peso').val(),
-                        altura: $('#altura').val(),
-                        nivel_atividade: $('#nivel_atividade').val(),
-                        objetivo: $('#objetivo').val(),
-                        condicoes_medicas: $('#condicoes_medicas').val(),
-                        preferencias_alimentares: $('#preferencias_alimentares').val(),
-                        estado_saude_geral: $('#estado_saude_geral').val(),
-                    };
-        
-                    // Faça a chamada AJAX
-                    $.ajax({
-                        type: 'POST',
-                        url: '/gerar_dieta',  // Substitua isso pela sua rota no servidor
-                        contentType: 'application/json;charset=UTF-8',
-                        data: JSON.stringify(dadosUsuario),
-                        success: function (response) {
-                            // A resposta do servidor pode conter o caminho do PDF gerado ou outros dados relevantes
-                            alert('Dieta gerada com sucesso! Alimentos: ' + response.alimentos.join(', '));
-                        },
-                        error: function (error) {
-                            alert('Erro ao gerar a dieta. Verifique os dados fornecidos.');
-                        }
-                    });
-                }
-            </script>
+        <script>
+    function toggleSidebar() {
+        var x = document.getElementById("myNavbar");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+
+    function gerarDieta() {
+        // Simula uma requisição AJAX (substitua por uma chamada real)
+        $.ajax({
+            type: 'POST',
+            url: '/gerar_dieta',
+            data: $('#dietaForm').serialize(), // Envia os dados do formulário
+            success: function (response) {
+                // Exibe a mensagem de sucesso
+                $('#mensagem').html('<div class="alert alert-success">' + response + '</div>');
+
+                // Atualiza a tabela com os detalhes das dietas geradas
+                atualizarDetalhesDietas();
+            },
+            error: function (error) {
+                // Exibe a mensagem de erro
+                $('#mensagem').html('<div class="alert alert-danger">' + error.responseText + '</div>');
+            }
+        });
+    }
+
+    function atualizarDetalhesDietas() {
+        // Simula uma requisição AJAX para obter os detalhes das dietas geradas (substitua por uma chamada real)
+        $.ajax({
+            type: 'GET',
+            url: '/detalhes_dietas',
+            success: function (dietas) {
+                // Limpa a tabela
+                $('#detalhesDietas').empty();
+
+                // Adiciona as linhas na tabela com os detalhes das dietas
+                dietas.forEach(function (detalhes) {
+                    $('#detalhesDietas').append('<tr>' +
+                        '<td>' + detalhes.objetivo + '</td>' +
+                        '<td>' + detalhes.nivel_atividade + '</td>' +
+                        '<td>' + detalhes.calorias_diarias + '</td>' +
+                        '<td>' + detalhes.proteinas_diarias + '</td>' +
+                        '<td>' + detalhes.gorduras_diarias + '</td>' +
+                        '<td>' + detalhes.carboidratos_diarios + '</td>' +
+                        '</tr>');
+                });
+            },
+            error: function (error) {
+                // Exibe a mensagem de erro
+                console.log(error.responseText);
+            }
+        });
+    }
+</script>
 </body>
 </html>
