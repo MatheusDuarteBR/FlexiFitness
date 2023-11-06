@@ -308,11 +308,15 @@ def login():
 
 @app.route('/dashboard')
 def dashboard():
+
+    user_id = session['user_id']
+    usuario = Usuario.query.get(user_id)
     if 'user_id' not in session:
         flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
         return redirect(url_for('login'))
     
-    return render_template('dashboard.html')
+    return render_template('dashboard.html', usuario=usuario)
+
 
 # Routes for the Dashboard page
 @app.route('/dashboard/treinos')
