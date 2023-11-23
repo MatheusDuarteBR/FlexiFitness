@@ -1,6 +1,9 @@
 # Use a imagem oficial do Python
 FROM python:3.7.3
 
+# Create a non-root user
+RUN useradd -m myuser
+
 # Defina o diretório de trabalho
 WORKDIR /app
 
