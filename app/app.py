@@ -13,6 +13,8 @@ from datetime import datetime
 from weasyprint import HTML
 from dotenv import load_dotenv
 import os
+from flask_wtf.csrf import CSRFProtect
+
 
 load_dotenv()
 
@@ -40,6 +42,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = SQLALCHEMY_DATABASE_URI
 migrate = Migrate(app, db)
 bcrypt = Bcrypt(app)
 db.init_app(app)
+csrf = CSRFProtect(app)
 
 # Chave secreta para sessões
 app.secret_key = SECRET_KEY
@@ -159,6 +162,7 @@ def verifica_autenticacao(f):
     return decorador
 
 @app.route('/dashboard/meu-perfil', methods=['GET', 'POST'])
+@csrf.exempt
 @verifica_autenticacao
 def meu_perfil():
     user_id = session['user_id']
@@ -231,6 +235,7 @@ def is_valid_email(email):
     return re.match(pattern, email)
 
 @app.route('/registro', methods=['GET', 'POST'])
+@csrf.exempt
 def registro():
     if request.method == 'POST':
         username = request.form['username']
@@ -286,6 +291,7 @@ def registro():
 
 
 @app.route('/login', methods=['GET', 'POST'])
+@csrf.exempt
 def login():
     if request.method == 'POST':
         email = request.form['email']
@@ -339,6 +345,7 @@ def treinos():
 
 
 @app.route('/dashboard/dietas', methods=['GET', 'POST'])
+@csrf.exempt
 def dietas():
     if 'user_id' not in session:
         flash('Você precisa fazer login para acessar esta página.', 'Você precisa fazer login para acessar esta página.')
@@ -346,6 +353,7 @@ def dietas():
     return render_template('dietas.html')
 
 @app.route('/gerar_dieta', methods=['POST'])
+@csrf.exempt
 def gerar_dieta():
     if request.method == 'POST':
         dados_formulario = request.form
