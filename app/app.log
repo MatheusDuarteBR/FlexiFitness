@@ -4125,3 +4125,65 @@ KeyError: 'user_id'
 2023-11-23 17:02:40,641 [DEBUG] - Compiling 'GDEF' table
 2023-11-23 17:02:40,641 [DEBUG] - Writing 'GDEF' table to disk
 2023-11-23 17:02:40,646 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:40] "GET /gerar_pdf/102 HTTP/1.1" 200 -
+2023-11-23 17:10:40,888 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-23 17:10:40,888 [INFO] - [33mPress CTRL+C to quit[0m
+2023-11-23 17:10:46,106 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-11-23 17:10:46,209 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,250 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/chicken_salad.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,320 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/rice_salmao.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,326 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/omelete_espinafre.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,338 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/smoothie_amendoim.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,371 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/batata_doce_frango.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,375 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/wrap_atum.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,377 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/smoothie_manga_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,380 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/quinoa_legumes.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,382 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/smoothie_morango_banana.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,385 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/frango_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,394 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,482 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/wrap_frango_abacate.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,488 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/smoothie_pessego_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,501 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/sopa_de_lentilha.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,526 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/macarrao_com_frango.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,527 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/salada_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,525 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/smoothie_abacaxi_coco.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,530 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/panquecas_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,538 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/acai.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,565 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/salada_frutas.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,574 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/hamburguer_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,586 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,592 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/couscus.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,601 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/smoothie_melancia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,606 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/wrap_legumes.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,693 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/smoothie_framboesa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,695 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/miniatures/bowl_salmao.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:10:46,896 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:46] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:47,166 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:47] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-11-23 17:10:47,198 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:47] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:48,341 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:48] "GET /dashboard HTTP/1.1" 200 -
+2023-11-23 17:10:48,381 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:48] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:48,385 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:48] "[36mGET /static/carrocel1.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:48,396 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:48] "[36mGET /static/carrocel2.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:48,403 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:48] "[36mGET /static/carrocel3.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:49,247 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-11-23 17:10:49,256 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:49] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-11-23 17:10:49,276 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:49] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:50,007 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:50] "GET /dashboard/mensagens HTTP/1.1" 200 -
+2023-11-23 17:10:50,016 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:50] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:51,425 [INFO] - Usuário desconectado: Duarteex
+2023-11-23 17:10:51,426 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:51] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-11-23 17:10:51,432 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:51] "GET /login HTTP/1.1" 200 -
+2023-11-23 17:10:51,449 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:51] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-11-23 17:10:51,451 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:51] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:51,491 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:51] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:52,592 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:52] "GET /login HTTP/1.1" 200 -
+2023-11-23 17:10:52,606 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:52] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:52,609 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:52] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-11-23 17:10:55,916 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-11-23 17:10:55,916 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-11-23 17:10:55,917 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-11-23 17:10:55,922 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:55] "GET /dashboard HTTP/1.1" 200 -
+2023-11-23 17:10:55,931 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:55] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:55,933 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:55] "[36mGET /static/carrocel1.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:55,939 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:55] "[36mGET /static/carrocel2.png HTTP/1.1[0m" 304 -
+2023-11-23 17:10:55,941 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:10:55] "[36mGET /static/carrocel3.png HTTP/1.1[0m" 304 -
