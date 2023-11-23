@@ -3496,3 +3496,632 @@ KeyError: 'user_id'
 2023-11-13 17:03:20,649 [INFO] - 127.0.0.1 - - [13/Nov/2023 17:03:20] "[36mGET /static/carrocel1.png HTTP/1.1[0m" 304 -
 2023-11-13 17:03:20,656 [INFO] - 127.0.0.1 - - [13/Nov/2023 17:03:20] "[36mGET /static/carrocel2.png HTTP/1.1[0m" 304 -
 2023-11-13 17:03:20,665 [INFO] - 127.0.0.1 - - [13/Nov/2023 17:03:20] "[36mGET /static/carrocel3.png HTTP/1.1[0m" 304 -
+2023-11-23 10:44:04,397 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-23 10:44:04,398 [INFO] - [33mPress CTRL+C to quit[0m
+2023-11-23 10:47:38,116 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-23 10:47:38,116 [INFO] - [33mPress CTRL+C to quit[0m
+2023-11-23 10:49:49,721 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-23 10:49:49,721 [INFO] - [33mPress CTRL+C to quit[0m
+2023-11-23 16:43:51,480 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-23 16:43:51,480 [INFO] - [33mPress CTRL+C to quit[0m
+2023-11-23 16:43:54,443 [INFO] - Rota "/" foi acessada.
+2023-11-23 16:43:54,472 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:43:54] "GET / HTTP/1.1" 200 -
+2023-11-23 16:43:54,501 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:43:54] "GET /static/logo.png HTTP/1.1" 200 -
+2023-11-23 16:43:54,502 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:43:54] "GET /static/treinamento.png HTTP/1.1" 200 -
+2023-11-23 16:43:54,545 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:43:54] "GET /static/dieta.png HTTP/1.1" 200 -
+2023-11-23 16:43:54,545 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:43:54] "GET /static/receitas-fit.png HTTP/1.1" 200 -
+2023-11-23 16:43:54,546 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:43:54] "GET /static/cutting.png HTTP/1.1" 200 -
+2023-11-23 16:43:54,549 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:43:54] "GET /static/bulking.png HTTP/1.1" 200 -
+2023-11-23 16:44:05,165 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:05] "GET /static/servicos.png HTTP/1.1" 200 -
+2023-11-23 16:44:05,168 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:05] "GET /static/background-image.png HTTP/1.1" 200 -
+2023-11-23 16:44:05,168 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:05] "GET /static/contact.png HTTP/1.1" 200 -
+2023-11-23 16:44:05,169 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:05] "GET /static/nutricao.png HTTP/1.1" 200 -
+2023-11-23 16:44:05,429 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:05] "GET /static/favicon.png HTTP/1.1" 200 -
+2023-11-23 16:44:11,031 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:11] "GET /login HTTP/1.1" 200 -
+2023-11-23 16:44:11,056 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:11] "GET /static/styles.css HTTP/1.1" 200 -
+2023-11-23 16:44:11,064 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:11] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 16:44:16,246 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:16] "GET /static/registro-background.png HTTP/1.1" 200 -
+2023-11-23 16:44:22,857 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-11-23 16:44:22,857 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-11-23 16:44:22,860 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:22] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-11-23 16:44:22,869 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:22] "GET /dashboard HTTP/1.1" 200 -
+2023-11-23 16:44:22,887 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:22] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 16:44:22,905 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:22] "GET /static/carrocel1.png HTTP/1.1" 200 -
+2023-11-23 16:44:22,920 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:22] "GET /static/carrocel3.png HTTP/1.1" 200 -
+2023-11-23 16:44:22,921 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:22] "GET /static/carrocel2.png HTTP/1.1" 200 -
+2023-11-23 16:44:29,173 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-11-23 16:44:29,203 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/chicken_salad.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,224 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 16:44:29,237 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/batata_doce_frango.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,238 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/rice_salmao.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,241 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/omelete_espinafre.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,247 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/smoothie_amendoim.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,256 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/smoothie_manga_aveia.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,261 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/wrap_atum.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,269 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/quinoa_legumes.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,276 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/smoothie_morango_banana.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,294 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/frango_quinoa.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,302 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/wrap_frango_abacate.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,310 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/background-receita.png HTTP/1.1" 200 -
+2023-11-23 16:44:29,318 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/smoothie_pessego_aveia.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,328 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/macarrao_com_frango.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,350 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/smoothie_abacaxi_coco.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,360 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/sopa_de_lentilha.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,362 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/salada_quinoa.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,370 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/panquecas_aveia.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,387 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/hamburguer_quinoa.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,394 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/acai.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,424 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/salada_frutas.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,438 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/imagem1.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,438 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/couscus.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,443 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/smoothie_melancia.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,465 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/wrap_legumes.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,468 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/bowl_salmao.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:29,474 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:29] "GET /static/miniatures/smoothie_framboesa.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:30,769 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:30] "GET /static/miniatures/chicken_salad.jpg HTTP/1.1" 200 -
+2023-11-23 16:44:30,828 [DEBUG] - Reading 'maxp' table from disk
+2023-11-23 16:44:30,828 [DEBUG] - Decompiling 'maxp' table
+2023-11-23 16:44:30,828 [DEBUG] - Took 0.000s to load 'maxp'
+2023-11-23 16:44:30,828 [DEBUG] - Took 0.000s to prune 'maxp'
+2023-11-23 16:44:30,828 [INFO] - maxp pruned
+2023-11-23 16:44:30,829 [DEBUG] - Reading 'cmap' table from disk
+2023-11-23 16:44:30,829 [DEBUG] - Decompiling 'cmap' table
+2023-11-23 16:44:30,830 [DEBUG] - Reading 'post' table from disk
+2023-11-23 16:44:30,830 [DEBUG] - Decompiling 'post' table
+2023-11-23 16:44:30,832 [DEBUG] - Took 0.003s to load 'cmap'
+2023-11-23 16:44:30,832 [DEBUG] - Took 0.000s to prune 'cmap'
+2023-11-23 16:44:30,832 [INFO] - cmap pruned
+2023-11-23 16:44:30,832 [INFO] - fpgm dropped
+2023-11-23 16:44:30,832 [INFO] - prep dropped
+2023-11-23 16:44:30,832 [INFO] - cvt  dropped
+2023-11-23 16:44:30,832 [INFO] - kern dropped
+2023-11-23 16:44:30,832 [DEBUG] - Took 0.000s to load 'post'
+2023-11-23 16:44:30,832 [DEBUG] - Took 0.000s to prune 'post'
+2023-11-23 16:44:30,832 [INFO] - post pruned
+2023-11-23 16:44:30,834 [INFO] - GPOS dropped
+2023-11-23 16:44:30,834 [INFO] - GSUB dropped
+2023-11-23 16:44:30,834 [DEBUG] - Reading 'name' table from disk
+2023-11-23 16:44:30,834 [DEBUG] - Decompiling 'name' table
+2023-11-23 16:44:30,834 [DEBUG] - Took 0.000s to load 'name'
+2023-11-23 16:44:30,834 [DEBUG] - Reading 'fvar' table from disk
+2023-11-23 16:44:30,834 [DEBUG] - Reading 'STAT' table from disk
+2023-11-23 16:44:30,834 [DEBUG] - Reading 'CPAL' table from disk
+2023-11-23 16:44:30,834 [DEBUG] - Took 0.000s to prune 'name'
+2023-11-23 16:44:30,834 [INFO] - name pruned
+2023-11-23 16:44:30,834 [DEBUG] - Reading 'glyf' table from disk
+2023-11-23 16:44:30,834 [DEBUG] - Decompiling 'glyf' table
+2023-11-23 16:44:30,834 [DEBUG] - Reading 'loca' table from disk
+2023-11-23 16:44:30,834 [DEBUG] - Decompiling 'loca' table
+2023-11-23 16:44:30,834 [DEBUG] - Reading 'head' table from disk
+2023-11-23 16:44:30,835 [DEBUG] - Decompiling 'head' table
+2023-11-23 16:44:30,836 [DEBUG] - Took 0.002s to load 'glyf'
+2023-11-23 16:44:30,836 [DEBUG] - Took 0.000s to prune 'glyf'
+2023-11-23 16:44:30,836 [INFO] - glyf pruned
+2023-11-23 16:44:30,836 [DEBUG] - Took 0.000s to close glyph list over 'cmap'
+2023-11-23 16:44:30,836 [INFO] - Added gid0 to subset
+2023-11-23 16:44:30,836 [INFO] - Closing glyph list over 'glyf': 29 glyphs before
+2023-11-23 16:44:30,836 [INFO] - Glyph names: ['.notdef', 'C', 'D', 'F', 'I', 'M', 'P', 'R', 'S', 'T', 'a', 'atilde', 'c', 'ccedilla', 'colon', 'd', 'e', 'f', 'g', 'i', 'l', 'm', 'n', 'o', 'p', 'r', 's', 'space', 't']
+2023-11-23 16:44:30,837 [INFO] - Glyph IDs:   [0, 3, 29, 38, 39, 41, 44, 48, 51, 53, 54, 55, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 83, 85, 86, 87, 165, 169]
+2023-11-23 16:44:30,837 [INFO] - Closed glyph list over 'glyf': 31 glyphs after
+2023-11-23 16:44:30,837 [INFO] - Glyph names: ['.notdef', 'C', 'D', 'F', 'I', 'M', 'P', 'R', 'S', 'T', 'a', 'atilde', 'c', 'ccedilla', 'cedilla', 'colon', 'd', 'e', 'f', 'g', 'i', 'l', 'm', 'n', 'o', 'p', 'r', 's', 'space', 't', 'tilde']
+2023-11-23 16:44:30,837 [INFO] - Glyph IDs:   [0, 3, 29, 38, 39, 41, 44, 48, 51, 53, 54, 55, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 83, 85, 86, 87, 122, 165, 169, 670]
+2023-11-23 16:44:30,837 [DEBUG] - Took 0.001s to close glyph list over 'glyf'
+2023-11-23 16:44:30,838 [INFO] - Retaining 31 glyphs
+2023-11-23 16:44:30,838 [INFO] - head subsetting not needed
+2023-11-23 16:44:30,838 [INFO] - hhea subsetting not needed
+2023-11-23 16:44:30,838 [INFO] - maxp subsetting not needed
+2023-11-23 16:44:30,838 [INFO] - OS/2 subsetting not needed
+2023-11-23 16:44:30,838 [DEBUG] - Reading 'hmtx' table from disk
+2023-11-23 16:44:30,838 [DEBUG] - Decompiling 'hmtx' table
+2023-11-23 16:44:30,838 [DEBUG] - Reading 'hhea' table from disk
+2023-11-23 16:44:30,838 [DEBUG] - Decompiling 'hhea' table
+2023-11-23 16:44:30,920 [DEBUG] - Took 0.082s to subset 'hmtx'
+2023-11-23 16:44:30,920 [INFO] - hmtx subsetted
+2023-11-23 16:44:30,921 [DEBUG] - Took 0.001s to subset 'cmap'
+2023-11-23 16:44:30,921 [INFO] - cmap subsetted
+2023-11-23 16:44:30,921 [INFO] - loca subsetting not needed
+2023-11-23 16:44:30,921 [DEBUG] - Took 0.000s to subset 'post'
+2023-11-23 16:44:30,921 [INFO] - post subsetted
+2023-11-23 16:44:30,921 [INFO] - gasp subsetting not needed
+2023-11-23 16:44:30,921 [INFO] - FFTM NOT subset; don't know how to subset
+2023-11-23 16:44:30,921 [DEBUG] - Reading 'GDEF' table from disk
+2023-11-23 16:44:30,921 [DEBUG] - Decompiling 'GDEF' table
+2023-11-23 16:44:30,922 [DEBUG] - Took 0.001s to subset 'GDEF'
+2023-11-23 16:44:30,922 [INFO] - GDEF subsetted
+2023-11-23 16:44:30,922 [INFO] - name subsetting not needed
+2023-11-23 16:44:30,923 [DEBUG] - Took 0.001s to subset 'glyf'
+2023-11-23 16:44:30,923 [INFO] - glyf subsetted
+2023-11-23 16:44:30,923 [DEBUG] - Took 0.000s to subset GlyphOrder
+2023-11-23 16:44:30,923 [DEBUG] - Took 0.000s to prune 'head'
+2023-11-23 16:44:30,923 [INFO] - head pruned
+2023-11-23 16:44:30,924 [DEBUG] - Reading 'OS/2' table from disk
+2023-11-23 16:44:30,924 [DEBUG] - Decompiling 'OS/2' table
+2023-11-23 16:44:30,924 [INFO] - OS/2 Unicode ranges pruned: [0, 1]
+2023-11-23 16:44:30,925 [DEBUG] - Took 0.000s to prune 'glyf'
+2023-11-23 16:44:30,925 [INFO] - glyf pruned
+2023-11-23 16:44:30,925 [DEBUG] - Took 0.000s to prune 'GDEF'
+2023-11-23 16:44:30,925 [INFO] - GDEF pruned
+2023-11-23 16:44:30,926 [DEBUG] - Compiling 'glyf' table
+2023-11-23 16:44:30,930 [DEBUG] - Writing 'glyf' table to disk
+2023-11-23 16:44:30,930 [DEBUG] - Compiling 'maxp' table
+2023-11-23 16:44:30,931 [DEBUG] - Writing 'maxp' table to disk
+2023-11-23 16:44:30,931 [DEBUG] - Compiling 'loca' table
+2023-11-23 16:44:30,931 [DEBUG] - Writing 'loca' table to disk
+2023-11-23 16:44:30,931 [DEBUG] - Compiling 'head' table
+2023-11-23 16:44:30,931 [DEBUG] - Writing 'head' table to disk
+2023-11-23 16:44:30,931 [DEBUG] - Compiling 'hmtx' table
+2023-11-23 16:44:30,932 [DEBUG] - Writing 'hmtx' table to disk
+2023-11-23 16:44:30,932 [DEBUG] - Compiling 'hhea' table
+2023-11-23 16:44:30,933 [DEBUG] - Writing 'hhea' table to disk
+2023-11-23 16:44:30,933 [DEBUG] - Compiling 'OS/2' table
+2023-11-23 16:44:30,933 [DEBUG] - Writing 'OS/2' table to disk
+2023-11-23 16:44:30,933 [DEBUG] - Compiling 'cmap' table
+2023-11-23 16:44:30,933 [DEBUG] - Writing 'cmap' table to disk
+2023-11-23 16:44:30,933 [DEBUG] - Compiling 'name' table
+2023-11-23 16:44:30,934 [DEBUG] - Writing 'name' table to disk
+2023-11-23 16:44:30,934 [DEBUG] - Compiling 'post' table
+2023-11-23 16:44:30,935 [DEBUG] - Writing 'post' table to disk
+2023-11-23 16:44:30,935 [DEBUG] - Reading 'gasp' table from disk
+2023-11-23 16:44:30,935 [DEBUG] - Writing 'gasp' table to disk
+2023-11-23 16:44:30,935 [DEBUG] - Reading 'FFTM' table from disk
+2023-11-23 16:44:30,935 [DEBUG] - Writing 'FFTM' table to disk
+2023-11-23 16:44:30,935 [DEBUG] - Compiling 'GDEF' table
+2023-11-23 16:44:30,936 [DEBUG] - Writing 'GDEF' table to disk
+2023-11-23 16:44:30,937 [DEBUG] - Reading 'maxp' table from disk
+2023-11-23 16:44:30,937 [DEBUG] - Decompiling 'maxp' table
+2023-11-23 16:44:30,937 [DEBUG] - Took 0.000s to load 'maxp'
+2023-11-23 16:44:30,937 [DEBUG] - Took 0.000s to prune 'maxp'
+2023-11-23 16:44:30,937 [INFO] - maxp pruned
+2023-11-23 16:44:30,937 [DEBUG] - Reading 'cmap' table from disk
+2023-11-23 16:44:30,937 [DEBUG] - Decompiling 'cmap' table
+2023-11-23 16:44:30,937 [DEBUG] - Reading 'post' table from disk
+2023-11-23 16:44:30,937 [DEBUG] - Decompiling 'post' table
+2023-11-23 16:44:30,940 [DEBUG] - Took 0.003s to load 'cmap'
+2023-11-23 16:44:30,940 [DEBUG] - Took 0.000s to prune 'cmap'
+2023-11-23 16:44:30,940 [INFO] - cmap pruned
+2023-11-23 16:44:30,940 [INFO] - fpgm dropped
+2023-11-23 16:44:30,940 [INFO] - prep dropped
+2023-11-23 16:44:30,940 [INFO] - cvt  dropped
+2023-11-23 16:44:30,940 [INFO] - kern dropped
+2023-11-23 16:44:30,940 [DEBUG] - Took 0.000s to load 'post'
+2023-11-23 16:44:30,940 [DEBUG] - Took 0.000s to prune 'post'
+2023-11-23 16:44:30,940 [INFO] - post pruned
+2023-11-23 16:44:30,940 [INFO] - GPOS dropped
+2023-11-23 16:44:30,940 [INFO] - GSUB dropped
+2023-11-23 16:44:30,940 [DEBUG] - Reading 'name' table from disk
+2023-11-23 16:44:30,940 [DEBUG] - Decompiling 'name' table
+2023-11-23 16:44:30,941 [DEBUG] - Took 0.000s to load 'name'
+2023-11-23 16:44:30,941 [DEBUG] - Reading 'fvar' table from disk
+2023-11-23 16:44:30,941 [DEBUG] - Reading 'STAT' table from disk
+2023-11-23 16:44:30,941 [DEBUG] - Reading 'CPAL' table from disk
+2023-11-23 16:44:30,941 [DEBUG] - Took 0.000s to prune 'name'
+2023-11-23 16:44:30,941 [INFO] - name pruned
+2023-11-23 16:44:30,941 [DEBUG] - Reading 'glyf' table from disk
+2023-11-23 16:44:30,941 [DEBUG] - Decompiling 'glyf' table
+2023-11-23 16:44:30,942 [DEBUG] - Reading 'loca' table from disk
+2023-11-23 16:44:30,942 [DEBUG] - Decompiling 'loca' table
+2023-11-23 16:44:30,942 [DEBUG] - Reading 'head' table from disk
+2023-11-23 16:44:30,942 [DEBUG] - Decompiling 'head' table
+2023-11-23 16:44:30,944 [DEBUG] - Took 0.002s to load 'glyf'
+2023-11-23 16:44:30,944 [DEBUG] - Took 0.000s to prune 'glyf'
+2023-11-23 16:44:30,944 [INFO] - glyf pruned
+2023-11-23 16:44:30,944 [DEBUG] - Took 0.000s to close glyph list over 'cmap'
+2023-11-23 16:44:30,944 [INFO] - Added gid0 to subset
+2023-11-23 16:44:30,944 [INFO] - Closing glyph list over 'glyf': 44 glyphs before
+2023-11-23 16:44:30,944 [INFO] - Glyph names: ['.notdef', 'C', 'D', 'F', 'P', 'R', 'S', 'T', 'U', 'a', 'aacute', 'atilde', 'b', 'bullet', 'c', 'ccedilla', 'comma', 'copyright', 'd', 'e', 'eight', 'f', 'five', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'underscore', 'v', 'x', 'z', 'zero']
+2023-11-23 16:44:30,945 [INFO] - Glyph IDs:   [0, 3, 15, 17, 19, 20, 24, 27, 38, 39, 41, 51, 53, 54, 55, 56, 66, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 93, 107, 163, 165, 169, 2030]
+2023-11-23 16:44:30,945 [INFO] - Closed glyph list over 'glyf': 47 glyphs after
+2023-11-23 16:44:30,945 [INFO] - Glyph names: ['.notdef', 'C', 'D', 'F', 'P', 'R', 'S', 'T', 'U', 'a', 'aacute', 'acute', 'atilde', 'b', 'bullet', 'c', 'ccedilla', 'cedilla', 'comma', 'copyright', 'd', 'e', 'eight', 'f', 'five', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'tilde', 'u', 'underscore', 'v', 'x', 'z', 'zero']
+2023-11-23 16:44:30,945 [INFO] - Glyph IDs:   [0, 3, 15, 17, 19, 20, 24, 27, 38, 39, 41, 51, 53, 54, 55, 56, 66, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 93, 107, 118, 122, 163, 165, 169, 670, 2030]
+2023-11-23 16:44:30,945 [DEBUG] - Took 0.001s to close glyph list over 'glyf'
+2023-11-23 16:44:30,947 [INFO] - Retaining 47 glyphs
+2023-11-23 16:44:30,947 [INFO] - head subsetting not needed
+2023-11-23 16:44:30,947 [INFO] - hhea subsetting not needed
+2023-11-23 16:44:30,947 [INFO] - maxp subsetting not needed
+2023-11-23 16:44:30,947 [INFO] - OS/2 subsetting not needed
+2023-11-23 16:44:30,947 [DEBUG] - Reading 'hmtx' table from disk
+2023-11-23 16:44:30,947 [DEBUG] - Decompiling 'hmtx' table
+2023-11-23 16:44:30,947 [DEBUG] - Reading 'hhea' table from disk
+2023-11-23 16:44:30,947 [DEBUG] - Decompiling 'hhea' table
+2023-11-23 16:44:30,949 [DEBUG] - Took 0.002s to subset 'hmtx'
+2023-11-23 16:44:30,950 [INFO] - hmtx subsetted
+2023-11-23 16:44:30,950 [DEBUG] - Took 0.000s to subset 'cmap'
+2023-11-23 16:44:30,950 [INFO] - cmap subsetted
+2023-11-23 16:44:30,950 [INFO] - loca subsetting not needed
+2023-11-23 16:44:30,950 [DEBUG] - Took 0.000s to subset 'post'
+2023-11-23 16:44:30,950 [INFO] - post subsetted
+2023-11-23 16:44:30,950 [INFO] - gasp subsetting not needed
+2023-11-23 16:44:30,950 [INFO] - FFTM NOT subset; don't know how to subset
+2023-11-23 16:44:30,950 [DEBUG] - Reading 'GDEF' table from disk
+2023-11-23 16:44:30,951 [DEBUG] - Decompiling 'GDEF' table
+2023-11-23 16:44:30,951 [DEBUG] - Took 0.001s to subset 'GDEF'
+2023-11-23 16:44:30,951 [INFO] - GDEF subsetted
+2023-11-23 16:44:30,951 [INFO] - name subsetting not needed
+2023-11-23 16:44:30,952 [DEBUG] - Took 0.001s to subset 'glyf'
+2023-11-23 16:44:30,952 [INFO] - glyf subsetted
+2023-11-23 16:44:30,952 [DEBUG] - Took 0.000s to subset GlyphOrder
+2023-11-23 16:44:30,952 [DEBUG] - Took 0.000s to prune 'head'
+2023-11-23 16:44:30,952 [INFO] - head pruned
+2023-11-23 16:44:30,953 [DEBUG] - Reading 'OS/2' table from disk
+2023-11-23 16:44:30,953 [DEBUG] - Decompiling 'OS/2' table
+2023-11-23 16:44:30,953 [INFO] - OS/2 Unicode ranges pruned: [0, 1, 31]
+2023-11-23 16:44:30,953 [DEBUG] - Took 0.000s to prune 'glyf'
+2023-11-23 16:44:30,953 [INFO] - glyf pruned
+2023-11-23 16:44:30,953 [DEBUG] - Took 0.000s to prune 'GDEF'
+2023-11-23 16:44:30,953 [INFO] - GDEF pruned
+2023-11-23 16:44:30,954 [DEBUG] - Compiling 'glyf' table
+2023-11-23 16:44:30,960 [DEBUG] - Writing 'glyf' table to disk
+2023-11-23 16:44:30,960 [DEBUG] - Compiling 'maxp' table
+2023-11-23 16:44:30,960 [DEBUG] - Writing 'maxp' table to disk
+2023-11-23 16:44:30,960 [DEBUG] - Compiling 'loca' table
+2023-11-23 16:44:30,961 [DEBUG] - Writing 'loca' table to disk
+2023-11-23 16:44:30,961 [DEBUG] - Compiling 'head' table
+2023-11-23 16:44:30,961 [DEBUG] - Writing 'head' table to disk
+2023-11-23 16:44:30,961 [DEBUG] - Compiling 'hmtx' table
+2023-11-23 16:44:30,962 [DEBUG] - Writing 'hmtx' table to disk
+2023-11-23 16:44:30,962 [DEBUG] - Compiling 'hhea' table
+2023-11-23 16:44:30,963 [DEBUG] - Writing 'hhea' table to disk
+2023-11-23 16:44:30,963 [DEBUG] - Compiling 'OS/2' table
+2023-11-23 16:44:30,963 [DEBUG] - Writing 'OS/2' table to disk
+2023-11-23 16:44:30,963 [DEBUG] - Compiling 'cmap' table
+2023-11-23 16:44:30,963 [DEBUG] - Writing 'cmap' table to disk
+2023-11-23 16:44:30,963 [DEBUG] - Compiling 'name' table
+2023-11-23 16:44:30,963 [DEBUG] - Writing 'name' table to disk
+2023-11-23 16:44:30,964 [DEBUG] - Compiling 'post' table
+2023-11-23 16:44:30,964 [DEBUG] - Writing 'post' table to disk
+2023-11-23 16:44:30,964 [DEBUG] - Reading 'gasp' table from disk
+2023-11-23 16:44:30,964 [DEBUG] - Writing 'gasp' table to disk
+2023-11-23 16:44:30,964 [DEBUG] - Reading 'FFTM' table from disk
+2023-11-23 16:44:30,964 [DEBUG] - Writing 'FFTM' table to disk
+2023-11-23 16:44:30,964 [DEBUG] - Compiling 'GDEF' table
+2023-11-23 16:44:30,964 [DEBUG] - Writing 'GDEF' table to disk
+2023-11-23 16:44:30,968 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:30] "GET /gerar_pdf/102 HTTP/1.1" 200 -
+2023-11-23 16:44:31,020 [INFO] - 127.0.0.1 - - [23/Nov/2023 16:44:31] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-11-23 17:02:02,772 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-23 17:02:02,772 [INFO] - [33mPress CTRL+C to quit[0m
+2023-11-23 17:02:06,417 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-11-23 17:02:06,434 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,440 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/chicken_salad.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,457 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/rice_salmao.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,461 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/omelete_espinafre.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,462 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/smoothie_amendoim.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,467 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/batata_doce_frango.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,470 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/wrap_atum.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,472 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/smoothie_manga_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,473 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,494 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/smoothie_morango_banana.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,501 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/quinoa_legumes.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,505 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/frango_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,522 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/wrap_frango_abacate.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,525 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/smoothie_pessego_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,529 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/macarrao_com_frango.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,537 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/sopa_de_lentilha.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,539 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/smoothie_abacaxi_coco.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,541 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/salada_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,547 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/acai.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,549 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/hamburguer_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,550 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/salada_frutas.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,548 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/panquecas_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,553 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,556 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/smoothie_melancia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,556 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/couscus.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,557 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/wrap_legumes.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,566 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/bowl_salmao.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,569 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/miniatures/smoothie_framboesa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:06,658 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:06] "[36mGET /static/favicon.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:08,001 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:08] "GET /dashboard HTTP/1.1" 200 -
+2023-11-23 17:02:08,011 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:08,032 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:08] "[36mGET /static/carrocel1.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:08,034 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:08] "[36mGET /static/carrocel2.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:08,037 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:08] "[36mGET /static/carrocel3.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:08,965 [INFO] - Usuário desconectado: Duarteex
+2023-11-23 17:02:08,967 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:08] "[32mGET /logout HTTP/1.1[0m" 302 -
+2023-11-23 17:02:08,974 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:08] "GET /login HTTP/1.1" 200 -
+2023-11-23 17:02:08,984 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:08] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-11-23 17:02:08,985 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:08] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:09,007 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:09] "[36mGET /static/registro-background.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:19,475 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:19] "GET /registro HTTP/1.1" 200 -
+2023-11-23 17:02:19,490 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:19] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:19,491 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:19] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-11-23 17:02:25,244 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:25] "GET /login HTTP/1.1" 200 -
+2023-11-23 17:02:25,261 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:25] "[36mGET /static/styles.css HTTP/1.1[0m" 304 -
+2023-11-23 17:02:25,263 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:25] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:28,872 [INFO] - Login bem-sucedido para o usuário: Duarteex
+2023-11-23 17:02:28,873 [INFO] - User session: <SecureCookieSession {'user_id': 1, '_flashes': [('Login bem-sucedido!', 'Login bem-sucedido!')]}>
+2023-11-23 17:02:28,880 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+2023-11-23 17:02:28,890 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:28] "GET /dashboard HTTP/1.1" 200 -
+2023-11-23 17:02:28,905 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:28] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:28,907 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:28] "[36mGET /static/carrocel1.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:28,926 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:28] "[36mGET /static/carrocel2.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:28,928 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:28] "[36mGET /static/carrocel3.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:36,169 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:36] "GET /dashboard/dietas HTTP/1.1" 200 -
+2023-11-23 17:02:36,191 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:36,592 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:36] "GET /dashboard/treinos HTTP/1.1" 200 -
+2023-11-23 17:02:36,603 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:36] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,027 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-11-23 17:02:37,035 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,038 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/chicken_salad.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,042 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/rice_salmao.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,052 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/omelete_espinafre.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,055 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/smoothie_amendoim.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,056 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/wrap_atum.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,057 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/batata_doce_frango.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,059 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/quinoa_legumes.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,059 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/smoothie_manga_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,066 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/smoothie_morango_banana.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,067 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/frango_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,068 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/wrap_frango_abacate.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,069 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/smoothie_pessego_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,071 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/smoothie_abacaxi_coco.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,073 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/macarrao_com_frango.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,073 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,074 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/sopa_de_lentilha.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,075 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/salada_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,076 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/panquecas_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,081 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/acai.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,082 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/hamburguer_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,083 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/salada_frutas.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,084 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,085 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/couscus.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,086 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/smoothie_melancia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,098 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/bowl_salmao.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,098 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/wrap_legumes.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,099 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/miniatures/smoothie_framboesa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:37,970 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-11-23 17:02:37,975 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-11-23 17:02:37,984 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:37] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:38,861 [INFO] - Você já possui um perfil cadastrado. Duarteex
+2023-11-23 17:02:38,863 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:38] "GET /dashboard/meu-perfil HTTP/1.1" 200 -
+2023-11-23 17:02:38,870 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:38] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,466 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "GET /dashboard/receitas HTTP/1.1" 200 -
+2023-11-23 17:02:39,473 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/logo.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,477 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/chicken_salad.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,483 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/rice_salmao.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,495 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/omelete_espinafre.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,497 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/smoothie_amendoim.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,498 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/batata_doce_frango.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,499 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/wrap_atum.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,501 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/smoothie_manga_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,502 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/quinoa_legumes.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,509 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/frango_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,506 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/smoothie_morango_banana.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,511 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/wrap_frango_abacate.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,518 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/smoothie_pessego_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,519 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/macarrao_com_frango.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,519 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/smoothie_abacaxi_coco.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,527 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/salada_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,531 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/panquecas_aveia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,533 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/sopa_de_lentilha.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,535 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/acai.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,535 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/background-receita.png HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,549 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/hamburguer_quinoa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,551 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/imagem1.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,558 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/couscus.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,564 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/salada_frutas.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,564 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/smoothie_melancia.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,572 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/bowl_salmao.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,573 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/smoothie_framboesa.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:39,573 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:39] "[36mGET /static/miniatures/wrap_legumes.jpg HTTP/1.1[0m" 304 -
+2023-11-23 17:02:40,478 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:40] "GET /static/miniatures/chicken_salad.jpg HTTP/1.1" 200 -
+2023-11-23 17:02:40,545 [DEBUG] - Reading 'maxp' table from disk
+2023-11-23 17:02:40,546 [DEBUG] - Decompiling 'maxp' table
+2023-11-23 17:02:40,546 [DEBUG] - Took 0.001s to load 'maxp'
+2023-11-23 17:02:40,546 [DEBUG] - Took 0.000s to prune 'maxp'
+2023-11-23 17:02:40,546 [INFO] - maxp pruned
+2023-11-23 17:02:40,547 [DEBUG] - Reading 'cmap' table from disk
+2023-11-23 17:02:40,547 [DEBUG] - Decompiling 'cmap' table
+2023-11-23 17:02:40,548 [DEBUG] - Reading 'post' table from disk
+2023-11-23 17:02:40,548 [DEBUG] - Decompiling 'post' table
+2023-11-23 17:02:40,550 [DEBUG] - Took 0.003s to load 'cmap'
+2023-11-23 17:02:40,550 [DEBUG] - Took 0.000s to prune 'cmap'
+2023-11-23 17:02:40,550 [INFO] - cmap pruned
+2023-11-23 17:02:40,550 [INFO] - fpgm dropped
+2023-11-23 17:02:40,550 [INFO] - prep dropped
+2023-11-23 17:02:40,550 [INFO] - cvt  dropped
+2023-11-23 17:02:40,550 [INFO] - kern dropped
+2023-11-23 17:02:40,550 [DEBUG] - Took 0.000s to load 'post'
+2023-11-23 17:02:40,550 [DEBUG] - Took 0.000s to prune 'post'
+2023-11-23 17:02:40,550 [INFO] - post pruned
+2023-11-23 17:02:40,551 [INFO] - GPOS dropped
+2023-11-23 17:02:40,551 [INFO] - GSUB dropped
+2023-11-23 17:02:40,551 [DEBUG] - Reading 'name' table from disk
+2023-11-23 17:02:40,551 [DEBUG] - Decompiling 'name' table
+2023-11-23 17:02:40,552 [DEBUG] - Took 0.000s to load 'name'
+2023-11-23 17:02:40,552 [DEBUG] - Reading 'fvar' table from disk
+2023-11-23 17:02:40,552 [DEBUG] - Reading 'STAT' table from disk
+2023-11-23 17:02:40,552 [DEBUG] - Reading 'CPAL' table from disk
+2023-11-23 17:02:40,552 [DEBUG] - Took 0.000s to prune 'name'
+2023-11-23 17:02:40,552 [INFO] - name pruned
+2023-11-23 17:02:40,552 [DEBUG] - Reading 'glyf' table from disk
+2023-11-23 17:02:40,552 [DEBUG] - Decompiling 'glyf' table
+2023-11-23 17:02:40,552 [DEBUG] - Reading 'loca' table from disk
+2023-11-23 17:02:40,552 [DEBUG] - Decompiling 'loca' table
+2023-11-23 17:02:40,552 [DEBUG] - Reading 'head' table from disk
+2023-11-23 17:02:40,552 [DEBUG] - Decompiling 'head' table
+2023-11-23 17:02:40,601 [DEBUG] - Took 0.049s to load 'glyf'
+2023-11-23 17:02:40,601 [DEBUG] - Took 0.000s to prune 'glyf'
+2023-11-23 17:02:40,601 [INFO] - glyf pruned
+2023-11-23 17:02:40,601 [DEBUG] - Took 0.000s to close glyph list over 'cmap'
+2023-11-23 17:02:40,601 [INFO] - Added gid0 to subset
+2023-11-23 17:02:40,601 [INFO] - Closing glyph list over 'glyf': 29 glyphs before
+2023-11-23 17:02:40,601 [INFO] - Glyph names: ['.notdef', 'C', 'D', 'F', 'I', 'M', 'P', 'R', 'S', 'T', 'a', 'atilde', 'c', 'ccedilla', 'colon', 'd', 'e', 'f', 'g', 'i', 'l', 'm', 'n', 'o', 'p', 'r', 's', 'space', 't']
+2023-11-23 17:02:40,602 [INFO] - Glyph IDs:   [0, 3, 29, 38, 39, 41, 44, 48, 51, 53, 54, 55, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 83, 85, 86, 87, 165, 169]
+2023-11-23 17:02:40,602 [INFO] - Closed glyph list over 'glyf': 31 glyphs after
+2023-11-23 17:02:40,602 [INFO] - Glyph names: ['.notdef', 'C', 'D', 'F', 'I', 'M', 'P', 'R', 'S', 'T', 'a', 'atilde', 'c', 'ccedilla', 'cedilla', 'colon', 'd', 'e', 'f', 'g', 'i', 'l', 'm', 'n', 'o', 'p', 'r', 's', 'space', 't', 'tilde']
+2023-11-23 17:02:40,602 [INFO] - Glyph IDs:   [0, 3, 29, 38, 39, 41, 44, 48, 51, 53, 54, 55, 68, 70, 71, 72, 73, 74, 76, 79, 80, 81, 82, 83, 85, 86, 87, 122, 165, 169, 670]
+2023-11-23 17:02:40,602 [DEBUG] - Took 0.001s to close glyph list over 'glyf'
+2023-11-23 17:02:40,603 [INFO] - Retaining 31 glyphs
+2023-11-23 17:02:40,603 [INFO] - head subsetting not needed
+2023-11-23 17:02:40,603 [INFO] - hhea subsetting not needed
+2023-11-23 17:02:40,603 [INFO] - maxp subsetting not needed
+2023-11-23 17:02:40,603 [INFO] - OS/2 subsetting not needed
+2023-11-23 17:02:40,603 [DEBUG] - Reading 'hmtx' table from disk
+2023-11-23 17:02:40,603 [DEBUG] - Decompiling 'hmtx' table
+2023-11-23 17:02:40,603 [DEBUG] - Reading 'hhea' table from disk
+2023-11-23 17:02:40,603 [DEBUG] - Decompiling 'hhea' table
+2023-11-23 17:02:40,604 [DEBUG] - Took 0.001s to subset 'hmtx'
+2023-11-23 17:02:40,604 [INFO] - hmtx subsetted
+2023-11-23 17:02:40,605 [DEBUG] - Took 0.000s to subset 'cmap'
+2023-11-23 17:02:40,605 [INFO] - cmap subsetted
+2023-11-23 17:02:40,605 [INFO] - loca subsetting not needed
+2023-11-23 17:02:40,605 [DEBUG] - Took 0.000s to subset 'post'
+2023-11-23 17:02:40,605 [INFO] - post subsetted
+2023-11-23 17:02:40,605 [INFO] - gasp subsetting not needed
+2023-11-23 17:02:40,605 [INFO] - FFTM NOT subset; don't know how to subset
+2023-11-23 17:02:40,605 [DEBUG] - Reading 'GDEF' table from disk
+2023-11-23 17:02:40,605 [DEBUG] - Decompiling 'GDEF' table
+2023-11-23 17:02:40,606 [DEBUG] - Took 0.001s to subset 'GDEF'
+2023-11-23 17:02:40,606 [INFO] - GDEF subsetted
+2023-11-23 17:02:40,606 [INFO] - name subsetting not needed
+2023-11-23 17:02:40,606 [DEBUG] - Took 0.001s to subset 'glyf'
+2023-11-23 17:02:40,606 [INFO] - glyf subsetted
+2023-11-23 17:02:40,606 [DEBUG] - Took 0.000s to subset GlyphOrder
+2023-11-23 17:02:40,607 [DEBUG] - Took 0.000s to prune 'head'
+2023-11-23 17:02:40,607 [INFO] - head pruned
+2023-11-23 17:02:40,607 [DEBUG] - Reading 'OS/2' table from disk
+2023-11-23 17:02:40,607 [DEBUG] - Decompiling 'OS/2' table
+2023-11-23 17:02:40,607 [INFO] - OS/2 Unicode ranges pruned: [0, 1]
+2023-11-23 17:02:40,607 [DEBUG] - Took 0.000s to prune 'glyf'
+2023-11-23 17:02:40,607 [INFO] - glyf pruned
+2023-11-23 17:02:40,608 [DEBUG] - Took 0.000s to prune 'GDEF'
+2023-11-23 17:02:40,608 [INFO] - GDEF pruned
+2023-11-23 17:02:40,608 [DEBUG] - Compiling 'glyf' table
+2023-11-23 17:02:40,612 [DEBUG] - Writing 'glyf' table to disk
+2023-11-23 17:02:40,612 [DEBUG] - Compiling 'maxp' table
+2023-11-23 17:02:40,613 [DEBUG] - Writing 'maxp' table to disk
+2023-11-23 17:02:40,613 [DEBUG] - Compiling 'loca' table
+2023-11-23 17:02:40,613 [DEBUG] - Writing 'loca' table to disk
+2023-11-23 17:02:40,613 [DEBUG] - Compiling 'head' table
+2023-11-23 17:02:40,613 [DEBUG] - Writing 'head' table to disk
+2023-11-23 17:02:40,613 [DEBUG] - Compiling 'hmtx' table
+2023-11-23 17:02:40,613 [DEBUG] - Writing 'hmtx' table to disk
+2023-11-23 17:02:40,613 [DEBUG] - Compiling 'hhea' table
+2023-11-23 17:02:40,614 [DEBUG] - Writing 'hhea' table to disk
+2023-11-23 17:02:40,614 [DEBUG] - Compiling 'OS/2' table
+2023-11-23 17:02:40,614 [DEBUG] - Writing 'OS/2' table to disk
+2023-11-23 17:02:40,614 [DEBUG] - Compiling 'cmap' table
+2023-11-23 17:02:40,615 [DEBUG] - Writing 'cmap' table to disk
+2023-11-23 17:02:40,615 [DEBUG] - Compiling 'name' table
+2023-11-23 17:02:40,615 [DEBUG] - Writing 'name' table to disk
+2023-11-23 17:02:40,615 [DEBUG] - Compiling 'post' table
+2023-11-23 17:02:40,615 [DEBUG] - Writing 'post' table to disk
+2023-11-23 17:02:40,615 [DEBUG] - Reading 'gasp' table from disk
+2023-11-23 17:02:40,615 [DEBUG] - Writing 'gasp' table to disk
+2023-11-23 17:02:40,615 [DEBUG] - Reading 'FFTM' table from disk
+2023-11-23 17:02:40,615 [DEBUG] - Writing 'FFTM' table to disk
+2023-11-23 17:02:40,615 [DEBUG] - Compiling 'GDEF' table
+2023-11-23 17:02:40,615 [DEBUG] - Writing 'GDEF' table to disk
+2023-11-23 17:02:40,616 [DEBUG] - Reading 'maxp' table from disk
+2023-11-23 17:02:40,616 [DEBUG] - Decompiling 'maxp' table
+2023-11-23 17:02:40,616 [DEBUG] - Took 0.000s to load 'maxp'
+2023-11-23 17:02:40,616 [DEBUG] - Took 0.000s to prune 'maxp'
+2023-11-23 17:02:40,616 [INFO] - maxp pruned
+2023-11-23 17:02:40,616 [DEBUG] - Reading 'cmap' table from disk
+2023-11-23 17:02:40,616 [DEBUG] - Decompiling 'cmap' table
+2023-11-23 17:02:40,616 [DEBUG] - Reading 'post' table from disk
+2023-11-23 17:02:40,616 [DEBUG] - Decompiling 'post' table
+2023-11-23 17:02:40,618 [DEBUG] - Took 0.002s to load 'cmap'
+2023-11-23 17:02:40,618 [DEBUG] - Took 0.000s to prune 'cmap'
+2023-11-23 17:02:40,618 [INFO] - cmap pruned
+2023-11-23 17:02:40,618 [INFO] - fpgm dropped
+2023-11-23 17:02:40,618 [INFO] - prep dropped
+2023-11-23 17:02:40,618 [INFO] - cvt  dropped
+2023-11-23 17:02:40,618 [INFO] - kern dropped
+2023-11-23 17:02:40,618 [DEBUG] - Took 0.000s to load 'post'
+2023-11-23 17:02:40,619 [DEBUG] - Took 0.000s to prune 'post'
+2023-11-23 17:02:40,619 [INFO] - post pruned
+2023-11-23 17:02:40,619 [INFO] - GPOS dropped
+2023-11-23 17:02:40,619 [INFO] - GSUB dropped
+2023-11-23 17:02:40,619 [DEBUG] - Reading 'name' table from disk
+2023-11-23 17:02:40,619 [DEBUG] - Decompiling 'name' table
+2023-11-23 17:02:40,619 [DEBUG] - Took 0.000s to load 'name'
+2023-11-23 17:02:40,619 [DEBUG] - Reading 'fvar' table from disk
+2023-11-23 17:02:40,619 [DEBUG] - Reading 'STAT' table from disk
+2023-11-23 17:02:40,619 [DEBUG] - Reading 'CPAL' table from disk
+2023-11-23 17:02:40,619 [DEBUG] - Took 0.000s to prune 'name'
+2023-11-23 17:02:40,619 [INFO] - name pruned
+2023-11-23 17:02:40,619 [DEBUG] - Reading 'glyf' table from disk
+2023-11-23 17:02:40,619 [DEBUG] - Decompiling 'glyf' table
+2023-11-23 17:02:40,619 [DEBUG] - Reading 'loca' table from disk
+2023-11-23 17:02:40,619 [DEBUG] - Decompiling 'loca' table
+2023-11-23 17:02:40,619 [DEBUG] - Reading 'head' table from disk
+2023-11-23 17:02:40,619 [DEBUG] - Decompiling 'head' table
+2023-11-23 17:02:40,621 [DEBUG] - Took 0.002s to load 'glyf'
+2023-11-23 17:02:40,621 [DEBUG] - Took 0.000s to prune 'glyf'
+2023-11-23 17:02:40,621 [INFO] - glyf pruned
+2023-11-23 17:02:40,621 [DEBUG] - Took 0.000s to close glyph list over 'cmap'
+2023-11-23 17:02:40,621 [INFO] - Added gid0 to subset
+2023-11-23 17:02:40,621 [INFO] - Closing glyph list over 'glyf': 44 glyphs before
+2023-11-23 17:02:40,621 [INFO] - Glyph names: ['.notdef', 'C', 'D', 'F', 'P', 'R', 'S', 'T', 'U', 'a', 'aacute', 'atilde', 'b', 'bullet', 'c', 'ccedilla', 'comma', 'copyright', 'd', 'e', 'eight', 'f', 'five', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'u', 'underscore', 'v', 'x', 'z', 'zero']
+2023-11-23 17:02:40,621 [INFO] - Glyph IDs:   [0, 3, 15, 17, 19, 20, 24, 27, 38, 39, 41, 51, 53, 54, 55, 56, 66, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 93, 107, 163, 165, 169, 2030]
+2023-11-23 17:02:40,621 [INFO] - Closed glyph list over 'glyf': 47 glyphs after
+2023-11-23 17:02:40,622 [INFO] - Glyph names: ['.notdef', 'C', 'D', 'F', 'P', 'R', 'S', 'T', 'U', 'a', 'aacute', 'acute', 'atilde', 'b', 'bullet', 'c', 'ccedilla', 'cedilla', 'comma', 'copyright', 'd', 'e', 'eight', 'f', 'five', 'g', 'h', 'i', 'k', 'l', 'm', 'n', 'o', 'one', 'p', 'period', 'r', 's', 'space', 't', 'tilde', 'u', 'underscore', 'v', 'x', 'z', 'zero']
+2023-11-23 17:02:40,622 [INFO] - Glyph IDs:   [0, 3, 15, 17, 19, 20, 24, 27, 38, 39, 41, 51, 53, 54, 55, 56, 66, 68, 69, 70, 71, 72, 73, 74, 75, 76, 78, 79, 80, 81, 82, 83, 85, 86, 87, 88, 89, 91, 93, 107, 118, 122, 163, 165, 169, 670, 2030]
+2023-11-23 17:02:40,622 [DEBUG] - Took 0.001s to close glyph list over 'glyf'
+2023-11-23 17:02:40,623 [INFO] - Retaining 47 glyphs
+2023-11-23 17:02:40,623 [INFO] - head subsetting not needed
+2023-11-23 17:02:40,623 [INFO] - hhea subsetting not needed
+2023-11-23 17:02:40,623 [INFO] - maxp subsetting not needed
+2023-11-23 17:02:40,623 [INFO] - OS/2 subsetting not needed
+2023-11-23 17:02:40,623 [DEBUG] - Reading 'hmtx' table from disk
+2023-11-23 17:02:40,623 [DEBUG] - Decompiling 'hmtx' table
+2023-11-23 17:02:40,623 [DEBUG] - Reading 'hhea' table from disk
+2023-11-23 17:02:40,623 [DEBUG] - Decompiling 'hhea' table
+2023-11-23 17:02:40,624 [DEBUG] - Took 0.001s to subset 'hmtx'
+2023-11-23 17:02:40,624 [INFO] - hmtx subsetted
+2023-11-23 17:02:40,624 [DEBUG] - Took 0.000s to subset 'cmap'
+2023-11-23 17:02:40,625 [INFO] - cmap subsetted
+2023-11-23 17:02:40,625 [INFO] - loca subsetting not needed
+2023-11-23 17:02:40,625 [DEBUG] - Took 0.000s to subset 'post'
+2023-11-23 17:02:40,625 [INFO] - post subsetted
+2023-11-23 17:02:40,625 [INFO] - gasp subsetting not needed
+2023-11-23 17:02:40,625 [INFO] - FFTM NOT subset; don't know how to subset
+2023-11-23 17:02:40,625 [DEBUG] - Reading 'GDEF' table from disk
+2023-11-23 17:02:40,625 [DEBUG] - Decompiling 'GDEF' table
+2023-11-23 17:02:40,625 [DEBUG] - Took 0.001s to subset 'GDEF'
+2023-11-23 17:02:40,626 [INFO] - GDEF subsetted
+2023-11-23 17:02:40,626 [INFO] - name subsetting not needed
+2023-11-23 17:02:40,627 [DEBUG] - Took 0.001s to subset 'glyf'
+2023-11-23 17:02:40,627 [INFO] - glyf subsetted
+2023-11-23 17:02:40,627 [DEBUG] - Took 0.000s to subset GlyphOrder
+2023-11-23 17:02:40,627 [DEBUG] - Took 0.000s to prune 'head'
+2023-11-23 17:02:40,627 [INFO] - head pruned
+2023-11-23 17:02:40,627 [DEBUG] - Reading 'OS/2' table from disk
+2023-11-23 17:02:40,627 [DEBUG] - Decompiling 'OS/2' table
+2023-11-23 17:02:40,628 [INFO] - OS/2 Unicode ranges pruned: [0, 1, 31]
+2023-11-23 17:02:40,628 [DEBUG] - Took 0.001s to prune 'glyf'
+2023-11-23 17:02:40,628 [INFO] - glyf pruned
+2023-11-23 17:02:40,628 [DEBUG] - Took 0.000s to prune 'GDEF'
+2023-11-23 17:02:40,628 [INFO] - GDEF pruned
+2023-11-23 17:02:40,629 [DEBUG] - Compiling 'glyf' table
+2023-11-23 17:02:40,634 [DEBUG] - Writing 'glyf' table to disk
+2023-11-23 17:02:40,635 [DEBUG] - Compiling 'maxp' table
+2023-11-23 17:02:40,635 [DEBUG] - Writing 'maxp' table to disk
+2023-11-23 17:02:40,635 [DEBUG] - Compiling 'loca' table
+2023-11-23 17:02:40,636 [DEBUG] - Writing 'loca' table to disk
+2023-11-23 17:02:40,636 [DEBUG] - Compiling 'head' table
+2023-11-23 17:02:40,636 [DEBUG] - Writing 'head' table to disk
+2023-11-23 17:02:40,636 [DEBUG] - Compiling 'hmtx' table
+2023-11-23 17:02:40,637 [DEBUG] - Writing 'hmtx' table to disk
+2023-11-23 17:02:40,638 [DEBUG] - Compiling 'hhea' table
+2023-11-23 17:02:40,639 [DEBUG] - Writing 'hhea' table to disk
+2023-11-23 17:02:40,639 [DEBUG] - Compiling 'OS/2' table
+2023-11-23 17:02:40,639 [DEBUG] - Writing 'OS/2' table to disk
+2023-11-23 17:02:40,640 [DEBUG] - Compiling 'cmap' table
+2023-11-23 17:02:40,640 [DEBUG] - Writing 'cmap' table to disk
+2023-11-23 17:02:40,640 [DEBUG] - Compiling 'name' table
+2023-11-23 17:02:40,640 [DEBUG] - Writing 'name' table to disk
+2023-11-23 17:02:40,640 [DEBUG] - Compiling 'post' table
+2023-11-23 17:02:40,640 [DEBUG] - Writing 'post' table to disk
+2023-11-23 17:02:40,640 [DEBUG] - Reading 'gasp' table from disk
+2023-11-23 17:02:40,641 [DEBUG] - Writing 'gasp' table to disk
+2023-11-23 17:02:40,641 [DEBUG] - Reading 'FFTM' table from disk
+2023-11-23 17:02:40,641 [DEBUG] - Writing 'FFTM' table to disk
+2023-11-23 17:02:40,641 [DEBUG] - Compiling 'GDEF' table
+2023-11-23 17:02:40,641 [DEBUG] - Writing 'GDEF' table to disk
+2023-11-23 17:02:40,646 [INFO] - 127.0.0.1 - - [23/Nov/2023 17:02:40] "GET /gerar_pdf/102 HTTP/1.1" 200 -

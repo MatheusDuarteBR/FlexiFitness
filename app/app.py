@@ -5,26 +5,34 @@ import logging
 from functools import wraps
 from datetime import timedelta
 from flask_migrate import Migrate
-from reportlab.pdfgen import canvas
 from io import BytesIO
 from reportlab.lib.pagesizes import letter
-#from models.models import Usuario, Perfil, Receita, db
-#from config import SQLALCHEMY_DATABASE_URI, SECRET_KEY
 from logging.handlers import RotatingFileHandler
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 from weasyprint import HTML
+from dotenv import load_dotenv
+import os
 
-DEBUG = True
-USERNAME = 'pollux'
-PASSWORD = 'pollux123'
-SERVER = '127.0.0.1'
-DB = 'flexifitness'
+load_dotenv()
+
+DEBUG = os.getenv("DEBUG")
+USERNAME= 'pollux'
+PASSWORD = os.getenv("PASSWORD")
+SERVER = os.getenv("SERVER")
+DB = os.getenv("DB")
+SECRET_KEY = os.getenv("SECRET_KEY")
+
+# Adicione logs para debug
+print(f"DEBUG: {DEBUG}")
+print(f"USERNAME: {USERNAME}")
+print(f"PASSWORD: {PASSWORD}")
+print(f"SERVER: {SERVER}")
+print(f"DB: {DB}")
+print(f"SECRET_KEY: {SECRET_KEY}")
 
 SQLALCHEMY_DATABASE_URI = f"postgresql://{USERNAME}:{PASSWORD}@{SERVER}/{DB}"
-SQLACHEMY_TRACK_MODIFICATIONS = True
-
-SECRET_KEY="28782878"
+SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 db = SQLAlchemy()
 app = Flask(__name__)
