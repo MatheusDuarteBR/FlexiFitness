@@ -32,6 +32,12 @@ Dentro do projeto digite os seguintes comandos:
 2. docker run -p 5000:5000 meu_projeto:latest
 3. Sua aplicação Flask deve agora estar acessível em http://localhost:5000
 
+## 🔥 Monitoramento da Aplicação - Visualização de Logs
+
+Para facilitar a visualização em tempo real dos logs da aplicação, utilize o comando *tail -f app.log*
+
+O arquivo se encontra na partição FlexiFitness/app/app.log 
+
 ## 🔥 Pacotes e dependências
 
 alembic==1.12.0
