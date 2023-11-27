@@ -21,6 +21,17 @@ Comandos para baixar todos os pacotes necessários:
 6. Inicie a aplicação usando "python app.py"
 7. Abra um navegador da web e vá para http://localhost:5000
 
+Lembre-se também de criar um arquivo .env dentro da pasta app e colocar as seguintes informações:
+```
+DEBUG=True
+USERNAME=user_do_banco
+PASSWORD=senha_do_banco
+SERVER=127.0.0.1
+DB=flexifitness
+SECRET_KEY=28782878
+SERVER=127.0.0.1
+```
+
 Você deve conseguir rodar um servidor/aplicação de testes.
 
 ## 🔥 Como rodar a aplicação via Docker
@@ -30,7 +41,18 @@ Lembre-se de já ter baixado e instalado corretamente o docker em sua máquina!
 Dentro do projeto digite os seguintes comandos:
 1. docker build -t meu_projeto:latest .
 2. docker run -p 5000:5000 meu_projeto:latest
-3. Sua aplicação Flask deve agora estar acessível em http://localhost:5000
+
+```
+DEBUG=True
+USERNAME=user_do_banco
+PASSWORD=senha_do_banco
+SERVER=127.0.0.1
+DB=flexifitness
+SECRET_KEY=28782878
+SERVER=127.0.0.1
+```
+   
+Sua aplicação Flask deve agora estar acessível em http://localhost:5000
 
 ## 🔥 Monitoramento da Aplicação - Visualização de Logs
 
