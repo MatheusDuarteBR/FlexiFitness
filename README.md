@@ -86,6 +86,9 @@ gunicorn
 
 ## 🔥 Documentação
 
+SonarCloud test - ![image](https://github.com/MatheusDuarteBR/FlexiFitness/assets/17799967/97d8e8d4-de51-4f6f-b625-154f4415e0f5)
+
+
 ## 🔥 Further Help
 
 Se você precisa de mais ajuda, olhe a documentação necessária dos pacotes que podem estar gerando o problema. Segue algumas que podem lhe ajudar:
