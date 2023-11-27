@@ -4625,3 +4625,6 @@ KeyError: 'user_id'
 2023-11-23 18:41:38,334 [DEBUG] - Compiling 'GDEF' table
 2023-11-23 18:41:38,334 [DEBUG] - Writing 'GDEF' table to disk
 2023-11-23 18:41:38,337 [INFO] - 127.0.0.1 - - [23/Nov/2023 18:41:38] "GET /gerar_pdf/102 HTTP/1.1" 200 -
+2023-11-27 17:35:01,940 [INFO] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-11-27 17:35:01,941 [INFO] - [33mPress CTRL+C to quit[0m
