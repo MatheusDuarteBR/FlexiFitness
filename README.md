@@ -60,6 +60,11 @@ Para facilitar a visualização em tempo real dos logs da aplicação, utilize o
 
 O arquivo se encontra na partição FlexiFitness/app/app.log 
 
+A aplicação também tem suporte para a tecnologia chamada NewRelic como no print a seguir:
+
+![image](https://github.com/MatheusDuarteBR/FlexiFitness/assets/17799967/99c0cc07-853b-4e91-b121-18f9155a58a2)
+
+
 ## 🔥 Documentação / Tecnologias
 ```
 Frontend: Hmtl / boostrap / css / js
