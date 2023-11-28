@@ -86,6 +86,13 @@ gunicorn
 
 ## 🔥 Documentação
 
+Testes unitários - Foi usado a biblioteca "Pytest", foram realizados 12 testes no backend da aplicação, testes de todas as rotas possíveis dentro da aplicação.
+
+Você encontra todos os testes unitários no caminho: FlexiFitness/tests/test_routes.py || Não foi possível conectar o coverage test no SonarCloud.
+
+![image](https://github.com/MatheusDuarteBR/FlexiFitness/assets/17799967/e7599587-a3af-4871-a7f2-d15292e80eff)
+
+
 SonarCloud test - ![image](https://github.com/MatheusDuarteBR/FlexiFitness/assets/17799967/97d8e8d4-de51-4f6f-b625-154f4415e0f5)
 
 
