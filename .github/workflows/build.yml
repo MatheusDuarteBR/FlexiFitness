@@ -24,6 +24,7 @@ jobs:
       - name: Collect coverage reports
         run: |
           pip install -r requirements.txt  # Instalação de dependências, se necessário
+          pip install pytest  # Instala o pytest
           pip install coverage  # Instala a biblioteca de cobertura
           coverage run -m pytest tests/test_routes.py  # Executa testes e gera relatório de cobertura
           coverage xml -o coverage-reports/coverage.xml  # Gera um relatório XML para o SonarCloud
