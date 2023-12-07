@@ -4,7 +4,7 @@ on:
   workflow_run:
     workflows: [Build]
   push:
-    branches: [ deploy ]
+    branches: [ main ]
   # Adicione outros eventos conforme necessário, como pull_request, workflow_dispatch, etc.
 
 jobs:
