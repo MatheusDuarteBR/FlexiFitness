@@ -13,12 +13,12 @@ jobs:
     - name: Checkout Repository
       uses: actions/checkout@v3
       
-	 # Adicione os passos para instalar dependências e executar testes aqui
+    # Adicione os passos para instalar dependências e executar testes aqui
     - name: Install dependencies and run tests
       run: |
-	python -m pip install --upgrade pip
-	pip install -r requirements.txt
-	pip install pytest  # Instala o pytest
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+        pip install pytest  # Instala o pytest
         pip install Flask-WTF
         pip install python-dotenv
         pip install coverage  # Instala a biblioteca de cobertura
